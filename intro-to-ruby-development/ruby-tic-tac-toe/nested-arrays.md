@@ -1,4 +1,6 @@
-# Nested Arrays
+# Lesson: Nested Arrays
+
+## Notes
 
 - Arrays are declared as a comma-separated list of variable names or literal values wrapped in square brackets.
 - A nested, or multidimensional array, is an array whose individual elements are also arrays.
@@ -14,12 +16,14 @@
   - A useful tactic is to format the array such that each nested level is placed on its own line.
   - Don't go more than four levels deep when constructing a multidimensional array, use the has instead.
 
-## Example of Iteration in Nested Arrays
+## Code Examples
+
+### Iteration in Nested Arrays
 
 ```ruby
 nested_students = [
-  ["Mike", "Grade 10", "A average"], 
-  ["Tim", "Grade 10", "C average"], 
+  ["Mike", "Grade 10", "A average"],
+  ["Tim", "Grade 10", "C average"],
   ["Monique", "Grade 11", "B average", "Class President"]
 ]
 

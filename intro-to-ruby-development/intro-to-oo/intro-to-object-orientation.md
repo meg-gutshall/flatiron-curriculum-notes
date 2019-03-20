@@ -1,4 +1,6 @@
-# Intro to Object Orientation
+# Lesson: Intro to Object Orientation
+
+## Notes
 
 - OOP = object-oriented programming
 

@@ -1,4 +1,6 @@
-# Hello World
+# Lesson: Hello World
+
+## Notes
 
 - The `.rb` file extension is a common convention for specifying the language of the file as Ruby.
 - To create a new file in the Learn IDE’s terminal, type `touch file_name.rb`.

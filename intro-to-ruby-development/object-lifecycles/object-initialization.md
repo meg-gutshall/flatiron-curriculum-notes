@@ -1,10 +1,14 @@
-# Object Initialization
+# Lesson: Object Initialization
+
+## Notes
 
 - The `#initialize` method is used to create instances of our class with certain attributes.
   - An `#initialize` method is a method that is called automatically whenever `#new` is used.
 - The initialize method is a constructor method, which is invoked upon the creation of an instance of a class and used to help define the instance of that class.
 
-## Example of Defining an Initialize Method
+## Code Examples
+
+## Defining an Initialize Method
 
 ```ruby
 class Dog

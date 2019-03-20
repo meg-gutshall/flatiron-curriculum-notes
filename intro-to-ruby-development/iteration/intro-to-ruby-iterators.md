@@ -1,4 +1,6 @@
-# Intro to Ruby Iterators
+# Lesson: Intro to Ruby Iterators
+
+## Notes
 
 - `each` is a common iteration method.
   - Example: `array.each do |element|`

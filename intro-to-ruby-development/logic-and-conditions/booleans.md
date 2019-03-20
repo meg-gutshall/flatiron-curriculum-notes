@@ -1,4 +1,6 @@
-# Booleans
+# Lesson: Booleans
+
+## Notes
 
 - Every appearance, or instance, of `true` in a Ruby program is an instance of `TrueClass`, while every appearance of `false` is an instance of `FalseClass`.
 

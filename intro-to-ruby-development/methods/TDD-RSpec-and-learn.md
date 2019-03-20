@@ -1,4 +1,6 @@
-# TDD, RSpec, and Learn
+# Lesson: TDD, RSpec, and Learn
+
+## Notes
 
 - Tests verify that the code you write behaves and produces the desired result.
 - TDD (or test-driven development) is considered the most reliable methodology for writing quality code.
@@ -15,7 +17,7 @@
   - `NoMethodError`: when a method is undefined
   - `ArgumentError`: when a method isn’t set up to except an argument or there’s a mismatched expectation for the result
 
-## Understanding the Test in the `spec` Directory
+## Code Examples: Understanding the Tests in the `spec` Directory
 
 ### Understanding and Writing Tests
 
@@ -32,7 +34,7 @@ require_relative '../current_age_for_birth_year.rb'
 describe "current_age_for_birth_year method" do
   it "returns the age of a person based on their year of birth" do
     age_of_person = current_age_for_birth_year(1990)
-    
+
     expect(age_of_person).to eq(28)
   end
 end

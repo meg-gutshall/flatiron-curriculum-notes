@@ -1,4 +1,6 @@
-# Intro to IRB
+# Lesson: Intro to IRB
+
+## Notes
 
 - IRB stands for “Interactive Ruby”.
 - It's a Ruby shell, or REPL, which stands for read–eval–print loop.

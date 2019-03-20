@@ -1,4 +1,6 @@
-# About Ruby Conditionals
+# Lesson: About Ruby Conditionals
+
+## Notes
 
 - Control flow lets you tell your program what code to execute conditionally.
 - There are a number of ways to tell your program to conditionally execute certain code, the basic forms of which are:

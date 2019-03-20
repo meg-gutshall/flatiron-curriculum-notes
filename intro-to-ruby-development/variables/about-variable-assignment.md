@@ -1,4 +1,6 @@
-# About Variable Assignment
+# Lesson: About Variable Assignment
+
+## Notes
 
 - Variables are words or characters that store information.
   - Can be almost any type of value (numbers, strings, arrays, and hashes)

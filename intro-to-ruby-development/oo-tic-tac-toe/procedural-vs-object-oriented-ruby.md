@@ -1,4 +1,6 @@
-# Procedural vs Object Oriented Ruby
+# Lesson: Procedural vs Object Oriented Ruby
+
+## Notes
 
 - In procedural programming, data and procedures (or instructions) are two separate things.
 - In object-oriented programming, we have units of code that contain both data and instructions, such that an "object" operates on its own data structure.

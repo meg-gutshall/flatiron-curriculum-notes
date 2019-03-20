@@ -1,4 +1,6 @@
-# Classes and Instances
+# Lesson: Classes and Instances
+
+## Notes
 
 - A class is like a blueprint that defines how to build an object.
 - A Ruby class both contains the instructions for creating new objects and has the ability to create those objects.
@@ -11,7 +13,7 @@
   - The part following the semicolon is called its object identifier and it basically means this is where the object lives inside your computer.
 - Each instance is totally unique.
 
-## Example of A Class and New Instance
+## Code Examples
 
 ```ruby
 class ClassName

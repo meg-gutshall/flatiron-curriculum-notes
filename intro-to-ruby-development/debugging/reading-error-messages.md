@@ -1,4 +1,6 @@
-# Reading Error Messages
+# Lesson: Reading Error Messages
+
+## Notes
 
 Error messages have three parts:
 
@@ -17,9 +19,11 @@ Four common error types are:
   - Found inside the spec directory
 - Each error prints out a stack trace, which points to where the code failed and attempts to follow it up the stack—that is, through the bits of code that ran leading up to the failure. You can use these stack traces to pinpoint which line(s) of code need your attention.
 
-## Example Error Message
+## Code Examples
 
-```ruby
+### Example Error Message
+
+```bash
 lib/a_name_error.rb:3:in `<main>': undefined local variable or method `hello_world' for main:Object (NameError)
 
 # The location of the error

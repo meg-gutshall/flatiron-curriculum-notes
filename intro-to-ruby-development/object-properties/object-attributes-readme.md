@@ -1,4 +1,6 @@
-# Object Attributes Readme
+# Lesson: Object Attributes Readme
+
+## Notes
 
 - Reader methods (or "getters") return information stored in an instance variable.
 - Writer methods (or "setters") makes an attribute writable.

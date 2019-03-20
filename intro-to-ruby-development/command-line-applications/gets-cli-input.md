@@ -1,4 +1,6 @@
-# `gets` CLI Input
+# Lesson: `gets` CLI Input
+
+## Notes
 
 - Use the `gets` method and the Command Line Interface (CLI) to receive and process input from the user when running a method that accepts an argument.
 - We first greet the user, then ask them for input (in this case, their name).
@@ -8,7 +10,9 @@
 - Most often `gets` is followed by `.strip` or `.chomp`.
   - The `#chomp` method removes any new lines at the end of a string while the `#strip` method removes whitespace (leading and trailing) and new lines.
 
-## The CLI Pattern When Using the `#gets` Method
+## Code Examples
+
+### The CLI Pattern When Using the `#gets` Method
 
 ```ruby
 puts "Hello! Welcome to the world of Ruby programming!"

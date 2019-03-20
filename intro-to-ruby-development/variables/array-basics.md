@@ -1,4 +1,6 @@
-# Array Basics
+# Lesson: Array Basics
+
+## Notes
 
 - An array is like a list, but in code form. It stores pieces of data as a collection and can contain any data types in any combination (but it’s encouraged that you keep it to one data type per array).
 - Arrays are declared by listing variable names or literals separated by commas (`,`) and wrapped in square brackets `[]`.

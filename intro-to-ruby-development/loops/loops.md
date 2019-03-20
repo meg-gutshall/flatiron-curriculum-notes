@@ -1,4 +1,6 @@
-# Loops
+# Lesson: Loops
+
+## Notes
 
 - The most basic way to build a loop is using the `loop` keyword. It simply executes a block of code between the `do` and `end` keywords.
   - The code that goes inside the `do` and `end` is considered the loop's body or block; that's the code that will execute on repeat.

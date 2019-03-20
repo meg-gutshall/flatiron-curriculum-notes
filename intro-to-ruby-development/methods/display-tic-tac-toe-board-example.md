@@ -1,4 +1,6 @@
-# Display Tic Tac Toe Board Example
+# Lesson: Display Tic Tac Toe Board Example
+
+## Notes
 
 Because our program is going to have to display the board repeatedly, we should encapsulate the procedure of printing a board within a method so that we can simply call it whenever we need to print the board.
 

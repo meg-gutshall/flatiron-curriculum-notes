@@ -1,4 +1,6 @@
-# Methods and Arguments
+# Lesson: Methods and Arguments
+
+## Notes
 
 - To add arguments to a method, you specify them in the method signature––the line that starts with `def`. Simply add parentheses after the name of the method and create a placeholder name for your argument.
 - Arguments create new local variables that can be used within the method.

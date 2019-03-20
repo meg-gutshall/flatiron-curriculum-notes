@@ -1,4 +1,6 @@
-# Instance Methods
+# Lesson: Instance Methods
+
+## Notes
 
 - We send objects messages asking them to perform an operation or task through a syntax known as "Dot Notation".
   - This separates the object and the message with a dot (`.`).

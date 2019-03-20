@@ -1,4 +1,6 @@
-# Intro to Loops
+# Lesson: Intro to Loops
+
+## Notes
 
 - Loops allow us to tell our program to do the same thing over and over with just a few simple, clear, and easy to understand lines.
 - Loops have three advantages:

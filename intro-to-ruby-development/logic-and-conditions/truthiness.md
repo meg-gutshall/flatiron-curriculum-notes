@@ -1,4 +1,6 @@
-# Truthiness
+# Lesson: Truthiness
+
+## Notes
 
 - In Ruby, the boolean types are expressed directly as `true` and `false`.
   - These values help to implement flow control, which is the idea that we can tell our program to execute certain lines of code based upon certain conditions.

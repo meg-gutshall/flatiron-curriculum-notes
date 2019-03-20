@@ -1,4 +1,6 @@
-# While and Until Loops
+# Lesson: While and Until Loops
+
+## Notes
 
 - The `while` construct will keep executing a block as long as a specific condition is `true`.
   - Good to use with a counter.
