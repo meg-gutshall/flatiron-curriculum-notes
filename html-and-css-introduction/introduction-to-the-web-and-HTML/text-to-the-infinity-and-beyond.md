@@ -1,4 +1,6 @@
-# Text to the Infinity and Beyond
+# Lesson: Text to the Infinity and Beyond
+
+## Notes
 
 - HTML stands for hypertext markup language.
 - The texts, or "strings", sent back and forth on the web are HTML documents, containing both content and markup.

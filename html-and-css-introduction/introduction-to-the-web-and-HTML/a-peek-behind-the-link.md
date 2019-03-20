@@ -1,4 +1,6 @@
-# A Peek Behind the "Link", the Web's Superpower
+# Lesson: A Peek Behind the "Link", the Web's Superpower
+
+## Notes
 
 - In addition to being freely accessible and distributable for virtually no cost, texts created on the web can refer to one another, a process that's so common we might miss how special it is. On the Web, HTML documents can organically relate (link) to one another, allowing pieces of information to reference one another without the constraint of a hierarchical structure.
 - The idea for hyperlinks was discovered by the inventor of the World Wide Web, Tim Berners-Lee.
@@ -11,9 +13,11 @@
   - Tags classify the type of data
   - Attributes describe the specific occurrence of an HTML element
 
-## Anatomy of an HTML Tag
+## Code Examples
 
-```HTML
+### Anatomy of an HTML Tag
+
+```html
 <opening tag content-attribute=attribute value>
   Content
 </closing tag> <!-- Its a closing tag because the tag name begins with a `/`. By the way, this is an HTML comment. -->
