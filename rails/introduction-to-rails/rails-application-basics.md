@@ -1,19 +1,21 @@
-# Rails Application Basics
+# Lesson: Rails Application Basics
 
-## What is Ruby on Rails?
+## Notes
+
+### What is Ruby on Rails?
 
 - **A web framework**: A web framework provides developers the tools they need in order to build applications. When every application is unique, there are certain components that cna be found in almost every application, such as: routing, asset management, database connections, etc. A good web framework gives developers these baseline tools so that they don't have to create the base application functionality for each new project.
 - **A Ruby gem**: At its core, Ruby on Rails is simply a set of Ruby code libraries, and since the entire codebase is open source, you have the ability to review the framework to better understand how it works.
 - **An MVC framework**: MVC stand for Model-View-Controller, this essentially means that Rails takes advantage of the popular application architecture that helps developers naturally separate concerns and organize the applications properly. This setup encourages a specific set of conventions, such as placing the logic for the application in the model files, managing the code flow in the controllers, and displaying content to the user in the views.
 
-## Creating Your First Rails Project
+### Creating Your First Rails Project
 
-### Generating A New Rails Application
+#### Generating A New Rails Application
 
 - To create a new Rails app, run the following command: `rails new app-name`
   - For Rails app naming conventions, typically you'll want to use all lower case letters, separated by '-'.
 
-### Rails File Structure Overview
+#### Rails File Structure Overview
 
 - **`app`**: Contains the models, views, and controllers, along with the rest of the core functionality of the application. This is the one directory where you can make a change and not have to restart the Rails server. The majority of your time will be spent working in this directory. In addition to the full MVC structure, this directory also contains non-Ruby files, such as: CSS files, JavaScripts, images, fonts, etc.
 - **`bin`**: Some built-in Rails tasks that you most likely will never have to work with.
@@ -29,17 +31,17 @@
 - **`Gemfile.lock`**: This file should not be edited. It displays all of the dependencies that each of the gems contain along with their associated versions. Messing around with the lock file can lead to application bugs due to missing or altered gem dependencies.
 - **`README.rdoc`**: The `readme` file is an important place to document the details of the application. If the application is an open-source project, that is where you can place instructions to other developers, such as how to get the app up and running locally.
 
-### Creating the Database
+#### Creating the Database
 
 - Create the database by running: `rake db:create`.
 
-### Starting Up the Rails Server
+#### Starting Up the Rails Server
 
 - To start up the Rails server, make sure that you are in the root of the application in the terminal and run: `rails s`.
 - Verify that the server is working properly by navigating to `http://localhost:3000/`.
 - To shutdown the server, press `CTRL+C`.
 
-### Using the Rails Console
+#### Using the Rails Console
 
 - To start up the Rails console, run the follow command in the terminal: `rails c`.
 - To end the console session, run `control + d` and you'll return to the regular terminal session.
