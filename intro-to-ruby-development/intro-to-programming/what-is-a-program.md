@@ -1,4 +1,4 @@
-# What is a Program?
+# What Is A Program?
 
 All programs are just files on your computer filled with text. That text has a special syntax we call code. The programming language you're using defines the syntax of the code you are allowed to write. Programs are converted to [machine code](https://en.wikipedia.org/wiki/Machine_code) so that the computer can understand it.
 
