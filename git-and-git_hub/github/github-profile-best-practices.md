@@ -1,4 +1,6 @@
-# GitHub Profile Best Practices
+# Lesson: GitHub Profile Best Practices
+
+## Notes
 
 - Pin projects to the top of your profile
   - Highlight your most impressive, large, and/or recent projects first.

@@ -1,4 +1,6 @@
-# Intro to Version Control
+# Lesson: Intro to Version Control
+
+## Notes
 
 - Version control is the process of storing multiple versions of a single project, allowing each version to be recalled at a later date.
 - Using version control is useful because it allows you to easily rollback to a previous version of your application.

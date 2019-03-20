@@ -1,4 +1,6 @@
-# Git Collaboration
+# Lesson: Git Collaboration
+
+## Notes
 
 - A key to collaborating with Git is to keep discrete and individual lines of work isolated from each other.
   - We can do this using branches.

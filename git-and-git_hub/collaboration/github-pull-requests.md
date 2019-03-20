@@ -1,4 +1,6 @@
-# GitHub Pull Requests
+# Lesson: GitHub Pull Requests
+
+## Notes
 
 - The concept of a pull request is unique to GitHub and powers the communities of developers who create adn contribute to "open sourced" projects.
 - A pull request is a request to the owner of another repo to take changes you made in a branch on your fork of their repo and integrate it into theirs as if you had done the work on theirs directly.

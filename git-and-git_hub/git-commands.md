@@ -1,4 +1,6 @@
-# `Git` Commands
+# Lesson: `git` Commands
+
+## Notes
 
 - `cd my-git-project` moves the terminal to the new directory
 - `git add <filename or path>` adds that file to the list to files being tracked in the directory

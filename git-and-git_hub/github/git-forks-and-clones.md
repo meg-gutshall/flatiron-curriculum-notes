@@ -1,4 +1,6 @@
-# Git Forks and Clones
+# Lesson: Git Forks and Clones
+
+## Notes
 
 - Forking a GitHub repository is just a way to create your own copy of it.
 - Cloning lets us get a forked copy of the repository on our local machine.

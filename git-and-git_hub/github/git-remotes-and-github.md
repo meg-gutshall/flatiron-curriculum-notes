@@ -1,4 +1,6 @@
-# Git Remotes and GitHub
+# Lesson: Git Remotes and GitHub
+
+## Notes
 
 Creating a new repository in GitHub:
 

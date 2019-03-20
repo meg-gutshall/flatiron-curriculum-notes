@@ -1,4 +1,6 @@
-# Git Repository Basics
+# Lesson: Git Repository Basics
+
+## Notes
 
 - Git operates on a per-directory setup.
 - To make a new directory, open the terminal and type `mkdir my-git-project`. Then to move to the new directory, type `cd my-git-project`.
