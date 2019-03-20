@@ -2,13 +2,13 @@
 
 ## Notes
 
-Creating a new repository in GitHub:
+### Creating a new repository in GitHub:
 
 1. While logged into GitHub, click the + in the menubar and select `New repository`.
 2. Enter a name for your repository in the `Repository name` field, then click the green `Create repository` button.
 3. After you create the repo, you should see a "Quick setup" page. Click the "Copy to clipboard" symbol next to the repo URL to copy the URL.
 
-Connecting your remote repo to a local repo:
+### Connecting your remote repo to a local repo:
 
 1. In you terminal, create a new directory and add a file.
 2. Change into your `code` directory: `cd ~/code` (or whatever you named your development directory)
@@ -22,7 +22,7 @@ Connecting your remote repo to a local repo:
 
 - "Origin" is simply the default alias assigned to your new remote repo.
 
-`git push`
+### `git push`
 
 - This command is used when we want to send some code from the local repository to the associated remote repository.
 - `git push` takes two arguments: the name of the remote repo and the name of the remote branch you want to send code to
@@ -30,7 +30,7 @@ Connecting your remote repo to a local repo:
 - The first time you push the code, add the `-u` flag to tell Git to track the remote repository: `git push -u remote_repo remote_branch`
   - Every subsequent push can use `git push`
 
-`git pull`
+### `git pull`
 
 - This command is used to pull down any changes others have made on the remote repository to our local machine.
 - This can also take remote repo and remote branch arguments if need be: `git pull remote_repo remote_branch`
