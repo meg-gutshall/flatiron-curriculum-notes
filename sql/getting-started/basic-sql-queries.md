@@ -63,9 +63,9 @@ SQLite allows us to explicitly state the tableName.columnName we want to select.
 ### Format Query Output
 
 ```sql
-.headers    on  # output the name of each column
-.mode   column  # now we are in column mode, enabling us to run the next two .width commands
-.width  auto    # adjusts and normalizes column width
+.headers    on              # output the name of each column
+.mode       column          # now we are in column mode, enabling us to run the next two .width commands
+.width      auto            # adjusts and normalizes column width
 # or
-.width  NUM1, NUM2  # customize column width
+.width      NUM1, NUM2      # customize column width
 ```
