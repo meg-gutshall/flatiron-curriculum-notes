@@ -17,7 +17,7 @@ Enter SQL statements terminated with a ";"
 sqlite>
 ```
 
-This is the sqlite prompt.
+**This is the sqlite prompt.**
 
 Create a database table:
 

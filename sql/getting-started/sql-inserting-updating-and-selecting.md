@@ -20,7 +20,7 @@ SELECT [names of columns we are going to select] FROM [table we are selecting fr
 
 ### Selecting Data Based on Conditions
 
-- We can use the `WHERE` keyword to select data based on specific conditions:
+We can use the `WHERE` keyword to select data based on specific conditions:
 
 ```sql
 SELECT * FROM [table name] WHERE [column name] = [some value];

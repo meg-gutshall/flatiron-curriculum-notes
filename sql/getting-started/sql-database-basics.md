@@ -22,8 +22,7 @@
 
 ### Altering A Table
 
-- Add or remove columns with the `ALTER TABLE` statement.
-  - Add a column:
+Add or remove columns with the `ALTER TABLE` statement.
 
 ```sql
 ALTER TABLE cats ADD COLUMN breed TEXT;
@@ -31,7 +30,7 @@ ALTER TABLE cats ADD COLUMN breed TEXT;
 
 ### Deleting A Table
 
-- Delete a table using the `DROP TABLE` statement followed by the table name.
+Delete a table using the `DROP TABLE` statement followed by the table name.
 
 ## Code Examples
 
