@@ -12,7 +12,8 @@
 SELECT AVG(column_name) FROM table_name;
 ```
 
-  - Use the `AS` keyword to rename the returned column. (This is called "aliasing the return value".)
+- Use the `AS` keyword to rename the returned column. (This is called "aliasing the return value".)
+
 - The sum function returns the sum of all of the values in a particular column:
 
 ```sql
@@ -31,4 +32,4 @@ SELECT MIN|MAX(column_name) FROM table_name;
 SELECT COUNT(column_name) FROM table_name;
 ```
 
-  - We can use the `COUNT()` function to calculate the total number of rows in a table that are not `NULL`, or empty. `COUNT(*)` means count everything and will count the rows where at least one column has data in it.
+- We can use the `COUNT()` function to calculate the total number of rows in a table that are not `NULL`, or empty. `COUNT(*)` means count everything and will count the rows where at least one column has data in it.
