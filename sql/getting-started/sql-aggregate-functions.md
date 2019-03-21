@@ -6,9 +6,29 @@
 
 ### Using Aggregators
 
-- The average function returns the average value of a column: `SELECT AVG(column_name) FROM table_name;`
+- The average function returns the average value of a column:
+
+```sql
+SELECT AVG(column_name) FROM table_name;
+```
+
   - Use the `AS` keyword to rename the returned column. (This is called "aliasing the return value".)
-- The sum function returns the sum of all of the values in a particular column: `SELECT SUM(column_name) FROM table_name;`
-- The minimum and maximum aggregator functions return the minimum and maximum values from a specified column respectively: `SELECT MIN|MAX(column_name) FROM table_name;`
-- The count function returns the number of rows that meet a certain condition: `SELECT COUNT(column_name) FROM table_name;`
+- The sum function returns the sum of all of the values in a particular column:
+
+```sql
+SELECT SUM(column_name) FROM table_name;
+```
+
+- The minimum and maximum aggregator functions return the minimum and maximum values from a specified column respectively:
+
+```sql
+SELECT MIN|MAX(column_name) FROM table_name;
+```
+
+- The count function returns the number of rows that meet a certain condition:
+
+```sql
+SELECT COUNT(column_name) FROM table_name;
+```
+
   - We can use the `COUNT()` function to calculate the total number of rows in a table that are not `NULL`, or empty. `COUNT(*)` means count everything and will count the rows where at least one column has data in it.
