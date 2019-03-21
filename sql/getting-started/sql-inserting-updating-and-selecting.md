@@ -9,22 +9,39 @@ We use the `INSERT INTO` command, followed by the name of the table to which we 
 
 ### Selecting Data
 
-We use the `SELECT` statement to retrieve database data, or rows. A basic `SELECT` statement works like this: `SELECT [names of columns we are going to select] FROM [table we are selecting from];`
+We use the `SELECT` statement to retrieve database data, or rows. A basic `SELECT` statement works like this:
+
+```sql
+SELECT [names of columns we are going to select] FROM [table we are selecting from];
+```
 
 - To get data from every column in the table, use a special selector known as the "wildcard" `*` (ex. `SELECT * FROM cats`)
 - To select only unique values, use the `DISTINCT` keyword (ex. `SELECT DISTINCT name FROM cats`)
 
 ### Selecting Data Based on Conditions
 
-- We can use the `WHERE` keyword to select data based on specific conditions: `SELECT * FROM [table name] WHERE [column name] = [some value];`
-  - We can also use comparison operators, like `<` or `>` to select specific data.
+- We can use the `WHERE` keyword to select data based on specific conditions:
+
+```sql
+SELECT * FROM [table name] WHERE [column name] = [some value];
+```
+
+- We can also use comparison operators, like `<` or `>` to select specific data.
 
 ### Updating Data
 
-To update or change data in our table rows, we use the `UPDATE` keyword: `UPDATE [table name] SET [column name] = [new value] WHERE [column name] = [value];`
+To update or change data in our table rows, we use the `UPDATE` keyword:
+
+```sql
+UPDATE [table name] SET [column name] = [new value] WHERE [column name] = [value];
+```
 
 - The `UPDATE` statement uses a `WHERE` clause to grab the row you want to update.
 
 ### Deleting Data
 
-To delete table rows, we use the `DELETE` keyword: `DELETE FROM [table name] WHERE [column name] = [value];`
+To delete table rows, we use the `DELETE` keyword:
+
+```sql
+DELETE FROM [table name] WHERE [column name] = [value];
+```
