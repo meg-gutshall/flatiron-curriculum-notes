@@ -1,0 +1,4 @@
+# Lesson: Rails MVC
+
+## Notes
+
