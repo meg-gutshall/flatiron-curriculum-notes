@@ -17,4 +17,8 @@
 
 ### Querying the Join Table
 
-- Example that utilizes a JOIN statement to query a join table: `SELECT column(s) FROM table_one INNER JOIN table_two ON table_one.column_name = table_two.column_name WHERE table_two.column_name = condition;`
+- Example that utilizes a JOIN statement to query a join table:
+
+```sql
+SELECT column(s) FROM table_one INNER JOIN table_two ON table_one.column_name = table_two.column_name WHERE table_two.column_name = condition;
+```
