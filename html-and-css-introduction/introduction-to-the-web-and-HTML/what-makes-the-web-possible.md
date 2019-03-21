@@ -12,7 +12,7 @@ To make the web work we need:
 
 ### The Internet
 
-- There would be no web without Internet
+- There would be no web without Internet.
   - The Internet provides addresses to the clients and servers so that they can exchange information as well as error-connection and reconnection rules.
 - Technologists say that **the web is an Internet application**, but it is not the only one.
 

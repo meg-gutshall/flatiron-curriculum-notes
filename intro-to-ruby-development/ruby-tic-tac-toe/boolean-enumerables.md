@@ -10,7 +10,7 @@
 
 ### The `#none?` Method
 
-- The opposite of `#all?` where we are interested in none of the elements in a collection producing a true expression
+- The opposite of `#all?` where we are interested in none of the elements in a collection producing a true expression.
 - If any of the elements in the collection evaluate to `true` when passed to the block, `#none?` will return `false`. If none of the elements evaluate to `true`, `#none?` will return `true`.
 
 ### The `#any?` Method

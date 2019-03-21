@@ -2,13 +2,13 @@
 
 ## Notes
 
-Error messages have three parts:
+### Error messages have three parts:
 
 1. The location of the error, the “where”, which includes the file the error occurred in, the line of code with the error, and the scope of the error
 2. The description of the error, the “why”,
 3. And the type of error, the “who”.
 
-Four common error types are:
+### Four common error types are:
 
 1. Name errors: Caused when a given name is invalid or undefined
 2. Syntax errors: A result of incorrect syntax

@@ -4,7 +4,7 @@
 
 - Every appearance, or instance, of `true` in a Ruby program is an instance of `TrueClass`, while every appearance of `false` is an instance of `FalseClass`.
 
-**Boolean operators include:**
+### Boolean operators include:
 
 - A `!` ("single-bang") represents "not". This operator reverses the logical state of its operand. If a condition is `true`, then `!` will make it `false`; if it is `false`, then `!` will make it `true`.
 - A `&&` ("double-ampersand") represents "and". To evaluate to `true`, both values of either side of the symbol must evaluate to `true`.
