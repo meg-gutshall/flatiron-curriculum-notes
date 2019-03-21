@@ -8,5 +8,10 @@
 
 - Create a database in the terminal, then exit the sqlite prompt with the `.quit` command.
 - Open a text editor and write your create statement. Save that file as a `.sql` extension.
-- Execute that file in the command line: `sqlite3 database_name.db < create_statement.sql`
+- Execute that file in the command line:
+
+```sql
+sqlite3 database_name.db < create_statement.sql
+```
+
 - To carry out any subsequent actions on this database, we can create new `.sql` files in the text editor and execute them in the same way as above.
