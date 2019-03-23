@@ -30,7 +30,7 @@ For a real-world case study, let us pretend you have a newsletter application. T
   - The router in the application processes the request and 'routes' the request data to the proper controller action.
   - The controller action either performs a task, such as creating, updating, or deleting a record in the database, or it runs a database query and renders a view to the client.
 
-![RESTful routing diagram](/images/rails/rails_routes.png)
+![RESTful routing diagram](https://github.com/meg-gutshall/flatiron-curriculum-notes/blob/master/public/images/rails/rails_routes.png)
 
 ### Definition of HTTP Verbs
 
