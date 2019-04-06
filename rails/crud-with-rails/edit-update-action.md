@@ -1,6 +1,6 @@
 # Lesson: Edit/Update Action
 
-## Notes
+## Notes and Code Examples
 
 ### Rails Controller Conventions
 
