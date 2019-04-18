@@ -1,12 +1,10 @@
 # Lesson: `form_for` on Edit
 
-## Notes
-
-### Recap of `form_tag`
+## Recap of `form_tag`
 
 To review, the `form_tag` helper method allows us to automatically generate HTML form code and integrate date to both auto fill the values as well as have the form submit data that the controller can use to either create or update a record in the database. It allows for you to pass in: the route for where the parameters for the form will be sent, the HTTP method that the form will utilize, and the attributes for each field.
 
-### Issues with Using `form_tag`
+## Issues with Using `form_tag`
 
 Before we get into the benefits and features of the `form_for` method, let's first discuss some of the key drawbacks to utilizing `form_tag`:
 
@@ -14,7 +12,7 @@ Before we get into the benefits and features of the `form_for` method, let's fir
 - The form has no knowledge of the form's goal; it doesn't know if the form is mean to create or update a record
 - You're forced to have duplicate code throughout the form; it's hard to adhere to DRY principles when utilizing the `form_tag`
 
-### Difference Between `form_for` and `form_tag`
+## Difference Between `form_for` and `form_tag`
 
 The differences between `form_for` and `form_tag` are subtle, but important. We'll start with talking about them at a high level perspective and then get into each one of the aspects on a practical/implementation basis:
 
@@ -28,7 +26,7 @@ A good rule of thumb for when to use one approach over the other is below:
 - Use `form_for` when your form is directly connected to a model.
 - Use `form_tag` when you simply need an HTML form generated. Examples of this would be: a search form field or a contact form.
 
-### Implementation of `form_for`
+## Implementation of `form_for`
 
 Below is an example `edit` form for a `post` object:
 

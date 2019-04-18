@@ -1,8 +1,6 @@
 # Lesson: Resource Generator/Routes
 
-## Notes & Code Examples
-
-### Generating A Scaffold
+## Generating A Scaffold
 
 - It is not considered a good practice to use scaffolds in a production application. However, they can be a great reference for how we can build CRUD functionality into our apps.
 
@@ -68,7 +66,7 @@ create      app/assets/stylesheets/scaffolds.scss
   - The full set of RESTful routes
   - And every other component needed for a functional CRUD environment
 
-### DRYing Up the `ArticlesController`
+## DRYing Up the `ArticlesController`
 
 If you look through the code in the `ArticlesController`, you'll see a few familiar methods, such as: `index`, `new`, `edit`, `update`, and `show`. If you remember prior lessons, you may remember that we had some duplicate code. For example, if we had `show`, `edit`, and `update` actions in the controller, we had three different calls, such as:
 
@@ -102,7 +100,7 @@ end
 
 Even though scaffolds are great for learning how CRUD works in Rails, it's still considered a bad practice to use them in production applications. The main reason why scaffolds are discouraged in production is because they create so much code and so many files that they can be hard to manage.
 
-### Scaffold vs Resource Generators
+## Scaffold vs Resource Generators
 
 - So what's a good alternative to utilizing scaffolds? The `resource` generator!
 - The scaffold generator builds out the system in a very specific manner, which is rarely the way _you_ would want to build _your_ application.

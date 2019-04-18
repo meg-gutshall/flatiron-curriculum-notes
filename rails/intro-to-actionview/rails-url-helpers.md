@@ -1,8 +1,6 @@
 # Lesson: Rails URL Helpers
 
-## Notes and Code Examples
-
-### Paths vs Route Helpers
+## Paths vs Route Helpers
 
 Why would we want to use route helper methods as opposed to hard coding paths into the application? There are a number of reasons. Below are a few of the key rationales:
 
@@ -11,7 +9,7 @@ Why would we want to use route helper methods as opposed to hard coding paths in
 - It's more natural to be able to pass arguments into a method as opposed to using string interpolation.
 - Route helpers translate directly into HTML-friendly paths. In other words, if you have any weird characters in your URLs, the route helpers will convert them so they can be read properly by browsers. This includes items such as spaces or characters such as `&`, `%`, etc.
 
-### Implementing Route Helpers
+## Implementing Route Helpers
 
 Using the `resources` method to draw your routes will create routing methods that we can utilize in our views and controllers. For example:
 
@@ -36,7 +34,7 @@ These four columns tell us everything that we'll need in order to use the route 
 
 One of the nice things about utilizing route helper methods is that they create predictable names for the methods. Once to get into "day-to-day Rails development", you will only need to run `rake routes` to find custom paths.
 
-### The `link_to` Method
+## The `link_to` Method
 
 Instead of using the HTML anchor tag to create a hyperlink, Rails provides us with the handy `link_to` method. Just call `link_to` and pass in the body and URL arguments.
 
@@ -51,7 +49,7 @@ Rails is smart enough to know that if you pass in an object as the argument to a
 <% end %>
 ```
 
-### Using the `:as` Option
+## Using the `:as` Option
 
 If for any reason you don't like the naming structure for the methods or paths, you can customize them quite easily. A common change is updating the path users go to in order to register for a site. Out of the box, the standard path would be `/users/new`. However, we want something a little more readable, like `/register`. In order to make this change, let's update the `routes.rb` file, adding the following line:
 

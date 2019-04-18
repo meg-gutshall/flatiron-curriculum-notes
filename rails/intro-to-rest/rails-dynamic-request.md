@@ -1,8 +1,6 @@
 # Lesson: Rails Dynamic Request
 
-## Notes
-
-### Dynamic Requests
+## Dynamic Requests
 
 A breakdown of the dynamic route process flow is below:
 
@@ -15,7 +13,7 @@ In review, what's the difference between static and dynamic routes?
 - Static routes render pages that have a hard coded path connected to them.
 - Dynamic routes will render different data based on the parameters passed to the route.
 
-### Code Implementation
+## Code Implementation
 
 In order to set up a dynamic request feature, we will start by writing a test to verify that the page exists:
 
@@ -54,7 +52,7 @@ end
 
 Lastly, we'll need to add a `posts` folder in the `views` directory and create a `show.html.erb` file inside the new `views/posts` directory.
 
-#### Resource Routing
+### Resource Routing
 
 Instead of using our `get` route, we can use Ruby's RESTful defaults and the `resources` method with the `only` option:
 

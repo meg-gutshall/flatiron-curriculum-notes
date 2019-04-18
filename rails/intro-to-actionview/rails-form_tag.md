@@ -1,8 +1,6 @@
 # Lesson: Rails `form_tag`
 
-## Notes and Code Examples for Building a New Post Form
-
-### Rendering the Form View
+## Rendering the Form View
 
 In order to render the new post form, we have to add code to a few other files. First, we'll need to add a `new_post_path` method to our `routes.rb` file:
 
@@ -19,7 +17,7 @@ end
 
 Lastly, we have to create the actual template to hold our form at `app/views/posts/new.html.erb`.
 
-### Submitting the Form
+## Submitting the Form
 
 In order to submit the new post form, we have to draw a `create` route so that the routing system knows what to do when a `POST` request is sent to the `/posts` resource:
 
@@ -44,7 +42,7 @@ def create
 end
 ```
 
-### What Is CSRF?
+## What Is CSRF?
 
 "CSRF" stands for Cross-Site Request Forgery. Let's walk through a real-life example of a Cross-Site Request Forgery hack:
 
@@ -55,14 +53,14 @@ end
 
 One site making a request to another site via a form is the general flow of a Cross-Site Request Forgery. Rails blocks this from happening by default by requiring that a unique authenticity token be submitted with each form. This authenticity token is stored in the session and can't be hijacked by hackers. It performs a match check when the form is submitted, and it will throw an error if the token isn't there or doesn't match.
 
-### Building the Form in HTML Using Form Helpers
+## Building the Form in HTML Using Form Helpers
 
 - Just like Sinatra, Rails takes the user input entered into form field and stores it in the `params` hash. The `name` attribute for a given `input` field is used as the key within `params` at which the entered data is stored.
   - Traditionally, Rails apps use that `model[attribute]` syntax for `name` attributes.
 
 `ActionView`, a sub-gem of Rails, provides a number of helper methods to assist with streamlining view template code.
 
-#### Pure HTML Form
+### Pure HTML Form
 
 ```erb
 <form action="<%= posts_path %>" method="POST">
@@ -77,7 +75,7 @@ One site making a request to another site via a form is the general flow of a Cr
 </form>
 ```
 
-#### HTML Form with `ActionView` Helper Methods
+### HTML Form with `ActionView` Helper Methods
 
 ```erb
 <%= form_tag posts_path do %>

@@ -1,15 +1,13 @@
 # Lesson: Rails Static Request
 
-## Notes and Code Examples
-
-### Routing
+## Routing
 
 - Routes tells your application which views to render to users.
 - The differences between a static and a dynamic route:
   - A **static route** will render a view that does not change. Typically, you will not send parameters to it.
   - A **dynamic route** is a page that accepts parameters and renders different content based on those parameters.
 
-### Implementing A Static Route
+## Implementing A Static Route
 
 To draw a route, we need to open the `config/routes.rb` file and add the route inside of the `draw` block:
 
@@ -37,7 +35,7 @@ end
   - **Explicit rendering**: Rails lets you dictate which view file you want to have the controller action mapped to.
   - **Implicit rendering**: Rails follows a standard convention that automatically looks for the view file with the same name as the controller action.
 
-#### Explicit Rendering
+### Explicit Rendering
 
 ```ruby
 def about

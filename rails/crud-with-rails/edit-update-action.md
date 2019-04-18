@@ -1,8 +1,6 @@
 # Lesson: Edit/Update Action
 
-## Notes and Code Examples
-
-### Rails Controller Conventions
+## Rails Controller Conventions
 
 There is a trend in Rails conventions where the logic for rendering a form is separate from the action that manages the database record alteration. For example:
 
@@ -14,9 +12,9 @@ In like fashion, the `edit` and `update` actions have a similar convention:
 - The `edit` action will handle rendering the `edit` form
 - The `update` action will be the method that updates the database record itself
 
-### Rendering the `edit` Form
+## Rendering the `edit` Form
 
-#### Routes
+### Routes
 
 To start off, let's draw a `get` route for our edit form. Since the form will need to know which record is being edited, this will need to be a dynamic route that accepts an `:id` as a parameter that the controller can access:
 
@@ -32,7 +30,7 @@ patch 'articles/:id', to: 'articles#update'
 
 **NOTE:** `PUT` is meant to be used when replacing a whole resource. `PATCH` is used for sending a set of changes to a resource.
 
-#### Controllers
+### Controllers
 
 With our routes in place, let's add the controller actions to `app/controllers/articles_controller.rb`:
 
@@ -48,7 +46,7 @@ def update
 end
 ```
 
-#### Views
+### Views
 
 Create a new view template in `app/views/articles/edit.html.erb`. Since the `edit` view template has access to the `Article` object (stored in `@article`), we need to refactor the form so that it auto-fills the form fields with the corresponding data from `@article`. We'll also use a different form helper, `form_for`, which will automatically set up the url where the form will be sent, as seen below:
 
