@@ -68,15 +68,15 @@ Now let's plug the information back into the form:
 As you can see from the [docs](http://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html#method-i-text_field_tag), the second argument to the `text_field_tag`, as with most form tag helpers, is the "default" value. The HTML for the two field inputs used to look like this:
 
 ```html
-Name: <input type="text" name="name" id="name" /><br>
-Email: <input type="text" name="email" id="email" />
+Name: <input type="text" name="name" id="name"><br>
+Email: <input type="text" name="email" id="email">
 ```
 
 But now it will look like this:
 
 ```html
-Name: <input type="text" name="name" id="name" value="Jane Developer" /><br>
-Email: <input type="text" name="email" id="email" value="jane@develoeprs.fake />
+Name: <input type="text" name="name" id="name" value="Jane Developer"><br>
+Email: <input type="text" name="email" id="email" value="jane@develoeprs.fake>
 ```
 
 When the browser renders those inputs, they'll be pre-filled with the data in their `value` attributes.
