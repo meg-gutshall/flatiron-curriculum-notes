@@ -21,6 +21,8 @@ Invalid data is the bogeyman of web applications: it hides in your database unti
 ### Basic Validation Example
 
 ```ruby
+# app/models/person.rb
+
 class Person < ActiveRecord::Base
   validates :name, presence: true
 end
@@ -101,6 +103,8 @@ Rails has a host of built-in helpers.
 ### Length Validation Example
 
 ```ruby
+# app/models/person.rb
+
 class Person < ActiveRecord::Base
   validates :name, length: {minimum: 2}
   validates :bio, length: {maximum: 500}
@@ -116,6 +120,8 @@ Another common built-in validator is `uniqueness`.
 ### Uniqueness Validation Example
 
 ```ruby
+# app/models/account.rb
+
 class Account < ActiveRecord::Base
   validates :email, uniqueness: true
 end
@@ -130,6 +136,8 @@ This isn't a validator in its own right, but a handy convenience option for spec
 ### Custom Message Example
 
 ```ruby
+# app/models/person.rb
+
 class Person < ActiveRecord::Base
   validates :not_a_robot, acceptance: true, message: "Humans only!"
 end

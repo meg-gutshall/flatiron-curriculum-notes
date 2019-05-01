@@ -37,6 +37,8 @@ To generate a new migration, you can use:`rails generate migration CreatePosts` 
 - Add the posts table to the migration file:
 
 ```ruby
+# db/migrate/xxx_create_posts.rb
+
 class CreatePosts <ActiveRecord[5.0]
   def change
     create_table :posts do |t|
@@ -56,6 +58,8 @@ There is a special syntactic shortcut to generate migrations that add field to a
 - This will generate the file `timestamp_add_published_status_to_create_posts.rb`, which will look like:
 
 ```ruby
+# db/migrate/xxx_add_published_status_to_create_posts.rb
+
 class AddPublishedStatusToCreatePosts < ActiveRecord::Migration[5.0]
   def change
     add_column :posts, :published_status, :string
@@ -70,6 +74,8 @@ We can also get rid of a column with another migration: `rails generate migratio
 - If you open up this migration file, you will see the following code:
 
 ```ruby
+# db/migrate/xxx_remove_published_status_from_create_posts.rb
+
 class RemovePublishedStatusFromCreatePosts < ActiveRecord::Migration
   def change
     remove_column :posts, :published_status, :string
@@ -102,6 +108,8 @@ rails generate migration add_fieldname_to_tablename fieldname:string
 This will generate the file `timestamp_add_fieldname_to_tablename.rb`, which will look like this:
 
 ```ruby
+# db/migrate/xxx_add_fieldname_to_tablename.rb
+
 class AddFieldnameToTablename < ActiveRecord::Migration[5.0]
   def change
     add_column :tablenames, :fieldname, :string

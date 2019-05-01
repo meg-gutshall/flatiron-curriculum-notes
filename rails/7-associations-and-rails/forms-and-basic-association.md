@@ -73,6 +73,8 @@ Notice the difference—we're now accepting a category name, rather than a categ
 Now we can build our form:
 
 ```erb
+<!-- app/views/posts/new.html.erb -->
+
 <%= form_for @post do |f| %>
   <%= f.label :category_name %>
   <%= f.text_field :category_name %>
@@ -88,6 +90,8 @@ Now the user can enter a category by name (instead of needing look up its ID), a
 If we want to let the user pick from existing categories, we can use a [Collection Select](https://apidock.com/rails/ActionView/Helpers/FormOptionsHelper/collection_select) helper to render a `<select>` tag:
 
 ```erb
+<!-- app/views/posts/new.html.erb -->
+
 <%= form_for @post do |f| %>
   <%= f.collection_select :category_name, Category.all, :name, :name %>
   <%= f.text_field :content %>
@@ -102,6 +106,8 @@ That might be what you want. For example, the content management system for a ma
 In our case, however, we want to give users the flexibility to create a new category _or_ pick an existing one. What we want is autocompletion, which we can get with a [`datalist`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/datalist):
 
 ```erb
+<!-- app/views/posts/new.html.erb -->
+
 <%= form_for @post do |f| %>
   <%= f.text_field :category_name, list: "categories_autocomplete" %>
   <datalist id="categories_autocomplete">

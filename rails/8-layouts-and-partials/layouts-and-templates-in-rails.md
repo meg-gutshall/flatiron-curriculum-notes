@@ -90,7 +90,7 @@ And this is the template for the `static#about` action with a simple message, wh
 <p>Hello!</p>
 ```
 
-When you load up the `static#about` route in your browser, you will be greeted with a very bold message — **Welcome To The Flatiron Store!** — but you won't see the "Hello!" from the about action's template, which we just coded above.
+When you load up the `static#about` route in your browser, you will be greeted with a very bold message—**Welcome To The Flatiron Store!**—but you won't see the "Hello!" from the about action's template, which we just coded above.
 
 This is happening because the layout file at `app/views/layouts/application.html.erb` does not have a `yield` statement in it. `yield` is what Rails uses to decide where in the layout to render the content for the action. If you don't put a `yield` in your layout, the layout itself will render just fine, but any additional content coded into the action templates will not be correctly placed within the layout.
 
@@ -145,6 +145,8 @@ If you need to override the conventions explained above, you can easily do so. F
 1. If you want to use the products layout for every action, simply specify that you want to use the products layout by invoking the `layout` method in your controller, passing it a string that it can use to find the desired layout:
 
 ```ruby
+# app/controllers/shopping_cart_controller.rb
+
 class ShoppingCartController < ApplicationController
   layout "products"
 end
@@ -153,6 +155,8 @@ end
 2. If you want to use the products layout only for a particular action, simply use the `render` method in the controller action, specifying the layout you want it to use like this:
 
 ```ruby
+# app/controllers/shopping_cart_controller.rb
+
 class ShoppingCartController < ApplicationController
   def list
     render :layout => "static"
@@ -165,6 +169,8 @@ end
 If you want to render your action template without a layout, you can do the following:
 
 ```ruby
+# app/controllers/shopping_cart_controller.rb
+
 class ShoppingCartController < ApplicationController
   def list
     render :layout => false

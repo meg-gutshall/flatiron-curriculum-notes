@@ -31,6 +31,8 @@ A good rule of thumb for when to use one approach over the other is below:
 Below is an example `edit` form for a `post` object:
 
 ```erb
+<!-- app/views/posts/edit.html.erb -->
+
 <h3>Edit Post</h3>
 
 <%= form_for @post do |f| %>
@@ -49,6 +51,8 @@ Below is an example `edit` form for a `post` object:
 Because `form_for` is bound directly with the `Post` model, we need to pass the model name into the ActiveRecord `update` method in the controller. We can do this two ways:
 
 ```ruby
+# app/controllers/posts_controller.rb
+
 # Option 1
 def update
   @post = Post.find(params[:id])

@@ -143,6 +143,8 @@ With this in mind, we can conditionally "error-ify" each field in the form, targ
 By now, our full form has grown quite a bit:
 
 ```erb
+<!-- app/views/people/edit.html.erb -->
+
 <%= form_tag("/people") do %>
   <% if @person.errors.any? %>
     <div id="error_explanation">

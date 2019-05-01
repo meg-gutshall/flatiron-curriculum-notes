@@ -9,6 +9,8 @@ It all starts in the database. **Foreign keys** are columns that refer to the pr
 Like any other column, foreign keys are accessible through instance methods of the same name. For example, a migration that looks like this:
 
 ```ruby
+# db/migrate/xxx_add_author_id_to_posts.rb
+
 class AddAuthorIdToPosts < ActiveRecord::Migration
   def change
     change_table :posts do |t|
@@ -53,6 +55,8 @@ By using ActiveRecord's macro-style association class methods, we can add some c
 Each `Post` is associated with **one** `Author`.
 
 ```ruby
+# app/models/post.rb
+
 class Post < ActiveRecord::Base
   belongs_to :author
 end
@@ -71,6 +75,8 @@ We now have access to some new instance methods, like `author`. This will return
 In the opposite direction, each `Author` might be associated with zero, one, or many `Post` objects. We haven't changes the schema of the `authors` table at all; ActiveRecord is just going to use `posts.author_id` to do all of the lookups.
 
 ```ruby
+# app/models/author.rb
+
 class Author < ActiveRecord::Base
   has_many :posts
 end
@@ -176,16 +182,26 @@ This will create a table called `posts_tags`.
 To work with the join table, both our `Post` and `Tag` models will have a `has_many` association with the `posts_tags` table. We also still need to associate `Post` and `Tag` themselves. Ideally, we'd like to be able to call a `@my_post.tags` method, right? That's where `has_many :through` comes in. First, let's add the `has_many :posts_tags` line to our `Post` and `Tag` models:
 
 ```ruby
-class Post
+# app/models/post.rb
+
+class Post < ActiveRecord::Base
   has_many :posts_tags
 end
+```
 
-class PostsTags
+```ruby
+# app/models/post_tags.rb
+
+class PostsTags < ActiveRecord::Base
   belongs_to :post
   belongs_to :tag
 end
+```
 
-class Tag
+```ruby
+# app/models/tag.rb
+
+class Tag < ActiveRecord::Base
   has_many :posts_tags
 end
 ```
@@ -193,17 +209,27 @@ end
 So now we can run code like `@post.posts_tags` to get all the join entries. This is kinda sorta what we want. What we really want is to be able to call `@post.tags`, so we need one more `has_many` relationship to complete the link between tags and posts: `has_many :through`. Essentially, our `Post` model has many `tags` _through_ the `posts_tags` table, and vice versa. Let's write that out:
 
 ```ruby
-class Post
+# app/models/post.rb
+
+class Post < ActiveRecord::Base
   has_many :posts_tags
   has_many :tags, through: :posts_tags
 end
+```
 
-class PostsTags
+```ruby
+# app/models/post_tags.rb
+
+class PostsTags < ActiveRecord::Base
   belongs_to :post
   belongs_to :tag
 end
+```
 
-class Tag
+```ruby
+# app/models/tag.rb
+
+class Tag < ActiveRecord::Base
   has_many :posts_tags
   has_many :posts, through: :posts_tags
 end

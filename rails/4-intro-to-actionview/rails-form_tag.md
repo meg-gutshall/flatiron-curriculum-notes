@@ -5,12 +5,16 @@
 In order to render the new post form, we have to add code to a few other files. First, we'll need to add a `new_post_path` method to our `routes.rb` file:
 
 ```ruby
+# config/routes.rb
+
 resources :posts, only: [:index, :new]
 ```
 
 Next, we need to add the `new` action to our `PostsController`:
 
 ```ruby
+# app/controllers/posts_controller.rb
+
 def new
 end
 ```
@@ -22,6 +26,8 @@ Lastly, we have to create the actual template to hold our form at `app/views/pos
 In order to submit the new post form, we have to draw a `create` route so that the routing system knows what to do when a `POST` request is sent to the `/posts` resource:
 
 ```ruby
+# config/routes.rb
+
 resources :posts, only: [:index, :new, :create]
 ```
 
@@ -36,6 +42,8 @@ If you run `rake routes`, you'll see we now have a `posts#create` action:
 Next, we need to add a `create` action to our `PostsController` and have it create a new `Post` object with the values from `params` and then redirect to the index page:
 
 ```ruby
+# app/controllers/posts_controller.rb
+
 def create
   Post.create(title: params[:post][:title], description: params[:post][:description])
   redirect_to posts_path
@@ -63,6 +71,8 @@ One site making a request to another site via a form is the general flow of a Cr
 ### Pure HTML Form
 
 ```erb
+<!-- app/views/posts/new.html.erb -->
+
 <form action="<%= posts_path %>" method="POST">
   <label>Post title:</label><br>
   <input type="text" id="post_title" name="post[title]"><br>
@@ -78,6 +88,8 @@ One site making a request to another site via a form is the general flow of a Cr
 ### HTML Form with `ActionView` Helper Methods
 
 ```erb
+<!-- app/views/posts/new.html.erb -->
+
 <%= form_tag posts_path do %>
   <label>Post title:</label><br>
   <%= text_field_tag :'post[title]' %><br>

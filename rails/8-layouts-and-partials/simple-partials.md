@@ -49,6 +49,8 @@ First, let's create a new file in `app/views/posts/` called `_form.html.erb`. To
 Second, let's remove the repeated code in `app/views/posts/edit.html.erb`. The file should look like this:
 
 ```erb
+<!-- app/views/posts/edit.html.erb -->
+
 <%= form_tag post_path(@post), method: "put" do %>
 <% end %>
 ```
@@ -56,6 +58,8 @@ Second, let's remove the repeated code in `app/views/posts/edit.html.erb`. The f
 Note that we left in the non-duplicated code. Now, let's also remove the duplicated code in the `app/views/posts/new.html.erb` file. The file should look like this:
 
 ```erb
+<!-- app/views/posts/new.html.erb -->
+
 <%= form_tag post_path do %>
 <% end %>
 ```
@@ -63,6 +67,8 @@ Note that we left in the non-duplicated code. Now, let's also remove the duplica
 We left the code that is unique to each view and removed the duplicated code inside the `form_tag` blocks. Now, is when our partials come into play. First, we'll place the duplicated code in a new file called `app/views/posts/_form.html.erb`. The file should look as follows:
 
 ```erb
+<!-- app/views/posts/_form.html.erb -->
+
 <label>Post Title:</label><br>
 <%= text_field_tag :title %><br>
 
@@ -107,6 +113,8 @@ A couple of things to note:
 Let's take a look at our `authors/show.html.erb` file:
 
 ```erb
+<!-- app/views/authors/show.html.erb -->
+
 <%= @author.name %>
 <%= @author.hometown %>
 ```
@@ -114,6 +122,8 @@ Let's take a look at our `authors/show.html.erb` file:
 And now look at the code in `posts/show.html.erb`:
 
 ```erb
+<!-- app/views/posts/show.html.erb -->
+
 <%= @post.author.name %>
 <%= @post.author.hometown %>
 

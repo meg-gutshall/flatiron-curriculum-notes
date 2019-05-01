@@ -12,6 +12,8 @@
 To draw a route, we need to open the `config/routes.rb` file and add the route inside of the `draw` block:
 
 ```ruby
+# config/routes.rb
+
 get 'about', to: 'static#about'
 ```
 
@@ -24,6 +26,8 @@ get 'about', to: 'static#about'
 We must also add a new controller for our static pages (`app/controllers/static_controller.rb`) that inherits from `ApplicationController` along with the `about` action
 
 ```ruby
+# app/controllers/static_controller.rb
+
 class StaticController < ApplicationController
   def about
   end
@@ -38,6 +42,8 @@ end
 ### Explicit Rendering
 
 ```ruby
+# app/controllers/static_controller.rb
+
 def about
   render "some_page"
 end

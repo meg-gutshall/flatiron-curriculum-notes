@@ -15,6 +15,8 @@ Attributes of the `form_tag` helper:
 Let's build out a form that lets users enter in their cat's name and their associated color:
 
 ```erb
+<!-- app/views/cats/new.html.erb -->
+
 <%= form_tag("/cats) do %>
   <%= label_tag('cat[name]', "Name") %>
   <%= text_field_tag('cat[name]') %>
@@ -29,6 +31,8 @@ Let's build out a form that lets users enter in their cat's name and their assoc
 This will build a form and auto generate the following HTML:
 
 ```html
+<!-- app/views/cats/new.html.erb -->
+
 <form accept-charset="UTF-8" action="/cats" method="POST">
   <label for="cat_name">Name</label>
   <input id="cat_name" name="cat[name]" type="text">
@@ -55,6 +59,8 @@ This means when you're using the `form_for` method, the object is passed as a `f
 Let's refactor the cat form with `form_for`:
 
 ```erb
+<!-- app/views/cats/new.html.erb -->
+
 <%= form_for(@cat) do |f| %>
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -69,6 +75,8 @@ Let's refactor the cat form with `form_for`:
 The `form_for` above will auto generate the following HTML:
 
 ```html
+<!-- app/views/cats/new.html.erb -->
+
 <form accept-charset="UTF-8" action="/cats" method="POST">
   <label for="cat_name">Name</label>
   <input id="cat_name" name="cat[name]" type="text">

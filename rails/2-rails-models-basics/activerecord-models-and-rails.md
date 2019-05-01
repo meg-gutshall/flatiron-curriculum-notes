@@ -52,6 +52,8 @@ rails g rspec:install
 Create a new file `spec/models/post_spec.rb` and within place the following code:
 
 ```ruby
+# spec/models/post_spec.rb
+
 require 'rails_helper'
 
 describe Post do
@@ -76,6 +78,8 @@ The first block tests for a `Post` being created. The second block tests to see 
 In order for our RSpec to have anything to test, we need to create a `Post` model in the `app/models` directory called `post.rb`, and add the following code:
 
 ```ruby
+# app/models/post.rb
+
 class Post < ActiveRecord::Base
 
   def post_summary
@@ -90,6 +94,8 @@ end
 Since we're testing to see if a `Post` can be created, the `Post` model will need to have an associated database table in which `ActiveRecord` can use its built-in `#create` method to store a new object. To do this, we'll need to make a new directory in the `db/` directory called `migrate`, and add a new file called `001_create_posts.rb`. To that file, add the following code:
 
 ```ruby
+# db/migrate/001_create_posts.rb
+
 class CreatePosts < ActiveRecord::Migration
   def change
     create_table :posts do |t|

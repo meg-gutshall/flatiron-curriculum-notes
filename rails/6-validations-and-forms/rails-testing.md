@@ -236,18 +236,24 @@ When you see keywords like `visit`, `fill_in`, and `page`, you know you're looki
 To set up Capybara, one must first add the gem to the `Gemfile`:
 
 ```ruby
+# Gemfile
+
 gem 'Capybara'
 ```
 
 Then set up Capybara-Rails integration in `spec/rails_helper.rb`:
 
 ```ruby
+# spec/rails_helper.rb
+
 require 'capybara/rails'
 ```
 
 Then set up Capybara-RSpec integration in `spec/spec_helper.rb`:
 
 ```ruby
+# spec/spec_helper.rb
+
 require 'capybara/rspec'
 ```
 
@@ -273,6 +279,8 @@ When `click_button` is called, this will trigger the `POST` request to the contr
 Now, we can write our original controller tests like usual:
 
 ```ruby
+# spec/features/monster_creation.rb
+
 let(:monster {Monster.find_by(Name: "Dustwing")})
 
 it "creates a monster" do
@@ -287,6 +295,8 @@ end
 And because we're in Capybara land, we also have a very convenient way of making assertions about the final `GET` request:
 
 ```ruby
+# spec/features/monster_creation.rb
+
 it "displays the monster's name" do
   within "h1" do
     expect(page).to have_content(monster.name)

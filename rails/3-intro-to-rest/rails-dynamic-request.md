@@ -37,12 +37,16 @@ end
 To get this test to pass, we need to draw a route in `config/routes.rb` that maps to a show action in the `PostsController`:
 
 ```ruby
+# config/routes.rb
+
 get 'posts/:id', to: 'posts#show'
 ```
 
 We will also need to create the `PostsController` and define a `show` action:
 
 ```ruby
+# app/controllers/posts_controller.rb
+
 class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
@@ -57,5 +61,7 @@ Lastly, we'll need to add a `posts` folder in the `views` directory and create a
 Instead of using our `get` route, we can use Ruby's RESTful defaults and the `resources` method with the `only` option:
 
 ```ruby
+# config/routes.rb
+
 resources :posts, only: :show
 ```

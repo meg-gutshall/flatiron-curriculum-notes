@@ -5,6 +5,8 @@
 Sometimes, it may be appropriate for a user to create an instance of our join model directly. Think back to the hospital domain from our previous lab. It makes perfect sense that a user would go to `appointments/new` and fill out a form to create a new appointment.
 
 ```erb
+<!-- app/views/appointments/new.html.erb -->
+
 <%= form_for @appointment do |f| %>
   <%= f.datetime_select :appointment_datetime %>
   <%= f.collection_select :doctor, Doctor.all, :id, :name %>
@@ -122,9 +124,9 @@ Let's look at the HTML that this generated for us:
 Our params hash will now have a key of `:categories_attributes` nested under the key of `post`. Let's add that to our strong params and tell it to expect a key of `name` inside for the category's name.
 
 ```ruby
-# app/controllers/post_controller.rb
+# app/controllers/posts_controller.rb
 
-class PostController < ApplicationController
+class PostsController < ApplicationController
 
   ...
 
@@ -150,7 +152,7 @@ end
 We can now create categories that are automatically associated with our new post, but there's a problem. We're creating a new category each time, regardless of whether or not it already exists. In this case, we need to customize the way our category is created. Luckily, we can easily do this by creating our own `categories_attributes=` method.
 
 ```ruby
-# app/model/post.rb
+# app/models/post.rb
 
 class Post < ActiveRecord::Base
   has_many :post_categories

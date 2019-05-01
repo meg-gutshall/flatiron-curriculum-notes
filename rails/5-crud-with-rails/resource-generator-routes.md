@@ -71,18 +71,24 @@ create      app/assets/stylesheets/scaffolds.scss
 If you look through the code in the `ArticlesController`, you'll see a few familiar methods, such as: `index`, `new`, `edit`, `update`, and `show`. If you remember prior lessons, you may remember that we had some duplicate code. For example, if we had `show`, `edit`, and `update` actions in the controller, we had three different calls, such as:
 
 ```ruby
+# app/controllers/articles_controller.rb
+
 @article = Article.find(params[:id])
 ```
 
 This was necessary so that we could grab the `/:id` parameter from the URL string, but, as you may have noticed, the scaffold implemented an elegant solution to remove the duplicate code:
 
 ```ruby
+# app/controllers/articles_controller.rb
+
 before_action :set_article, only: [:show, :edit, :update, :destroy]
 ```
 
 The `show`, `edit`, `update`, and `destroy` actions will all have the `set_article` method called before any other code in the action is run. If you want to inspect the code for the `set_article` method, it's declared at the bottom of the controller:
 
 ```ruby
+# app/controllers/articles_controller.rb
+
 def set_article
   @article = Article.find(params[:id])
 end
@@ -93,6 +99,8 @@ As you can see, the method returns the `@article` instance variable that each of
 Another way that scaffolds show how to DRY up controller code can be found in the other `private` method:
 
 ```ruby
+# app/controllers/articles_controller.rb
+
 def article_params
   params.require(:article).permit(:title, :body)
 end

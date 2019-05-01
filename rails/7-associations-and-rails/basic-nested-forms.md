@@ -31,6 +31,8 @@ Notice the `addresses_attributes` key. That key is similar to the `artist_name` 
 Last time, we first wrote our setter method in the model. This time let's modify our `Person` model to include an `accepts_nested_attributes_for :addresses` line.
 
 ```ruby
+# app/models/person.rb
+
 class Person < ActiveRecord::Base
   has_many :addresses
   accepts_nested_attributes_for :addresses
@@ -81,6 +83,8 @@ We're asking Rails to generate `fields_for` each of the `Person`'s addresses. Ho
 We'll take the most straightforward way out: when we create a `Person` in the `PeopleController`, we'll add two empty addresses to fill out. The final controller looks like this:
 
 ```ruby
+# app/controllers/people_controller.rb
+
 class PeopleController < ApplicationController
   def new
     @person = Person.new
@@ -107,6 +111,8 @@ end
 Now, refresh the page and you'll see two lovely address forms. Try to hit submit, and it isn't going to work. One last hurdle. We have new `params` keys, which means we need to modify our `person_params` method to accept them. Your `person_params` method should now look like this:
 
 ```ruby
+# app/controllers/people_controller.rb
+
 def person_params
   params.require(:person).permit(
     :name,

@@ -35,6 +35,8 @@ delete '/people/:id', to: 'people#destroy', as: 'person'
 Now our HTML output:
 
 ```html
+<!-- app/views/people/show.html.erb -->
+
 <h2>Caligula</h2>
 caligula@rome-circe-40-AD.com
 <form accept-charset="UTF-8" action="/people/1" method="POST">
@@ -57,6 +59,8 @@ What you're seeing in the above `#form_tag()` behavior is a **workaround** imple
 Thus enlightened, we can (finally) proceed with our original goal:
 
 ```ruby
+# app/controllers/people_controller.rb
+
 def destroy
   Person.find(params[:id]).destroy
   redirect_to people_url
@@ -70,6 +74,8 @@ Nothing too special happening here except for a bit of method-chaining to immedi
 As shown, you have to go to a user's `show` page to delete them. What if we want an admin control panel where users can be deleted from a list?
 
 ```erb
+<!-- app/views/people/show.html.erb -->
+
 <% @people.each do |person| %>
 <div class="person">
   <span><%= person.name %></span>
@@ -80,7 +86,7 @@ As shown, you have to go to a user's `show` page to delete them. What if we want
 
 [`link_to`](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html#method-i-link_to) is a method of `UrlHelper` that has a number of convenient features.
 
-The HTML generated bt that call to `link_to` looks like this:
+The HTML generated at that call to `link_to` looks like this:
 
 ```html
 <a data-confirm="Really?" rel="nofollow" data-method="delete" href="/people/1">Delete</a>

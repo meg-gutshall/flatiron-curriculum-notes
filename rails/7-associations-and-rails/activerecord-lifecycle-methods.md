@@ -9,7 +9,7 @@ Take a look at the blog app that is included. It's pretty simple. We have a `Pos
 We are going to use our first callback by calling a method provided by Rails called `#titlecase` that will take care of the title casing for us. We'll implement the callback similarly to how we use `has_many` or `validates` by writing it at the top of our model file. First let's write our method to actually run `#titlecase`.
 
 ```ruby
-# post.rb
+# app/models/post.rb
 
 def make_title_case
   self.title = self.title.titlecase
@@ -21,6 +21,8 @@ end
 Ok, now we want to run this whenever someone tries to save to the database, but which callback do we use?
 
 ```ruby
+# app/models/post.rb
+
 class Post < ActiveRecord::Base
   belongs_to :author
   validate :is_title_case
@@ -50,6 +52,8 @@ We use `before_save` for actions that need to occur that aren't modifying the mo
 This is a perfect `before_save` action. It doesn't modify the model so there is no validation weirdness, and we don't want to email the user if the `Post` is invalid. So if you had some method called `email_author_about_post`, you would modify your `Post` model to look like this:
 
 ```ruby
+# app/models/post.rb
+
 class Post < ActiveRecord::Base
   belongs_to :author
   validate :is_title_case

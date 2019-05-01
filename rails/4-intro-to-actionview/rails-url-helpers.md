@@ -45,6 +45,8 @@ Instead of using the HTML anchor tag to create a hyperlink, Rails provides us wi
 Rails is smart enough to know that if you pass in an object as the argument to a route helper method, it will automatically use the `id` attribute. For example:
 
 ```erb
+<!-- app/views/posts/show.html.erb -->
+
 <% @posts.each do |post| %>
   <div><%= link_to post.title, post_path(post) %></div>
 <% end %>
@@ -55,6 +57,8 @@ Rails is smart enough to know that if you pass in an object as the argument to a
 If for any reason you don't like the naming structure for the methods or paths, you can customize them quite easily. A common change is updating the path users go to in order to register for a site. Out of the box, the standard path would be `/users/new`. However, we want something a little more readable, like `/register`. In order to make this change, let's update the `routes.rb` file, adding the following line:
 
 ```ruby
+# config/routes.rb
+
 get '/register', to: 'users#new', as: 'register'
 ```
 

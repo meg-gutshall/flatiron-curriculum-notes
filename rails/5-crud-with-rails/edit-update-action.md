@@ -19,12 +19,16 @@ In like fashion, the `edit` and `update` actions have a similar convention:
 To start off, let's draw a `get` route for our edit form. Since the form will need to know which record is being edited, this will need to be a dynamic route that accepts an `:id` as a parameter that the controller can access:
 
 ```ruby
+# config/routes.rb
+
 get 'articles/:id/edit', to: 'articles#edit', as: :edit_article
 ```
 
 We still need to draw one additional route to handle the `update` action. This second route will also need to be dynamic, accepting the same `:id` as a parameter so that the action will know which record is being altered.
 
 ```ruby
+# config/routes.rb
+
 patch 'articles/:id', to: 'articles#update'
 ```
 
@@ -35,6 +39,8 @@ patch 'articles/:id', to: 'articles#update'
 With our routes in place, let's add the controller actions to `app/controllers/articles_controller.rb`:
 
 ```ruby
+# app/controllers/articles_controller.rb
+
 def edit
   @article = Article.find(params[:id])
 end
@@ -51,6 +57,8 @@ end
 Create a new view template in `app/views/articles/edit.html.erb`. Since the `edit` view template has access to the `Article` object (stored in `@article`), we need to refactor the form so that it auto-fills the form fields with the corresponding data from `@article`. We'll also use a different form helper, `form_for`, which will automatically set up the url where the form will be sent, as seen below:
 
 ```erb
+<!-- app/views/articles/edit.html.erb -->
+
   <%= form_for @article do |f| %>
     <%= f.label 'Article Title' %><br>
     <%= f.text_field :title %><br>
