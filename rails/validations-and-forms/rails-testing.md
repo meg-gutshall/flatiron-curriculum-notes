@@ -201,7 +201,7 @@ If you were going to write tests for a cat's steering wheel, what would you star
 
 Here's one idea:
 
->> When the steering wheel is rotated to the left, the tires rotate to the left.
+&nbsp;&nbsp;&nbsp;&nbsp;*When the steering wheel is rotated to the left, the tires rotate to the left.*
 
 This makes sense, but it's testing much more than the steering wheel. This test relies on the view (steering wheel), the model (tires), _and_ the controller (steering column)!
 
@@ -217,11 +217,11 @@ This is called a **unit test**, because it tests a single unit of functionality.
 
 For a car, it might look like this:
 
->> When the steering column's flange rotates, the steering shaft transmits the rotation of the steering box.
+&nbsp;&nbsp;&nbsp;&nbsp;*When the steering column's flange rotates, the steering shaft transmits the rotation of the steering box.*
 
 It can be difficult to write isolated **unit tests**, and it's not always clear whether they're useful. Compare the jargon-heavy, extremely specific unit test, above, to the test covering the steering wheel (view) _and_ steering column (controller):
 
->> When the steering wheel is rotated to the left, the steering column transmits the rotation to the steering box.
+&nbsp;&nbsp;&nbsp;&nbsp;*When the steering wheel is rotated to the left, the steering column transmits the rotation to the steering box.*
 
 This is a **feature test**.
 

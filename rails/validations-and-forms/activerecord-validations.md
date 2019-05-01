@@ -25,8 +25,10 @@ class Person < ActiveRecord::Base
   validates :name, presence: true
 end
 
-Person.create(name: "John Doe").valid?  # => true
-Person.create(name: nil).valid?  # => false
+Person.create(name: "John Doe").valid?
+# => true
+Person.create(name: nil).valid?
+# => false
 ```
 
 In this example, the options hash is `{presence: true}`, which implements the most basic form of validation, preventing the object from being saved if its `name` attribute is empty.
@@ -74,9 +76,12 @@ You can check all errors at once by examining `errors.messages`,
 
 ```ruby
 person = Person.new
-person.errors.messages  # => empty
-person.valid?  # => false
-person.errors.messages  # => name: can't be blank
+person.errors.messages
+# => empty
+person.valid?
+# => false
+person.errors.messages
+# => name: can't be blank
 ```
 
 Or you can check one attribute at a time by passing the name to `errors` as a key.

@@ -29,9 +29,11 @@ As a professional Rails developer, you will be expected to build applications by
 
 ```bash
 # The -T flag tells the Rails project generator not to include TestUnit, the default testing framework:
+
 rails new my-blog-post-app -T
 
 # The Rails project generator created our directory:
+
 cd my-blog-post-app
 
 # We modified the Gemfile to include
@@ -41,6 +43,7 @@ cd my-blog-post-app
 bundle install
 
 # Finally, we created the initial RSpec config:
+
 rails g rspec:install
 ```
 

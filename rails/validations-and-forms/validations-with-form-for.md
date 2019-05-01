@@ -69,7 +69,7 @@ Because of `form_for`, Rails will automatically prepopulate the `new` form with 
 To get some extra verbosity, we can add the snippet from the previous lesson to the top of the form:
 
 ```erb
-<!-- app/views/posts/new.html.erb //-->
+<!-- app/views/posts/new.html.erb -->
 
 <% if @post.errors.any? %>
   <div id="error_explanation">
@@ -88,7 +88,7 @@ To get some extra verbosity, we can add the snippet from the previous lesson to 
 Let's look at another nice feature of `FormBuilder`. Here's our `form_for` code again:
 
 ```erb
-<!--- app/views/posts/edit.html.erb //-->
+<!-- app/views/posts/edit.html.erb -->
 
 <%= form_for @post do |f| %>
   <%= f.text_field :title %>

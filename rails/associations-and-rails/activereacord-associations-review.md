@@ -62,7 +62,8 @@ We now have access to some new instance methods, like `author`. This will return
 
 ```ruby
 @post.author_id = 5
-@post.author  # => #<Author id=5>
+@post.author
+# => #<Author id=5>
 ```
 
 ### `has_many`
@@ -78,7 +79,8 @@ end
 Now we can look up an author's posts just as easily:
 
 ```ruby
-@author.posts  # => [#<Post id=3>, #<Post id=8>]
+@author.posts
+# => [#<Post id=3>, #<Post id=8>]
 ```
 
 Remember, ActiveRecord uses its [Inflector](https://api.rubyonrails.org/classes/ActiveSupport/Inflector.html) to switch between the singular and plural forms of your models.

@@ -11,7 +11,7 @@ Now that we've learned to handle the server side of validations, we need to take
 No one likes re-doing work. First, let's make sure we know how to pre-fill forms with the user's input so they don't have to type everything all over again. There are two ways to pre-fill forms in Rails: `form_tag` and `form_for`. Let's start with a vanilla form (no pre-filled values yet), using the [FormTagHelper](https://api.rubyonrails.org/classes/ActionView/Helpers/FormTagHelper.html):
 
 ```erb
-<!-- app/views/people/new.html.erb //-->
+<!-- app/views/people/new.html.erb -->
 
 <%= form_tag("/people") do %>
   Name: <%= text_field_tag "name" %><br>
@@ -56,7 +56,7 @@ With this in mind, we can use the invalid `@person` object to "re-fill" the usua
 Now let's plug the information back into the form:
 
 ```erb
-<!-- app/views/people/new.html.erb //-->
+<!-- app/views/people/new.html.erb -->
 
 <%= form_tag("/people") do %>
   Name: <%= text_field_tag "name", @person.name %><br>

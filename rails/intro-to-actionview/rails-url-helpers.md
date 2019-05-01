@@ -15,6 +15,7 @@ Using the `resources` method to draw your routes will create routing methods tha
 
 ```ruby
 # config/routes.rb
+
 resources :posts, only: [:index, :show]
 ```
 

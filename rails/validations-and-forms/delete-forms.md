@@ -23,7 +23,7 @@ delete '/people/:id', to: 'people#destroy', as: 'person'
 ```
 
 ```erb
-<!-- app/views/people/show.html.erb //-->
+<!-- app/views/people/show.html.erb -->
 
 <h2><%= @person.name %></h2>
 <%= @person.email %>
