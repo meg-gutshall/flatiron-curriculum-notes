@@ -6,11 +6,11 @@ We're going to keep working on our blog application, augmenting it to filter pos
 
 You've encountered REST already, but just to review, it stands for REpresentational State Transfer and encapsulates a way of structuring a URL so that access to specific resources is predictable and standardized.
 
-In practice, that means that if we type `rails s` and run our blog app, browsing to `/posts` will show ust the index of all `Post` objects. And if we want to view a specific `Author`, we can guess the URL for that (as long as we know the author's `id`) by going to `/authors/:id`.
+In practice, that means that if we type `rails s` and run our blog app, browsing to `/posts` will show just the index of all `Post` objects. And if we want to view a specific `Author`, we can guess the URL for that (as long as we know the author's `id`) by going to `/authors/:id`.
 
 **Top-tip:** The `/:id` notation above represents a _dynamic_ route segment, which we've touched on before and will be seeing more of in this reading.
 
-Why do we care? When we added the filter button to our blog, we could filter by a certain author to see that author's posts, but the URL was an ugly string of text that told us nothing of value.
+Why do we care? Before, when we added the filter button to our blog, we could filter by a certain author to see that author's posts, but the URL was an ugly string of text that told us nothing of value.
 
 ## Dynamic Route Segments
 
@@ -39,8 +39,7 @@ class AuthorsController < ApplicationController
 
   def post
     @author = Author.find(params[:id])
-    # Note that because ids are unique by table we can go directly to
-    # Post.find — no need for @author.posts.find
+    # Note that because ids are unique by table we can go directly to Post.find — no need for @author.posts.find
     @post = Post.find(params[:post_id])
     render template: 'posts/show'
   end
@@ -51,7 +50,7 @@ end
 
 If we go to our blog and try to browse to `/authors/1/posts`, we should see the posts for that author. And then if we try `/authors/1/post/1`, we should see that post.
 
-**Note:** If your IDs are different adn you are having trouble with the URLs, try running `rake db:reset` to reset your IDs to the defaults in the seed file.
+**Note:** If your IDs are different and you are having trouble with the URLs, try running `rake db:reset` to reset your IDs to the defaults in the seed file.
 
 If we look at our `routes.rb` file, we can already see it getting messy. Instead of something nice like `resources :authors`, now we're specifying controller actions and HTTP verbs just to do a simple filter of an author's posts.
 
@@ -61,7 +60,7 @@ Beyond that, our DRY and Separation of Concern klaxons should be wailing because
 
 Rails gives us a way to make this a lot nicer. If we look again at our models, we see that an author `has_many :posts` and a post `belongs_to :author`. Since a post can logically be considered a _child_ object to an author, it can also be considered a _nested resource_ of an author for routing purposes. Nested resources give us a way to document that parent/child relationship in our routes and, ultimately, our URLs.
 
-Let's get back into `routes.rb`, delete the two routes we just added, adn recreate them as nested resources. We should end up with something like this:
+Let's get back into `routes.rb`, delete the two routes we just added, and recreate them as nested resources. We should end up with something like this:
 
 ```ruby
 # config/routes.rb
@@ -107,7 +106,7 @@ We added a conditional to the `posts#index` action to account for whether the us
 
 Where is `params[:author_id]` coming from? Rails provides it for us through the nested route, so we don't have to worry about a collision with the `:id` parameter that `posts#show` is looking for. Rails takes the parent resource's name and appends `_id` to it for a nice, predictable way to find the parent resource's ID.
 
-But, wait—we didn't make a single change to the `posts#show` action. What about the new `/authors/:id/posts/:id` route that we added? Remember, the point of nesting our resources is to DRY up our code. We had to create a conditional for the `posts#index` action because it renders _different_ sets of posts depending on the path, `/authors/:id/posts` or `/posts`. Conversely, the `posts#show` route is going to render the _same_ information—data concerning a single post—regardless of whether it is accessed via `/authors/:id/posts/:id` of `/posts/:id`/
+But, wait—we didn't make a single change to the `posts#show` action. What about the new `/authors/:id/posts/:id` route that we added? Remember, the point of nesting our resources is to DRY up our code. We had to create a conditional for the `posts#index` action because it renders _different_ sets of posts depending on the path, `/authors/:id/posts` or `/posts`. Conversely, the `posts#show` route is going to render the _same_ information—data concerning a single post—regardless of whether it is accessed via `/authors/:id/posts/:id` of `/posts/:id`.
 
 For good measure, let's go into our `AuthorsController` and delete the two actions (`post` and `posts_index`) that we added above so that it looks like this:
 
@@ -125,15 +124,15 @@ end
 
 ## Nested Route URL Helpers
 
-We've got out routes working and the `PostsController` is handling its business, but how can we present this on the page so that someone knows how to find a link to an author's posts?
+We've got our routes working and the `PostsController` is handling its business, but how can we present this on the page so that someone knows how to find a link to an author's posts?
 
-Just like any other resourced route, Rails provides named helpers for our nested routes as well. And, just like most other thing Rails provides, there's a predictable way to figure out what they are.
+Just like any other resourced route, Rails provides named helpers for our nested routes as well. And, just like most other things Rails provides, there's a predictable way to figure out what they are.
 
 If we want to get to the `/authors` page, we know the URL helpers are `authors_path` and `authors_url`. And if we want to get to a single author (`/authors/:id`), we can use `author_path(id)`. Similarly, we have `posts_path` for `/posts` and `post_path(id)` for `/posts/:id`.
 
 So what if we want to get to all posts nested under an author?
 
-We know the URL is `/authors/:author_id/posts`, so we can combine the two conventions and use `author_posts(author_id)`. Remember it's the singular `author` because we are getting one by `id`. It stands to reason that a single post for an author would combine the conventions for the single author path and single post path, leaving us with `author_post(author_id, post_id)`.
+We know the URL is `/authors/:author_id/posts`, so we can combine the two conventions and use `author_posts_path(author_id)`. Remember it's the singular `author` because we are getting one by `id`. It stands to reason that a single post for an author would combine the conventions for the single author path and single post path, leaving us with `author_post_path(author_id, post_id)`.
 
 Once you become accustomed to breaking it down in that way, it's pretty straightforward to know what our URL helpers will be for a nested route. However, if you're not sure, or if you just want to double-check, you can use `rake resources` on the command line to get a printout of all your named routes. You can also view them in your browser anytime you type in an incorrect route or if you visit `rails/info/routes`. If you add `_path` or `_url` to any of the names under "Prefix", you'll have the helper for that route.
 
@@ -155,7 +154,7 @@ Let's make it easy for our readers to look at the posts for each of our authors 
   ...
 ```
 
-Great! Now our URLs properly reflect the relationship of our resources and read almost like and English sentence: `author/1/posts` = "author number one's posts".
+Great! Now our URLs properly reflect the relationship of our resources and read almost like an English sentence: `author/1/posts` = "author number one's posts".
 
 Sometimes people get confused by path helpers and what they take as arguments. For example, why does `posts_path` not take an argument, but `post_path(@post)` does? `posts_path` refers to all of the posts, so we're not talking about a specific post (no specific ID). When we're looking at the `post_path`, we're referring to a specific post, and the Rails helper needs to know _which_ post so that it can generate the proper URL.
 
