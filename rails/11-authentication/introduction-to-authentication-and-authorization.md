@@ -1,4 +1,4 @@
-# Lesson: Intro to Authentication and Authorization
+# Lesson: Introduction to Authentication and Authorization
 
 Why can _some_ URLs be followed to view a page and have the same experience, but others cannot? How are banks able to provide you full access to **your** account information while limiting what everyone else can see? This is a common problem that most anyone building a web application will face. We'll be exploring this "who gets to see what" problem in this lesson.
 
