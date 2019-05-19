@@ -17,7 +17,7 @@ The flow will look like this:
 - The user navigates to `/login`, using the `GET` method.
 - The user enters their username. There is no password.
 - The user submits the login form to `/login` via the `POST` method.
-- In the create action of the `SessionsController`, we set a cookie on the user's browser by writing their username into the session hash.
+- In the `create` action of the `SessionsController`, we set a cookie on the user's browser by writing their username into the session hash.
 - Thereafter, the user is logged in. `session[:username]` will hold their username.
 
 Let's write a `SessionsController` to handle these routes. This controller has two actions, `new` and `create`, which we'll map in `routes.rb` to `GET` and `POST` on `/login`.
