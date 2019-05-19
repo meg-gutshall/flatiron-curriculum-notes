@@ -206,7 +206,7 @@ This use of cookies worries people and the EU [has created legislation around th
 
 Cookies, like any technology, are a tool. In the rest of the unit, we're going to be using them to let users log in. Whether you later want to use them in such a way that the EU passes another law is up to you.
 
-## Resources
+### Resources
 
 - [HTTP RFC Section 9 — Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
 - [RFC 6265 — HTTP State Management Mechanism (the cookie spec)](http://tools.ietf.org/html/rfc6265)
