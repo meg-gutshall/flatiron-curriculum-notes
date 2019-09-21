@@ -1,15 +1,15 @@
-# Lesson: ActiveRecord Associations
+# Lesson: Active Record Associations
 
 ## Notes
 
-### What Are ActiveRecord Associations?
+### What Are Active Record Associations?
 
-- ActiveRecord associations allow us to associate models and their analogous database tables without having to write tons of code.
-  - ActiveRecord associations make working with our associate objects even quicker, neater, and easier.
+- Active Record associations allow us to associate models and their analogous database tables without having to write tons of code.
+  - Active Record associations make working with our associate objects even quicker, neater, and easier.
 
-### How Do We Use ActiveRecord Associations?
+### How Do We Use Active Record Associations?
 
-- ActiveRecord makes it easy to implement the following relationships between models:
+- Active Record makes it easy to implement the following relationships between models:
   - `belongs_to`
   - `has_one`
   - `has_many`
@@ -18,11 +18,11 @@
   - `has_and_belongs_to_many`
 - In order to implement these relationships, we will need to do two things:
   - Write a migration that creates tables with associations.
-  - Use ActiveRecord macros in the models.
+  - Use Active Record macros in the models.
 
 ### Overview of Our Example
 
-- We'll have three models: Artists, Songs, and Genres. By writing a few migrations and making use of the appropriate ActiveRecord macros, we will be able to:
+- We'll have three models: Artists, Songs, and Genres. By writing a few migrations and making use of the appropriate Active Record macros, we will be able to:
   - ask an Artist about its songs and genres
   - ask a Song about its genre and artist
   - ask a Genre about its songs and artists
@@ -39,7 +39,7 @@
 
 - A song will belong to an artist and belong to a genre, which means that in addition to `id` and `name` columns, it will also include `artist_id` and `genre_id` columns.
   - We will give a given song an `artist_id` value of the artist it belongs to. The same goes for genre.
-  - These foreign keys, in conjunction with the ActiveRecord association macros, will allow us to write queries to get an artist's songs or genres, a song's artist or genre, adn a genre's songs and artists, entirely through ActiveRecord-provided methods on our class.
+  - These foreign keys, in conjunction with the Active Record association macros, will allow us to write queries to get an artist's songs or genres, a song's artist or genre, adn a genre's songs and artists, entirely through Active Record-provided methods on our class.
 
 #### The `Artist` Model
 
@@ -50,7 +50,7 @@
 
 - A genre will have many songs and it will have many artists through songs.
 
-### Building Our Associations Using ActiveRecord Macros
+### Building Our Associations Using Active Record Macros
 
 - A macro is a method that writes code for us (think metaprogramming).
 - The class must inherit from `ActiveRecord::Base` to be able to access the macros.

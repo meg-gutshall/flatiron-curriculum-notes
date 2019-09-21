@@ -176,7 +176,7 @@ Now we're getting into messy territory. Our `comments_path` helper is now `autho
 
 But if we lean on our old friend Separation of Concerns, we can conclude that a post's comments are not the concern of an author and therefore don't belong nested two levels deep under the `:authors` resource.
 
-In addition, the reason to put the ID of the resource in the URL is so that we have access to it in the controller. If we know we have the post with an ID of `1`, we can use our ActiveRecord relationships to call:
+In addition, the reason to put the ID of the resource in the URL is so that we have access to it in the controller. If we know we have the post with an ID of `1`, we can use our Active Record relationships to call:
 
 ```ruby
 @post = Post.find(params[:id])

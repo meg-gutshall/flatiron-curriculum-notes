@@ -1,10 +1,10 @@
-# Lesson: ActiveRecord Associations Review
+# Lesson: Active Record Associations Review
 
-ActiveRecord associations are an iconic Rails feature. They allow developers to work with complex networks of related models without having to write a single line of SQL—as long as all of the names line up!
+Active Record associations are an iconic Rails feature. They allow developers to work with complex networks of related models without having to write a single line of SQL—as long as all of the names line up!
 
 ## Foreign Keys
 
-It all starts in the database. **Foreign keys** are columns that refer to the primary key of another table. Conventionally, foreign keys in ActiveRecord are comprised of the name of the model you're referencing, and `_id`. So for example if the foreign key was for a `posts` table, it would be `post_id`.
+It all starts in the database. **Foreign keys** are columns that refer to the primary key of another table. Conventionally, foreign keys in Active Record are comprised of the name of the model you're referencing, and `_id`. So for example if the foreign key was for a `posts` table, it would be `post_id`.
 
 Like any other column, foreign keys are accessible through instance methods of the same name. For example, a migration that looks like this:
 
@@ -20,7 +20,7 @@ class AddAuthorIdToPosts < ActiveRecord::Migration
 end
 ```
 
-Would mean you could find a post's author with the following ActiveRecord query:
+Would mean you could find a post's author with the following Active Record query:
 
 ```ruby
 Author.find(@post.author_id)
@@ -48,7 +48,7 @@ This is all great, but Rails is always looking for ways to save us keystrokes.
 
 ## Many-to-One Relationships
 
-By using ActiveRecord's macro-style association class methods, we can add some convenient instance methods to our models. The most common relationship is **many-to-one**, and it is declared in ActiveRecord with `belongs_to` and `has_many`.
+By using Active Record's macro-style association class methods, we can add some convenient instance methods to our models. The most common relationship is **many-to-one**, and it is declared in Active Record with `belongs_to` and `has_many`.
 
 ### `belongs_to`
 
@@ -72,7 +72,7 @@ We now have access to some new instance methods, like `author`. This will return
 
 ### `has_many`
 
-In the opposite direction, each `Author` might be associated with zero, one, or many `Post` objects. We haven't changes the schema of the `authors` table at all; ActiveRecord is just going to use `posts.author_id` to do all of the lookups.
+In the opposite direction, each `Author` might be associated with zero, one, or many `Post` objects. We haven't changes the schema of the `authors` table at all; Active Record is just going to use `posts.author_id` to do all of the lookups.
 
 ```ruby
 # app/models/author.rb
@@ -89,7 +89,7 @@ Now we can look up an author's posts just as easily:
 # => [#<Post id=3>, #<Post id=8>]
 ```
 
-Remember, ActiveRecord uses its [Inflector](https://api.rubyonrails.org/classes/ActiveSupport/Inflector.html) to switch between the singular and plural forms of your models.
+Remember, Active Record uses its [Inflector](https://api.rubyonrails.org/classes/ActiveSupport/Inflector.html) to switch between the singular and plural forms of your models.
 
 | Name | Data |
 | --- | --- |
@@ -99,7 +99,7 @@ Remember, ActiveRecord uses its [Inflector](https://api.rubyonrails.org/classes/
 | `belongs_to` | `:author` |
 | `has_many` | `:authors` |
 
-Like many other ActiveRecord class methods, the symbol you pass determines the name of the instance method that will be defined. So `belongs_to :author` will give you `@post.author`, and `has_many :posts` will give you `@author.posts`.
+Like many other Active Record class methods, the symbol you pass determines the name of the instance method that will be defined. So `belongs_to :author` will give you `@post.author`, and `has_many :posts` will give you `@author.posts`.
 
 ## Convenience Builders
 
@@ -135,7 +135,7 @@ These methods are also documented in the [Rails Associations Guide](https://guid
 
 ### Collection Convenience
 
-If you add an existing object to a collection association, ActiveRecord will conveniently take care of setting the foreign key for you:
+If you add an existing object to a collection association, Active Record will conveniently take care of setting the foreign key for you:
 
 ```ruby
 @author = Author.find_by(name: "Leeroy Jenkins")
@@ -169,7 +169,7 @@ Each author has many posts, each post has one author. So let's shake things up a
 
 Because there is no "owner" model in this relationship, there's also no right place to put the foreign key column. Enter the join table.
 
-ActiveRecord has a migration method for creating join tables:
+Active Record has a migration method for creating join tables:
 
 ```ruby
 create_join_table :posts, :tags

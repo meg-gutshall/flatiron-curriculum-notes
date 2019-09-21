@@ -35,7 +35,7 @@ def show
 end
 ```
 
-Which loads the row for that item from the database and returns it as an ActiveRecord model object, which your `show.html.erb` then renders. If we want to be able to retrieve the current cart, we need to have its `id` somewhere in the HTTP request. Specifically, it must be in the path or the headers.
+Which loads the row for that item from the database and returns it as an Active Record model object, which your `show.html.erb` then renders. If we want to be able to retrieve the current cart, we need to have its `id` somewhere in the HTTP request. Specifically, it must be in the path or the headers.
 
 It would be possible, though quite convoluted, to store this information in the path. This would have strange effects: since the path is shown in the browser's URL bar, a user who copies a URL and sends it to a friend would also be copying their shopping cart ID. Upon loading the page, the friend would see what's in the user's cart. Since a cart is owned by a particular user, and may contain private information, this is probably not what we want. Cookies allow us to store this information in the only other place available to us: HTTP headers.
 
@@ -90,7 +90,7 @@ When the user comes back to our site, their browser will include the cookie in t
 Cookie: cart_id=273
 ```
 
-We can look at this HTTP header, get the `cart_id` from it, and look it up using the `ActiveRecord` find method we know and love.
+We can look at this HTTP header, get the `cart_id` from it, and look it up using the Active Record find method we know and love.
 
 ## Security Concerns
 

@@ -82,7 +82,7 @@ class Comment < ActiveRecord::Base
 end
 ```
 
-Notice that we can't just declare that our `User` `has_many :posts` because our `posts` table doesn't have a foreign key called `user_id`. Instead, we tell ActiveRecord to look through the `comments` table to figure out this association by declaring that our `User` `has_many "posts, through: :comments`. Now, instances of our `User` model respond to a method called `posts`. This will return a collection of posts that share a comment with the user.
+Notice that we can't just declare that our `User` `has_many :posts` because our `posts` table doesn't have a foreign key called `user_id`. Instead, we tell Active Record to look through the `comments` table to figure out this association by declaring that our `User` `has_many "posts, through: :comments`. Now, instances of our `User` model respond to a method called `posts`. This will return a collection of posts that share a comment with the user.
 
 ## Displaying Comments on Our Posts
 

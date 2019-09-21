@@ -89,4 +89,4 @@ We can confirm that the `count` results are accurate by running a few tests in o
 
 ## Recap
 
-With ActiveRecord's powerful association macros and instance methods, we can treat related models exactly the same as we treat directly-accessed models. As long as the database and classes are set up correctly, ActiveRecord will figure the rest out for us.
+With Active Record's powerful association macros and instance methods, we can treat related models exactly the same as we treat directly-accessed models. As long as the database and classes are set up correctly, Active Record will figure the rest out for us.

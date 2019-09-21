@@ -24,7 +24,7 @@ Now we need to build the functionality for a user to create a `Post`. We're goin
 
 ## Defining A Custom Setter and Getter (Convenience Attributes on Models)
 
-Since our ActiveRecord models are still just Ruby classes, we can define our own setter and getter methods:
+Since our Active Record models are still just Ruby classes, we can define our own setter and getter methods:
 
 ```ruby
 # app/models/post.rb
@@ -49,7 +49,7 @@ Post.create({
 })
 ```
 
-So, you can see that `#category_name=` will indeed be called. Since we have defined this setter ourselves, `Post.create` does not try to fall back to setting `category_name` through ActiveRecord. You can think of `#category_name=` as intercepting the call to the database and instead shadowing the attribute `category_name` by, one, making sure the `Category` exists; and, two, providing it in-memory for the `Post` model. We sometimes call these in-memory attributes "virtuals".
+So, you can see that `#category_name=` will indeed be called. Since we have defined this setter ourselves, `Post.create` does not try to fall back to setting `category_name` through Active Record. You can think of `#category_name=` as intercepting the call to the database and instead shadowing the attribute `category_name` by, one, making sure the `Category` exists; and, two, providing it in-memory for the `Post` model. We sometimes call these in-memory attributes "virtuals".
 
 Now we can set `category_name` on a post. We can do it when creating a post too, so our controller becomes quite simple again:
 
@@ -68,7 +68,7 @@ class PostsController < ApplicationController
 end
 ```
 
-Notice the difference—we're now accepting a category name, rather than a category ID. Even though there's no ActiveRecord field for `category_name`, the `category_name` key in the `post_params` hash prompts a call to the `category_name=` method.
+Notice the difference—we're now accepting a category name, rather than a category ID. Even though there's no Active Record field for `category_name`, the `category_name` key in the `post_params` hash prompts a call to the `category_name=` method.
 
 Now we can build our form:
 

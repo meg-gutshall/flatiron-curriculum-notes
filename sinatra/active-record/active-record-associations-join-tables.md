@@ -1,4 +1,4 @@
-# Lesson: ActiveRecord Associations: Join Tables
+# Lesson: Active Record Associations: Join Tables
 
 ## Notes
 

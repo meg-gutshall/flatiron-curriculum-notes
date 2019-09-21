@@ -76,7 +76,7 @@ So having something that looks like this...
 
 ...isn't the best application of MVC and Separation of Concerns. We want the model to know things like `"created_at >= ?", Time.zone.today.beginning_of_day` and the controller to just ask for something more like `from_today`.
 
-So we need to move this into the model. Now, the question becomes: is this a _class method_ on the `Post` model itself, or is it an _instance method_ on a specific `post`? Since we are going to be asking for multiple `post` instances from the database, we won't have an instance to begin with, so we'll need to use a class method. Class methods are commonly used on ActiveRecord models to encapsulate this type of custom query functionality, so let's do that now.
+So we need to move this into the model. Now, the question becomes: is this a _class method_ on the `Post` model itself, or is it an _instance method_ on a specific `post`? Since we are going to be asking for multiple `post` instances from the database, we won't have an instance to begin with, so we'll need to use a class method. Class methods are commonly used on Active Record models to encapsulate this type of custom query functionality, so let's do that now.
 
 First, we want to add one for the author filter. Let's dive into `post.rb` and get to work.
 

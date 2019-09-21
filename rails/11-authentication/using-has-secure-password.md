@@ -146,7 +146,7 @@ After we've loaded the user, we find the salt which we previously stored in thei
 
 ## Rails Makes It Easier
 
-You don't have to deal with this all yourself. Rails provides a method called `has_secure_password` that you can use on your ActiveRecord models to handle all this. It looks like this:
+You don't have to deal with this all yourself. Rails provides a method called `has_secure_password` that you can use on your Active Record models to handle all this. It looks like this:
 
 ```ruby
 # app/models/user.rb

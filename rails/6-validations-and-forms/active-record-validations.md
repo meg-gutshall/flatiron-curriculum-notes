@@ -1,14 +1,14 @@
-# Lesson: ActiveRecord Validations
+# Lesson: Active Record Validations
 
-ActiveRecord can validate our models for us before they even touch the database. This means it's harder to end up with bad data, which can cause problems later even if our code is technically bug-free. We can use `ActiveRecord::Base` class methods like `#validates` to set things up.
+Active Record can validate our models for us before they even touch the database. This means it's harder to end up with bad data, which can cause problems later even if our code is technically bug-free. We can use `ActiveRecord::Base` class methods like `#validates` to set things up.
 
 ## Context: Database and Data Validity
 
 In the context of Rails, validations are special method calls that go at the top of model class definitions and prevent an object from being saved to the database if it's data doesn't meet certain requirements set by the method calls. In general, "validations" are any code that perform the job of protecting the database from invalid code.
 
-## ActiveRecord Validations Are Not Database Validations
+## Active Record Validations Are Not Database Validations
 
-Many relational databases such as SQLite have data validation features that check things like length and data type. In Rails, there validations are **not used**, because each database works a little differently, and handling everything in ActiveRecord itself guarantees that we'll always get the same features no matter what database we're using under the hood.
+Many relational databases such as SQLite have data validation features that check things like length and data type. In Rails, there validations are **not used**, because each database works a little differently, and handling everything in Active Record itself guarantees that we'll always get the same features no matter what database we're using under the hood.
 
 ## Validations Protect the Database
 
@@ -37,13 +37,13 @@ In this example, the options hash is `{presence: true}`, which implements the mo
 
 ## Lifecycle Timing
 
-**Database activity triggers validation.** An ActiveRecord model instantiated with `#new` will not be validated, because no attempt to write to the database was made. Validations won't run unless you call a method that actually hits the database, like `#save`. The only way to trigger validation without touching the database is to call the `#valid?` method. For a full list of methods that trigger validation, see [Section 4](https://guides.rubyonrails.org/active_record_callbacks.html#running-callbacks) of the Rails Guide for ActiveRecord Callbacks.
+**Database activity triggers validation.** An Active Record model instantiated with `#new` will not be validated, because no attempt to write to the database was made. Validations won't run unless you call a method that actually hits the database, like `#save`. The only way to trigger validation without touching the database is to call the `#valid?` method. For a full list of methods that trigger validation, see [Section 4](https://guides.rubyonrails.org/active_record_callbacks.html#running-callbacks) of the Rails Guide for Active Record Callbacks.
 
 ## Validation Failure
 
 How can you tell when a record fails validation? Pay attention to return values!
 
-- By default, ActiveRecord does not raise an exception when validation fails. Database operation methods (such as `#save`) will simply return `false` and decline to update the database.
+- By default, Active Record does not raise an exception when validation fails. Database operation methods (such as `#save`) will simply return `false` and decline to update the database.
 - Every database method has a sister method with a `!` at the end which will raise an exception (`#create!` instead of `#create` and so on).
 - And of course, you can always check manually with `#valid?`.
 

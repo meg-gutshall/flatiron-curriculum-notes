@@ -17,7 +17,7 @@ Sometimes, it may be appropriate for a user to create an instance of our join mo
 
 In this example, a user is filling out a form, entering the date and time they'd like to come, and choosing their doctor and their name from a dropdown. We're assigning these properties directly to the appointment as it's created.
 
-Other times, we need to be more abstract. Let's return to our blog example, but this time we'll say that a post can have many categories and categories can have many posts. For this, we'll need a join table—let's call it `post_categories`. If our user wants to associate a post with a category, it doesn't make sense for them to go to `/post_categories/new` and fill out a "new post category form". That's confusing! Let's look at a more abstract way that we can do this thanks to the magic of ActiveRecord.
+Other times, we need to be more abstract. Let's return to our blog example, but this time we'll say that a post can have many categories and categories can have many posts. For this, we'll need a join table—let's call it `post_categories`. If our user wants to associate a post with a category, it doesn't make sense for them to go to `/post_categories/new` and fill out a "new post category form". That's confusing! Let's look at a more abstract way that we can do this thanks to the magic of Active Record.
 
 ## Setting Up Our Posts and Categories
 
@@ -88,7 +88,7 @@ class PostController < ApplicationController
 end
 ```
 
-When we submit a new post, first, we're creating a new row in our `posts` table with `title` and `content`. Next, we create a row in our `post_categories` table dor each ID number that was stored in our `category_ids` array. This functions just like it did with a `has_many` relationship, but, instead of creating a new record in our `categories` table, ActiveRecord is creating two new rows in our `post_categories` table. This means that we can interact with out higher-level models directly without having to think too much at all about our join table—ActiveRecord will manage that relationship for us behind the scenes.
+When we submit a new post, first, we're creating a new row in our `posts` table with `title` and `content`. Next, we create a row in our `post_categories` table dor each ID number that was stored in our `category_ids` array. This functions just like it did with a `has_many` relationship, but, instead of creating a new record in our `categories` table, Active Record is creating two new rows in our `post_categories` table. This means that we can interact with out higher-level models directly without having to think too much at all about our join table—Active Record will manage that relationship for us behind the scenes.
 
 ## Creating New Categories
 
@@ -168,4 +168,4 @@ class Post < ActiveRecord::Base
 end
 ```
 
-Now, we're only creating a new category if it doesn't already exist with the current name. We're also using a cool method called `categories <<`. What's great about this is you can mentally think of it as two steps. First, we call `self.categories`, which returns an array of `Category` objects, and then we call the shovel (`<<`) method to add our newly found or created `Category` object to the array. We could imagine later calling `save` on the `Post` object and this then creating the `post_categories` join record for us. In reality, this is syntactic sugar for the `categories <<` method. That's the actual method name, and behind the scenes it will create the join record for us. It's one of the methods dynamically created for us whenever we use a `has_many` association. The end result is this method doing exactly what ActiveRecord was doing for us before; we're just customizing the behavior a little bit.
+Now, we're only creating a new category if it doesn't already exist with the current name. We're also using a cool method called `categories <<`. What's great about this is you can mentally think of it as two steps. First, we call `self.categories`, which returns an array of `Category` objects, and then we call the shovel (`<<`) method to add our newly found or created `Category` object to the array. We could imagine later calling `save` on the `Post` object and this then creating the `post_categories` join record for us. In reality, this is syntactic sugar for the `categories <<` method. That's the actual method name, and behind the scenes it will create the join record for us. It's one of the methods dynamically created for us whenever we use a `has_many` association. The end result is this method doing exactly what Active Record was doing for us before; we're just customizing the behavior a little bit.

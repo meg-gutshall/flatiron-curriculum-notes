@@ -1,4 +1,4 @@
-# Lesson: ActiveRecord Models and Rails
+# Lesson: Active Record Models and Rails
 
 ## Active Record's Role
 

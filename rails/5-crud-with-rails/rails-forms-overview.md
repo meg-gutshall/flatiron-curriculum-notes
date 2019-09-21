@@ -49,7 +49,7 @@ This will build a form and auto generate the following HTML:
 Attributes for the `form_for` form helper method:
 
 - More magical form helper in Rails
-- `form_for` is a Ruby method in which a Ruby object is passed. This means that a form that utilizes `form_for` is directly connected with an ActiveRecord model.
+- `form_for` is a Ruby method in which a Ruby object is passed. This means that a form that utilizes `form_for` is directly connected with an Active Record model.
 - `form_for` yields a `FormBuilder` object that lets you create form elements that correspond to attributes in the model.
 
 This means when you're using the `form_for` method, the object is passed as a `form_for` parameter, and it creates corresponding inputs with each of the attributes.
@@ -99,5 +99,5 @@ In order to make a good choice for which form element to use, it's vital to unde
 
 So when would you choose one over the other? Below are some real-world examples:
 
-- `form_for`: This works well for forms that manage CRUD. Imagine that you have a blog posting application. A great fit for the `form_for` method would be the `Post` model. This is because the `Post` model would have the standard ActiveRecord setup, and therefore it's smart to take advantage of the pre-packaged functionality built into `form_for`.
+- `form_for`: This works well for forms that manage CRUD. Imagine that you have a blog posting application. A great fit for the `form_for` method would be the `Post` model. This is because the `Post` model would have the standard Active Record setup, and therefore it's smart to take advantage of the pre-packaged functionality built into `form_for`.
 - `form_tag`: This works well for forms that are not directly connected with models. For example, let's say that our blog posting application has a search engine. The search form would be a great fit for using a `form_tag`.

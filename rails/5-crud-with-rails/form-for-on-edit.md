@@ -48,7 +48,7 @@ Below is an example `edit` form for a `post` object:
 
 - `form_for` is smart enough to know that since it's dealing with a pre-existing record, we want to utilize `PUT` or `PATCH` over `POST` for the HTTP method.
 
-Because `form_for` is bound directly with the `Post` model, we need to pass the model name into the ActiveRecord `update` method in the controller. We can do this two ways:
+Because `form_for` is bound directly with the `Post` model, we need to pass the model name into the Active Record `update` method in the controller. We can do this two ways:
 
 ```ruby
 # app/controllers/posts_controller.rb

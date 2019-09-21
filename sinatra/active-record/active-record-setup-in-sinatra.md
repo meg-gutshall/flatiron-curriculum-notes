@@ -1,16 +1,16 @@
-# Lesson: ActiveRecord Setup in Sinatra
+# Lesson: Active Record Setup in Sinatra
 
 ## Notes
 
 ### Adding Gems
 
-- First, we'll add three gems to allow us to use ActiveRecord:
+- First, we'll add three gems to allow us to use Active Record:
   - `activerecord` (version `4.2.5`) gives us access to database mapping and association methods
   - `sinatra-activerecord` gives us access to Rake tasks
   - `rake`, short for "ruby make", is a package that lets us quickly create files and folders, and automate tasks such as database creation
 - We'll add two gems to our development group:
   - `sqlite3` is our database adapter gem which allows our Ruby application to communicate with a SQL database
-  - `tux` will give us an interactive console that pre-loads our database and ActiveRecord relationships for us
+  - `tux` will give us an interactive console that pre-loads our database and Active Record relationships for us
 
 ### Setting Up A Database Connection
 

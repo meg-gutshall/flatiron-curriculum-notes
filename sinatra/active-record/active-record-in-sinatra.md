@@ -1,4 +1,4 @@
-# Lesson: ActiveRecord in Sinatra
+# Lesson: Active Record in Sinatra
 
 ## Notes
 

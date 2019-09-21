@@ -1,10 +1,10 @@
-# Lesson: ActiveRecord Mechanics
+# Lesson: Active Record Mechanics
 
 ## Notes
 
-- ActiveRecord is a Ruby gem, meaning we get an entire library of code just by running `gem install activerecord` or by including it in our `Gemfile`.
+- Active Record is a Ruby gem, meaning we get an entire library of code just by running `gem install activerecord` or by including it in our `Gemfile`.
 - To execute sql code, now we write it like this: `ActiveRecord::Base.connection.execute(sql)`
-- To add ActiveRecord's `Base` methods to your class, inherit from `ActiveRecord::Base`. Now your class has a whole bunch of new methods available to it that are built into ActiveRecord.
+- To add Active Record's `Base` methods to your class, inherit from `ActiveRecord::Base`. Now your class has a whole bunch of new methods available to it that are built into Active Record.
   - `.column_names`: Retrieve a list of all the columns in the table
   - `.create`: Create a new entry of your class in the database (aka add a row)
   - `.find`: Retrieve an entry from the database by `id`

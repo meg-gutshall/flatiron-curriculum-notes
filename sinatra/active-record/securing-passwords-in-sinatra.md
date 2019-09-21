@@ -12,9 +12,9 @@
 - BCrypt will store a salted, hashed version of our users' passwords in our database in a column called `password_digest`.
 - Essentially, once a password is salted and hashed, there is no way for anyone to decode it. This method requires that hackers use a "brute force" approach to gain access to someone's account-still possible, but more difficult.
 
-**ActiveRecord's `has_secure_password`**
+**Active Record's `has_secure_password`**
 
-- Let's update our `User` model so that it includes `has_secure_password`. This ActiveRecord macro gives us access to a few new methods.
+- Let's update our `User` model so that it includes `has_secure_password`. This Active Record macro gives us access to a few new methods.
   - In this case, the macro `has_secure_password` works in conjunction with the `bcrypt` gem and allows us to store the users' passwords securely in the database, instead of using just plain text.
 - Even though our database has a column called `password_digest`, we still access the attribute of `password`.
 

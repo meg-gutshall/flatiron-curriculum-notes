@@ -25,7 +25,7 @@
 
 - At the end of the day, the model file is a Ruby class.
 - If it has a corresponding database table, it will inherit from the `ActiveRecord::Base` class.
-  - This means that you can use the ActiveRecord database helper methods with the model as well as treat it like a regular Ruby class (i.e. create methods, use data attributes, etc.)
+  - This means that you can use the Active Record database helper methods with the model as well as treat it like a regular Ruby class (i.e. create methods, use data attributes, etc.)
 - It is important to remember to follow the single responsibility principle for your model class files.
   - If any of the methods that you place in the model perform tasks outside the scope of that specific model, they should probably be moved to their own class.
 
