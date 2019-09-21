@@ -1,5 +1,7 @@
-# Full Stack Web Development V7: JavaScript
+# JavaScript
 
+```html
+Full Stack Web Development V7
 ├── Basics
 │   ├── Intro to JavaScript
 │   ├── Data Types
@@ -7,9 +9,7 @@
 │   ├── Variables
 │   │   ├── Variables Lab
 │   │   ├── Strings Code-along
-│   │   └── [Arithmetic Lab](https://github.com/meg-gutshall/js-basics-arithmetic-lab-v-000)
-│   │       ├── Learn.co Lab: https://learn.co/tracks/full-stack-web-development-v7/javascript/basics/arithmetic-lab
-│   │       └── GitHub Repo: https://github.com/meg-gutshall/js-basics-arithmetic-lab-v-000
+│   │   └── Arithmetic Lab
 │   ├── Comparisons
 │   ├── Conditionals
 │   ├── Logical Operators
@@ -97,3 +97,4 @@
     │   └── Intro to Mocha
     ├── Testing with Spies
     └── Testing with Mocks and Stubs
+```
