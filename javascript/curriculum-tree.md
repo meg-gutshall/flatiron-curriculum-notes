@@ -1,7 +1,8 @@
-# JavaScript
+# JavaScript Curriculum Tree
 
 ```html
 Full Stack Web Development V7
+|
 ├── Basics
 │   ├── Intro to JavaScript
 │   ├── Data Types
