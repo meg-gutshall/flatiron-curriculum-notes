@@ -35,7 +35,7 @@ Full Stack Web Development V7
 │   │   └── Objects Lab
 │   └── Objects and Arrays Quiz
 ├── Looping and Iteration
-│   ├── Looping Code-along
+│   ├────── Looping Code-along
 │   ├── Object Iteration
 │   ├── Traversing Nested Objects
 │   ├── Filter
@@ -86,8 +86,8 @@ Full Stack Web Development V7
 │   │   └── Acting on Events Lab
 │   └── DOM Quiz
 ├── Asynchronous JavaScript
-│   ├── Intro to XHR Code-along
-│   │   └── Hitting APIs Lab
+│   ├────── Intro to XHR Code-along
+│   ├────── Hitting APIs Lab
 │   ├── AJAX and Callbacks
 │   ├── REST Refresher
 │   ├── REST Quiz
