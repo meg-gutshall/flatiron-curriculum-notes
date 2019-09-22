@@ -6,3 +6,4 @@
 - CSS stands for Cascading Style Sheets.
   - It tells us how to write rules that define how browsers will present HTML.
   - These rules usually live in a file apart from our HTML file.
+  

@@ -1,4 +1,4 @@
-# Lesson: What Makes the Web Possible?
+# Lesson: What Makes the Web Possible
 
 ## Notes
 
