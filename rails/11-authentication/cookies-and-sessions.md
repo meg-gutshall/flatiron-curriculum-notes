@@ -39,7 +39,7 @@ Which loads the row for that item from the database and returns it as an Active 
 
 It would be possible, though quite convoluted, to store this information in the path. This would have strange effects: since the path is shown in the browser's URL bar, a user who copies a URL and sends it to a friend would also be copying their shopping cart ID. Upon loading the page, the friend would see what's in the user's cart. Since a cart is owned by a particular user, and may contain private information, this is probably not what we want. Cookies allow us to store this information in the only other place available to us: HTTP headers.
 
-## What's A Cookie Anyway?
+## What's A Cookie Anyway
 
 Let's see what [the spec](http://tools.ietf.org/html/rfc6265) has to say:
 

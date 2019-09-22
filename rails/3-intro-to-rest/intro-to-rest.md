@@ -1,6 +1,6 @@
 # Lesson: Intro to REST
 
-## What Is REST?
+## What Is REST
 
 - Roy Thomas Fielding invented REST for his PhD dissertation in 2000 as a standard way for web apps to structure their URLs.
   - REST is an architectural design pattern, not a framework or code in itself.

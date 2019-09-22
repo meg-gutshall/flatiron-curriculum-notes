@@ -12,14 +12,14 @@
 - Web applications use both cookies and session data.
   - When the client sends a request to a web app, it will generate and store some data about them on the server. This data will be kept in a session hash, and also placed into a small text snippet called a cookie. The cookie is sent back to the client and stored in the client's browser. When a website sets cookies, they persist between pages while the client continues to browse the web. Upon any subsequent visits to the website that originally set the cookies, the cookies are sent back to the site's server. When that happens, the client-side cookie data will be compared to the server-side session data to help the application determine what steps to take and what information to send back to the client.
 
-### How Do Cookies Work?
+### How Do Cookies Work
 
 1. The client visits a webpage, such as facebook.com.
 2. Facebook's web application receives the request and creates a cookie with some information about the client as a user.
 3. Facebook sends that cookie back to the browser, where it is stored. Cookies last until they expire or are deleted.
 4. Every subsequent request the client makes to facebook.com sends the cookies back to the server, where Facebook can access them, retrieve information, and alter the cookies.
 
-#### What is contained in a cookie?
+#### What is contained in a cookie
 
 A cookie will usually contain a URL to the generating website, the date on which it was created (and the date on which it is set to expire, if applicable), and other pertinent information that the web application had requested to persist (such as remembered login information, user preferences, etc.).
 
@@ -30,6 +30,6 @@ A cookie will usually contain a URL to the generating website, the date on which
 - Persistent cookies allow a website to remember your user information and preferences for future visits. A persistent cookie is stored on your computer, while a session cookie is temporarily stored in your web browser. Persistent cookies allow for faster page loading, automatic login and user authentication, and access to other potential web application features. Much of the data that these features require will be hanging out already in a persistent cookie, stored on your computer. This means you can skip the process of sending a web request to a site and waiting to receive data back from the server in order to log in, for example. Persistent cookies are usually created on the first visit to a page after you have created an account on teh site, and they typically persist unless either the web application has a protocol in place for cookie expiration or the user clears their browser's cache.
   - If we didn't have persistent cookies, we would have to type in our email and password every time we wanted to log in to a web app, making the quality of the user's experience go way down.
 
-#### Cookies and Sessions: Teamwork!
+#### Cookies and Sessions: Teamwork
 
 You can think of cookies as the client-side counterpart to sessions. They store information locally and are visible only to the server that created them. Client browsers send cookies to remote servers along each web request. The web application on the server reads the cookie, associates it with an existing session (if such a session exists), adn decides how to respond.

@@ -93,15 +93,15 @@ end
 
 Some questions to answer first:
 
-#### What is `let`?
+#### What is `let`
 
 If you haven't seen `let` before, it is a [standard helper method](https://relishapp.com/rspec/rspec-core/docs/helper-methods/let-and-let) that takes a symbol and a block. It runs the block **once per example** in which it is called and saves the return value in a local variable named according to the symbol. This means you get a fresh copy in every test case.
 
-#### Why is `let` better than `before :each`?
+#### Why is `let` better than `before :each`
 
 It's more fine-grained, which means you have better control over your data. It can be used in combination with `before` statements to set up your test data _just right_ before the examples are run.
 
-#### Why did we use `let` to make an attribute hash?
+#### Why did we use `let` to make an attribute hash
 
 We could have put the entire `Monster.new` call inside our `let` block, but using our attribute hash instead has some advantages:
 
@@ -110,7 +110,7 @@ We could have put the entire `Monster.new` call inside our `let` block, but usin
 
 It's a good balance between saving keystrokes and maintaining the flexibility of your test data.
 
-#### Where does `be_valid` come from?
+#### Where does `be_valid` come from
 
 RSpec provides plenty of built-in matchers, which you can peruse in their [API docs](http://rspec.info/documentation/3.4/rspec-expectations/frames.html#!RSpec/Matchers.html), but `be_valid` is conspicuously absent from the list.
 

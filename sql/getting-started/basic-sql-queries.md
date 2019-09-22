@@ -2,7 +2,7 @@
 
 ## Notes
 
-### What Is A SQL Query?
+### What Is A SQL Query
 
 The term "query" refers to any SQL statement that retrieves data from your database.
 

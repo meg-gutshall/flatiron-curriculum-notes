@@ -10,3 +10,4 @@
 - ORM cuts down on repetitious code by writing methods to abstract common behaviors.
 - ORM implements conventional patterns that are organized and sensible.
   - Classes are mapped or equated with tables and instances of a class are equated to table rows.
+  

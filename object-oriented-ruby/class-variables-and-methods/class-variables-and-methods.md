@@ -12,3 +12,4 @@
 - A class variable looks like this: `@@variable_name`
 - A class method is defined like this: `def self.class_method_name #some code end`
   - The `self` keyword refers to the entire class itself, not to an instance of the class. In this case, we are inside the class only, not inside an instance method of the class. We are in the class scope, not the instance scope.
+  

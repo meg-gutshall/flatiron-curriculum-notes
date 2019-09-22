@@ -58,3 +58,4 @@
   - Example: `belongs_to :artist` or `has_many :genres, through: :songs`
 - **The model that `has_many` is considered the parent. The model that `belongs_to` is considered the child. If you tell the child that it belongs to the parents, the parent won't know about that relationship. If you tell the parent that a certain child object has been added to its collection, both the parent and the child will know about the association.**
   - In this example, it is better to push song objects into `artist.songs` instead of assign artist objects to `song.artist`.
+  

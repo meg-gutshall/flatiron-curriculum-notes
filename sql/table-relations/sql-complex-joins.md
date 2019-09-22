@@ -8,3 +8,4 @@
   - The left outer join is the most common outer join. This returns the normal inner join result and also returns all of the rows from the left-most (first mentioned) table.
   - The right outer join returns the normal inner join result and also returns all of the rows from the right-most (last mentioned) table.
   - The full outer join returns all of the rows from all the tables.
+  

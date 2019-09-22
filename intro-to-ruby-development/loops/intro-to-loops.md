@@ -7,3 +7,4 @@
   - First, we are able to achieve results with far fewer lines of code.
   - Secondly, it eliminates the room for error that manual typing allows.
   - Lastly, it clearly conveys to the reader exactly what it will accomplish.
+  

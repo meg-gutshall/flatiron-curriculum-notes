@@ -157,3 +157,4 @@ There are three ways to implement custom validators, with examples in [Section 6
   - `validate` for quick custom validations that you can extract later.
   - `EachValidator` and `validates` for validating one specific attribute.
   - `Validator` and `validates_with` for doing many validations in one pass.
+  

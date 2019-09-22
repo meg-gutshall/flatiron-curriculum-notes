@@ -42,3 +42,4 @@
 - Again, there are two ways to create hashes:
   - The Literal Constructor: write key/value pairs enclosed in curly braces
   - The Class Constructor: type `Hash.new`, creating an empty hash, `{}`
+  

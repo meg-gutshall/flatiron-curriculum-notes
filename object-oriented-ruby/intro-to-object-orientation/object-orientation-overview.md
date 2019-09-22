@@ -22,3 +22,4 @@
 - Whatever code is located in your class body gets executed at runtime as Ruby is reading it unless it is a method, which will only run when it's evoked.
 - You can define a method on an object itself explicitly.
   - Example: `def object.method #code end`
+  

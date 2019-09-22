@@ -1,12 +1,12 @@
-# Lesson: What Is Sinatra?
+# Lesson: What Is Sinatra
 
 ## Notes
 
-### What's A Web Framework?
+### What's A Web Framework
 
 Web frameworks take routine and common requirements of any web application and abstract them into code and patterns that provide these functionalities to your application without requiring you to build them yourself.
 
-### What is Sinatra?
+### What is Sinatra
 
 Sinatra is a Domain Specific Language (DSL) implemented in Ruby that's used for writing web applications.
 

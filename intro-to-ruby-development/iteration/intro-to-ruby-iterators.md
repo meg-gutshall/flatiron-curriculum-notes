@@ -11,3 +11,4 @@
 - The `#each` method will always return the original collection on which it was called.
 - Another way of establishing a code block that you may encounter is to use curly brackets, `{ }`, instead of the `do`/`end` keywords.
   - It is appropriate to use the `{ }` syntax when the code in the block is short and can fit on one line.
+  

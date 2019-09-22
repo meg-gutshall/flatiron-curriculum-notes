@@ -1,6 +1,6 @@
 # Lesson: Strong Params Basics
 
-## What Are Strong Params?
+## What Are Strong Params
 
 Parameters that are whitelisted as permitted when sending form data from a Rails application to the database.
 

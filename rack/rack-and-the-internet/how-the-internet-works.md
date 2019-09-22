@@ -66,3 +66,4 @@
 - The flow of request a response changes slightly based on a static or dynamic webapp.
   - When a client wants to load a static site, the client makes a request, the server finds the file on a disk, and send it back.
   - With a dynamic webapp, the client makes a request, the server runs application code, and returns a dynamically generated response.
+  

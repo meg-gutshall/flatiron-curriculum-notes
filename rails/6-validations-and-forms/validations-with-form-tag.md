@@ -31,7 +31,7 @@ class Person < ActiveRecord::Base
 end
 ```
 
-This means validation will fail if we put numbers into the "Name" field, and the form will be re-rendered with the invalid `@person` object available. 
+This means validation will fail if we put numbers into the "Name" field, and the form will be re-rendered with the invalid `@person` object available.
 
 Remember that our `create` action now looks like this:
 
@@ -51,7 +51,7 @@ def create
 end
 ```
 
-With this in mind, we can use the invalid `@person` object to "re-fill" the usually-empty `new` form with the user's invalid entries. This way they don't have to re-type anything. (You wouldn't _always_ want to do this—for example, with credit card numbers—because you want to minimize the amount of times sensitive information travels back and forth over the Internet.) 
+With this in mind, we can use the invalid `@person` object to "re-fill" the usually-empty `new` form with the user's invalid entries. This way they don't have to re-type anything. (You wouldn't _always_ want to do this—for example, with credit card numbers—because you want to minimize the amount of times sensitive information travels back and forth over the Internet.)
 
 Now let's plug the information back into the form:
 

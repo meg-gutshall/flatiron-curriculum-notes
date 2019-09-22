@@ -1,4 +1,4 @@
-# Lesson: What is SQL?
+# Lesson: What is SQL
 
 ## Notes
 

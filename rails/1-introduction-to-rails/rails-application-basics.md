@@ -1,6 +1,6 @@
 # Lesson: Rails Application Basics
 
-## What is Ruby on Rails?
+## What is Ruby on Rails
 
 - **A web framework**: A web framework provides developers the tools they need in order to build applications. When every application is unique, there are certain components that cna be found in almost every application, such as: routing, asset management, database connections, etc. A good web framework gives developers these baseline tools so that they don't have to create the base application functionality for each new project.
 - **A Ruby gem**: At its core, Ruby on Rails is simply a set of Ruby code libraries, and since the entire codebase is open source, you have the ability to review the framework to better understand how it works.

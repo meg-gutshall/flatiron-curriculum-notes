@@ -50,7 +50,7 @@ def create
 end
 ```
 
-## What Is CSRF?
+## What Is CSRF
 
 "CSRF" stands for Cross-Site Request Forgery. Let's walk through a real-life example of a Cross-Site Request Forgery hack:
 

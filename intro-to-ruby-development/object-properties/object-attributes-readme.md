@@ -9,3 +9,4 @@
 - In Ruby, it is possible to set an instance variable with the following method: `object.instance_variable_set(:instance_variable, "value")`
 - It is also possible to retrieve an instance variable from an object with the following method: `object.instance_variable_get(:instance_variable) => "value"`
   - This is syntactic vinegar and not flexible and should not be used
+  
