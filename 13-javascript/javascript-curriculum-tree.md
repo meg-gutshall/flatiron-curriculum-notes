@@ -74,7 +74,7 @@ Full Stack Web Development V7
 │   ├── Intro to the DOM
 │   ├── More on the DOM
 │   │   └── Intro to the DOM Code-along
-│   ├── The DOM Is A Tree
+│   ├── The DOM Is a Tree
 │   │   └── Hide and Seek Lab
 │   ├── Creating and Inserting DOM Nodes
 │   ├── Listening to Nodes
