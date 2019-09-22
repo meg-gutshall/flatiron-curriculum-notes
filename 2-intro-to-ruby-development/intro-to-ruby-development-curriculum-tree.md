@@ -6,7 +6,7 @@ Full Stack Web Development V7
 ├── Intro to Programming
 │   ├── Intro to Tic Tac Toe
 │   ├── MINASWAN: Yukihuro Matsumoto
-│   ├── What Is A Program?
+│   ├── What Is a Program?
 │   │   └── Hello World
 │   └────── Welcome to Tic Tac Toe
 ├── Debugging
@@ -31,7 +31,7 @@ Full Stack Web Development V7
 ├── Command Line Applications
 │   ├── Intro to CLI Applications
 │   ├── CLI Applications in Ruby
-│   │   ├── gets CLI input
+│   │   ├── gets CLI Input
 │   │   └── Greeting CLI Lab
 │   └────── Tic Tac Toe Move
 ├── Logic and Conditions

@@ -89,8 +89,8 @@ Full Stack Web Development V7
     ├────── Student Scraper
     └────── CLI Data Gem Portfolio Project
             ├── CLI Data Gem Walkthrough
-            ├── CLI Data Gem Walkthrough: Creating A CLI Scraper Gem
+            ├── CLI Data Gem Walkthrough: Creating a CLI Scraper Gem
             ├── Common Anti-Patterns in CLI Data Gems
-            ├── Student Example 1: Refactoring A CLI Data Gem
-            └── Student Example 2: Refactoring A CLI Data Gem
+            ├── Student Example 1: Refactoring a CLI Data Gem
+            └── Student Example 2: Refactoring a CLI Data Gem
 ```

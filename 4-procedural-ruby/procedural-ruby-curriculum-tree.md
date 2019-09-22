@@ -4,7 +4,7 @@
 Full Stack Web Development V7
 │
 ├── Regex
-│   ├── What's A Pattern
+│   ├── What's a Pattern?
 │   ├── Regex Basics
 │   ├── Ruby Methods with Regex
 │   └────── Regex Lab
