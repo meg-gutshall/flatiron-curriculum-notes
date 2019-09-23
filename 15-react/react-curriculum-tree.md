@@ -30,10 +30,10 @@ Full Stack Web Development V7
 │   │   └── Event System Lab
 │   ├── Events in Detail
 │   │   └── Events in Detail Lab
-│   └── Updating State
+│   └── Updating State Code-along
 │       └── Updating State Lab
 ├── Forms
-│   ├── Forms
+│   ├── Forms Code-along
 │   │   └── Forms Lab
 │   └────── Props, State, and Events Lab
 ├── Lifecycle Methods
@@ -62,7 +62,7 @@ Full Stack Web Development V7
 │   └── The Virtual DOM
 └── Client-side Routing
     ├── Introduction to React Router
-    └── Components as Routes
-        ├── Components as Routes Lab
-        └── Nested Routes Code-along
+    ├── Components as Routes Code-along
+    │   └── Components as Routes Lab
+    └────── Nested Routes Code-along
 ```
