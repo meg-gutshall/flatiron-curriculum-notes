@@ -14,7 +14,7 @@
 
 ## Code Examples
 
-## Connect to A Database
+### Connect to A Database
 
 ```ruby
 connection = ActiveRecord::Base.establish_connection(
