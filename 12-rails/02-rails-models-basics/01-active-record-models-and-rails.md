@@ -119,4 +119,4 @@ After creating the above file, run `rake db:migrate` and you should see that our
 
 ## Resources
 
-[Creating an Active Record Model Code Along](https://github.com/meg-gutshall/rails-activerecord-models-and-rails-readme-v-000)
+[Creating an Active Record Model Code-along](https://github.com/meg-gutshall/rails-activerecord-models-and-rails-readme-v-000)
