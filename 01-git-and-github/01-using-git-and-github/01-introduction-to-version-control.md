@@ -40,7 +40,7 @@ Beyond the advantage of being able to safely experiment, there are several other
 
 Version control helps us maintain the overall stability of our code so that we can feel free to explore.
 
-### Resources
+## Resources
 
 [Getting Started – About Version Control](http://git-scm.com/book/en/Getting-Started-About-Version-Control)<br>
 [Git Basics – What Is Git?](http://git-scm.com/video/what-is-git)
