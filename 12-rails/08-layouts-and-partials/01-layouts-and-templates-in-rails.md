@@ -1,6 +1,6 @@
 # Lesson: Layouts and Templates in Rails
 
-## Life Without Layouts
+## Life without Layouts
 
 Imagine that you're tsked to build an online store app with Rails.
 

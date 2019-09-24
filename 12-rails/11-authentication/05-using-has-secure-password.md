@@ -213,10 +213,10 @@ class User < ActiveRecord::Base
 end
 ```
 
-### Video Review
+## Video Review
 
-- [Authentication](https://www.youtube.com/watch?v=gB7lYvfL4J4)
+[Authentication](https://www.youtube.com/watch?v=gB7lYvfL4J4)
 
-### Resources
+## Resources
 
-- [BCrypt USENIX paper](https://www.usenix.org/legacy/event/usenix99/provos/provos.pdf)
+[BCrypt USENIX paper](https://www.usenix.org/legacy/event/usenix99/provos/provos.pdf)

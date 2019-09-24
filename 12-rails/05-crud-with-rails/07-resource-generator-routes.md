@@ -1,6 +1,6 @@
 # Lesson: Resource Generator/Routes
 
-## Generating A Scaffold
+## Generating a Scaffold
 
 - It is not considered a good practice to use scaffolds in a production application. However, they can be a great reference for how we can build CRUD functionality into our apps.
 

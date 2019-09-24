@@ -39,7 +39,7 @@ Which loads the row for that item from the database and returns it as an Active 
 
 It would be possible, though quite convoluted, to store this information in the path. This would have strange effects: since the path is shown in the browser's URL bar, a user who copies a URL and sends it to a friend would also be copying their shopping cart ID. Upon loading the page, the friend would see what's in the user's cart. Since a cart is owned by a particular user, and may contain private information, this is probably not what we want. Cookies allow us to store this information in the only other place available to us: HTTP headers.
 
-## What's A Cookie Anyway
+## What's a Cookie Anyway
 
 Let's see what [the spec](http://tools.ietf.org/html/rfc6265) has to say:
 
@@ -206,10 +206,10 @@ This use of cookies worries people and the EU [has created legislation around th
 
 Cookies, like any technology, are a tool. In the rest of the unit, we're going to be using them to let users log in. Whether you later want to use them in such a way that the EU passes another law is up to you.
 
-### Resources
+## Resources
 
-- [HTTP RFC Section 9 — Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)
-- [RFC 6265 — HTTP State Management Mechanism (the cookie spec)](http://tools.ietf.org/html/rfc6265)
-- [Rails — Accessing the Session](http://guides.rubyonrails.org/action_controller_overview.html#accessing-the-session)
-- [Has and belongs to many](http://guides.rubyonrails.org/association_basics.html#the-has-and-belongs-to-many-association)
-- [EU Cookie Directive](https://en.wikipedia.org/wiki/HTTP_cookie#EU_cookie_directive)
+[HTTP RFC Section 9 — Methods](http://www.w3.org/Protocols/rfc2616/rfc2616-sec9.html)<br>
+[RFC 6265 — HTTP State Management Mechanism](http://tools.ietf.org/html/rfc6265)<br>
+[Rails — Accessing the Session](http://guides.rubyonrails.org/action_controller_overview.html#accessing-the-session)<br>
+[Has and belongs to many](http://guides.rubyonrails.org/association_basics.html#the-has-and-belongs-to-many-association)<br>
+[EU Cookie Directive](https://en.wikipedia.org/wiki/HTTP_cookie#EU_cookie_directive)

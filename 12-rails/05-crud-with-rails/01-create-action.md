@@ -20,7 +20,7 @@ def create
 end
 ```
 
-## Checking for A Successfully Persisted Record
+## Checking for a Successfully Persisted Record
 
 There are a few ways to check to see if your record was successfully created in the database:
 

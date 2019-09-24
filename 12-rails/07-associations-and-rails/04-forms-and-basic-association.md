@@ -22,7 +22,7 @@ end
 
 Now we need to build the functionality for a user to create a `Post`. We're going to need a form for the `Post`'s content, and some way to represent what `Category` the `Post` belongs to.
 
-## Defining A Custom Setter and Getter (Convenience Attributes on Models)
+## Defining a Custom Setter and Getter (Convenience Attributes on Models)
 
 Since our Active Record models are still just Ruby classes, we can define our own setter and getter methods:
 

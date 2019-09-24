@@ -103,7 +103,7 @@ Like many other Active Record class methods, the symbol you pass determines the 
 
 ## Convenience Builders
 
-### Building A New Item in A Collection
+### Building a New Item in a Collection
 
 If you want to add a new post for an author, you might start this way:
 
@@ -121,7 +121,7 @@ new_post.save
 
 This will return a new `Post` object with the `author_id` already set for you! We use this one as much as possible because it's just easier. `build` works just like `new`. So the instance that is returned isn't quite saved to the database just yet. You'll need to `#save` the instance when you want it to be persisted to the database.
 
-### Setting A Singular Association
+### Setting a Singular Association
 
 The setup process is a little bit less intuitive for singular associations. Remember, a post `belongs_to` an author. The verbose way of creating this association would be like so:
 

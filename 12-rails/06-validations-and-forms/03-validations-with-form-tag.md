@@ -85,7 +85,7 @@ This is the same technique used to create `edit`/`update` forms.
 
 We can also use the **same** form code for empty _and_ pre-filled forms because `@person = Person.new` will create an empty model object whose attributes are all `nil`.
 
-## Displaying All Errors With `errors.full_messages`
+## Displaying All Errors with `errors.full_messages`
 
 When a model fails validation, its `errors` attribute is filled with information about what went wrong. Rails creates an [ActiveModel::Errors](https://api.rubyonrails.org/classes/ActiveModel/Errors.html) object to carry this information.
 
@@ -118,7 +118,7 @@ If the model has two errors, there will be two items in `full_messages`, which c
 
 This is nice, but it's not very helpful from a user interface standpoint. IT would be much better is the incorrect fields themselves were highlighted somehow.
 
-## Displaying Pre-Field Errors With `errors[]`
+## Displaying Pre-Field Errors with `errors[]`
 
 `ActiveModel::Errors` has much more than just a list of `full_message` error strings. It can also be used to access field-specific errors by interacting with it like a hash. If the field has errors, they will be returned in an array of strings:
 

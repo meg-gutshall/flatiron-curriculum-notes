@@ -2,7 +2,7 @@
 
 Continuing with our blog application, we're going to extend our nested resources to allow for creating and modifying blog posts by author.
 
-## Creating A New Post For An Author
+## Creating a New Post For an Author
 
 The first thing we want to do is to create a new post that is automatically link to an `Author`. We could set up a select box on the post page and make the author choose, however, if we're already on the author's page, we know who the author is, so why not do it without forcing the user to choose?
 
@@ -88,7 +88,7 @@ Now we know the `author_id` will be allowed for mass-assignment in the `create` 
 
 Why didn't we have to make a nested resource for `:create` in addition to `:new`? The `form_for(@post)` helper in `posts/_form.html.erb` will automatically route to `POST posts_controller#create` for a new `Post`. By carrying the `author_id` as we did and allowing it through strong parameters, the existing `create` route and action can be used without needing to do anything else.
 
-## Editing An Author's Posts
+## Editing an Author's Posts
 
 We can use the same technique to allow us to directly edit an author's posts. First, we allow the `:edit` action in the nested route:
 

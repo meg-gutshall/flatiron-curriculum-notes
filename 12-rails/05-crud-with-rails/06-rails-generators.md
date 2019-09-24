@@ -30,7 +30,7 @@ Below are the main generators that Rails offers:
 
 Rails has a great set of migration generators with conventions that can help make managing the database schema very efficient.
 
-### Generate A New Migration
+### Generate a New Migration
 
 To generate a new migration, you can use:`rails generate migration CreatePosts` where CreatePosts is the name of your migration. The generator will create an empty migration file `timestamp_create_posts.rb` in the `db/migrate/` directory where `timestamp` is the UTC formatted date and time that the migration was generated.
 
@@ -51,7 +51,7 @@ class CreatePosts <ActiveRecord[5.0]
 end
 ```
 
-### Add A Column to A Migration Table
+### Add a Column to a Migration Table
 
 There is a special syntactic shortcut to generate migrations that add field to a table: `rails generate migration add_published_status_to_create_posts published_status:string`
 
@@ -67,7 +67,7 @@ class AddPublishedStatusToCreatePosts < ActiveRecord::Migration[5.0]
 end
 ```
 
-### Remove A Column from A Migration Table
+### Remove a Column from a Migration Table
 
 We can also get rid of a column with another migration: `rails generate migration remove_published_status_from_create_posts published_status:string`
 
@@ -226,5 +226,5 @@ The `resource` generator is a smart generator that creates some of the core func
 
 ## Resources
 
-- [Rails::Generators](https://api.rubyonrails.org/classes/Rails/Generators.html)
-- [ActiveRecord::Migration](https://api.rubyonrails.org/classes/ActiveRecord/Migration.html)
+[Rails::Generators](https://api.rubyonrails.org/classes/Rails/Generators.html)<br>
+[ActiveRecord::Migration](https://api.rubyonrails.org/classes/ActiveRecord/Migration.html)

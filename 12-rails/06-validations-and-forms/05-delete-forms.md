@@ -47,7 +47,7 @@ caligula@rome-circe-40-AD.com
 </form>
 ```
 
-## Rails Magic At Work
+## Rails Magic at Work
 
 As of HTML5, forms officially do not support `DELETE` and `PATCH` for their methods.
 

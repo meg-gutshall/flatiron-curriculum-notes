@@ -143,6 +143,6 @@ Right away we see our Facebook application key, `api_key=247632982388118`, and t
 
 If you want to inspect the exact information that Facebook returns to our application about a logged-in user, throw a `binding.pry` in the `SessionsController#create` method and call `auth` inside the Pry session. When you make a server-side API call, Facebook will provide an access token that's good for about two months, so you don't have to bug your users very often. That's good!
 
-### Resources
+## Resources
 
-- [Managing Environment Variables](https://launchschool.com/blog/managing-environment-configuration-variables-in-rails)
+[Managing Environment Variables](https://launchschool.com/blog/managing-environment-configuration-variables-in-rails)

@@ -112,6 +112,6 @@ end
 
 The `skip_before_action` class method tells Rails to skip the `require_login` filter only on the `index` action.
 
-### Resources
+## Resources
 
-- [Action Controller Overview — 8, Filters](http://guides.rubyonrails.org/action_controller_overview.html#filters)
+[Action Controller Overview — 8, Filters](http://guides.rubyonrails.org/action_controller_overview.html#filters)

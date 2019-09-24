@@ -8,7 +8,7 @@ You arrive at the club. The bouncer checks your ID. They put a wristband on your
 
 You arrive at gmail.com. You submit your username and password. Google's servers check to see if your credentials are correct. If they are, Google's servers issue a cookie to your browser. If you visit another page on gmail, or anywhere on google.com for that matter, your browser will show the cookie to the server. The server verifies this cookie, and let you load your inbox.
 
-## How This Looks in Rails
+## How this Looks in Rails
 
 Let's look at what the simplest possible login system might look like in Rails.
 
@@ -71,6 +71,6 @@ The most common way to route this action is to `post '/logout'`. This means that
 
 It's tempting, but don't attach this to a `GET` route. HTTP specifies that `GET` routes don't change anything—logging out is definitely changing something. You don't actually want someone to be able to put a link to `https://www.yoursite.com/logout` in an email or message board post. It's not a security flaw, but it's pretty annoying to be logged out because of mailing list hijinks.
 
-### Resources
+## Resources
 
-- [Rails Tutorial Chapter 8 — Log in, log out](https://www.railstutorial.org/book/basic_login)
+[Rails Tutorial Chapter 8 — Log in, log out](https://www.railstutorial.org/book/basic_login)
