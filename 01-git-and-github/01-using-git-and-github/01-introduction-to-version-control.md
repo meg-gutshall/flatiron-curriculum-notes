@@ -1,4 +1,4 @@
-# Introduction to Version Control
+# Lesson: Introduction to Version Control
 
 ## Naive Strategy
 
