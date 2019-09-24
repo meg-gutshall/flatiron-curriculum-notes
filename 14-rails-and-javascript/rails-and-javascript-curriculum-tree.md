@@ -45,7 +45,7 @@ Full Stack Web Development V7
 │   └── Receiving API POSTs Code-along
 │       └── Receiving API POSTs Lab
 └── Project Mode
-    ├────── jQuery Tic-Tac-Toe with a Rails API (Part 1)
-    ├────── jQuery Tic-Tac-Toe with a Rails API (Part 2)
+    ├────── jQuery Tic-Tac-Toe with a Rails API Lab (Part 1)
+    ├────── jQuery Tic-Tac-Toe with a Rails API Lab (Part 2)
     └────── Rails with JavaScript Portfolio Project
 ```

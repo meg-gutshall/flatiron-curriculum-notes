@@ -16,8 +16,8 @@ Full Stack Web Development V7
 │   ├── HTML Fundamentals Quiz
 │   ├────── HTML Issue Bot 9000 Lab
 │   ├── Dev Tools Super Power
-│   ├────── HTML Album Cover
-│   └────── Riyadh Blog
+│   ├────── HTML Album Cover Lab
+│   └────── Riyadh Blog Lab
 ├── HTML Forms
 │   └── HTML Forms
 │       └── HTML Forms Lab

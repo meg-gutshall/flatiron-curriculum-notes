@@ -7,55 +7,55 @@ Full Stack Web Development V7
 │   ├── Intro to Tic Tac Toe
 │   ├── MINASWAN: Yukihuro Matsumoto
 │   ├── What Is a Program?
-│   │   └── Hello World
-│   └────── Welcome to Tic Tac Toe
+│   │   └── Hello World Lab
+│   └────── Welcome to Tic Tac Toe Lab
 ├── Debugging
 │   └── Intro to IRB
-│       └── Reading Error Messages
+│       └── Reading Error Messages Lab
 ├── Variables
 │   ├── About Variable Assignment
 │   │   └── Variable Assignment Lab
 │   ├── Ruby Data Types
 │   ├── Array Basics
-│   └────── Tic Tac Toe Board
+│   └────── Tic Tac Toe Board Lab
 ├── Methods
-│   ├── TDD, RSpec, and Learn
-│   ├── Intro to Methods
+│   ├── TDD, RSpec, and Learn Code-along
+│   ├── Intro to Methods Code-along
 │   ├── String Interpolation
 │   ├── Puts and Return
-│   │   └── Display Tic Tac Toe Board Example
+│   │   └── Display Tic Tac Toe Board Example Lab
 │   ├── Methods and Arguments
-│   │   ├── Say Hello
-│   │   └── Interpolation Super Power
-│   └────── Display Tic Tac Toe Board
+│   │   ├── Say Hello Lab
+│   │   └── Interpolation Super Power Lab
+│   └────── Display Tic Tac Toe Board Lab
 ├── Command Line Applications
 │   ├── Intro to CLI Applications
 │   ├── CLI Applications in Ruby
-│   │   ├── gets CLI Input
+│   │   ├── gets CLI Input Lab
 │   │   └── Greeting CLI Lab
-│   └────── Tic Tac Toe Move
+│   └────── Tic Tac Toe Move Lab
 ├── Logic and Conditions
 │   ├── Truthiness
 │   ├── Booleans
 │   ├── About Ruby Conditionals
-│   │   └── RSpec FizzBuzz
-│   ├────── Tic Tac Toe Position Taken
-│   └────── Valid Tic Tac Toe Move
+│   │   └── RSpec FizzBuzz Lab
+│   ├────── Tic Tac Toe Position Taken Lab
+│   └────── Valid Tic Tac Toe Move Lab
 ├── Loops
 │   ├── Intro to Loops
 │   ├── Loops
 │   ├── While and Until Loops
 │   │   └── While and Until Loops Lab
-│   ├────── Tic Tac Toe Turn
-│   └────── Tic Tac Toe Play Loop
+│   ├────── Tic Tac Toe Turn Lab
+│   └────── Tic Tac Toe Play Loop Lab
 ├── Iteration
 │   ├── Iteration and Abstraction
 │   ├── Intro to Ruby Iterators
-│   └────── Tic Tac Toe Current Player
+│   └────── Tic Tac Toe Current Player Lab
 └── Ruby Tic Tac Toe
     ├── Nested Arrays
     ├── Boolean Enumerables
     ├── Search Enumerables
-    ├────── Tic Tac Toe Game Status
-    └────── Tic Tac Toe in Ruby
+    ├────── Tic Tac Toe Game Status Lab
+    └────── Tic Tac Toe in Ruby Lab
 ```

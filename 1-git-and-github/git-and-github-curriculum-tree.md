@@ -16,5 +16,5 @@ Full Stack Web Development V7
 │   ├── Git Collaboration Quiz
 │   └── Git Basics Quiz
 └── Using Gems
-    └────── TDD, RSpec, and Learn
+    └── TDD, RSpec, and Learn Code-along
 ```

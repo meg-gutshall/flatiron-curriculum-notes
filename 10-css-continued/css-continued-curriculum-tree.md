@@ -16,7 +16,7 @@ Full Stack Web Development V7
 │   ├── Creating Column Based Layouts in CSS
 │   │   └── Creating Columns Lab
 │   ├── CSS Layout Quiz
-│   ├────── Zetsy
+│   ├────── Zetsy Lab
 │   └────── Box Style Lab
 └── Responsive Design
     ├── Building Responsive Sites
@@ -27,6 +27,6 @@ Full Stack Web Development V7
     ├── Viewport
     ├────── Adding Responsive Features Lab
     ├────── Animal Save Lab
-    ├────── CSS Flexbox Code-along
+    ├── CSS Flexbox Code-along
     └────── CSS Grid Lab
 ```

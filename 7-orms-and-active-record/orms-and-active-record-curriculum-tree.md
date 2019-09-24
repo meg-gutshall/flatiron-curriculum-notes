@@ -14,7 +14,7 @@ Full Stack Web Development V7
 │   ├────── Pokemon Scraper Lab
 │   ├── Preventing Record Duplication
 │   │   └── ORMs Lab: Bringing It All Together
-│   ├── Dynamic ORMs
+│   ├── Dynamic ORMs Code-along
 │   │   ├── Dynamic ORMs with Inheritance
 │   │   ├── Video Review: ORMs and SQL Joins
 │   │   └── Dynamic ORM Lab
@@ -22,11 +22,11 @@ Full Stack Web Development V7
 │   └── Video Review: Building a Room Scraper and ORM Code-along
 ├── Active Record
 │   ├── Active Record Mechanics
-│   │   └── Translating from ORM to Active Record
-│   ├── Intro to Rake
-│   ├── Mechanics of Migrations
-│   │   └── Writing Our Own Migrations
-│   ├────── Migrations and Active Record Lab
+│   │   └── Translating from ORM to Active Record Lab
+│   ├── Intro to Rake Code-along
+│   ├── Mechanics of Migrations Code-along
+│   │   ├── Writing Our Own Migrations Lab
+│   │   └── Migrations and Active Record Lab
 │   ├────── Active Record CRUD Lab
 │   └────── Advanced Finding Lab
 └── Associations

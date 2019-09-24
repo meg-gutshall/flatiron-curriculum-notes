@@ -12,14 +12,14 @@ Full Stack Web Development V7
 │   ├── About Variable Assignment
 │   │   └── Variable Assignment Lab
 │   ├── String Interpolation
-│   ├────── Defining Methods
+│   ├── Defining Methods Code-along
 │   ├── Methods and Arguments
 │   │   └── Methods and Arguments Lab
 │   ├── Methods and Default Arguments
 │   │   └── Methods and Default Arguments Lab
 │   ├── Return Values
 │   │   └── Return Values Lab
-│   ├────── Debugging with Pry
+│   ├── Debugging with Pry Code-along
 │   └── Method Scope
 │       └── Method Scope Lab
 ├── Booleans
@@ -29,17 +29,17 @@ Full Stack Web Development V7
 ├── Logic and Conditionals
 │   ├── If Statements
 │   │   ├── If Statements Lab
-│   │   ├── Ternary Operators and Statement Modifiers
-│   │   └── If Statements Quiz
+│   │   └── Ternary Operators and Statement Modifiers Lab
+│   ├── If Statements Quiz
 │   ├── Case Statements
-│   │   └── Case Statements Quiz
+│   ├── Case Statements Quiz
 │   └── Logic and Conditionals Quiz
 ├── Looping
 │   ├── Intro to Loops
 │   ├── Looping
 │   │   ├── Looping Lab
-│   │   ├── Times
-│   │   └── Looping Quiz
+│   │   └── Times Lab
+│   ├── Looping Quiz
 │   ├── While and Until Loops
 │   │   └── While and Until Loops Lab
 │   └────── Countdown to Midnight Lab
@@ -58,7 +58,7 @@ Full Stack Web Development V7
 │   │   └── Deli Counter Lab
 │   ├── Collect and Return Values
 │   │   ├── Reverse Each Word Lab
-│   │   ├── Yield and Blocks
+│   │   ├── Yield and Blocks Code-along
 │   │   ├── Each Lab
 │   │   ├── Return from Yield Statements
 │   │   └── Collect Lab
@@ -73,9 +73,9 @@ Full Stack Web Development V7
 │       └── Sorting Lab
 ├── Hashes
 │   ├── Introduction to Hashes
-│   │   └── Using Hashes
+│   │   └── Using Hashes Lab
 │   ├── Symbols
-│   ├── Hash Iteration with Each
+│   ├── Hash Iteration with Each Code-along
 │   └── Hash Iteration with Collect
 │       └── Hash Iteration Lab
 └── Data Structures
@@ -86,6 +86,6 @@ Full Stack Web Development V7
     │   └── Multitype Collections Lab
     ├── Nested Hashes Iteration
     │   └── Iterating Over Nested Hashes Code-along
-    ├────── Other Hashes Code-along
+    ├── Other Hashes Code-along
     └────── Hashes Manipulation Lab
 ```

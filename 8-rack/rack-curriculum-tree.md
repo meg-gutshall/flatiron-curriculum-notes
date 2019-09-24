@@ -6,8 +6,8 @@ Full Stack Web Development V7
 └── Rack and the Internet
     ├── How the Internet Works
     ├── Increasing Layers of Abstraction
-    │   ├── Inspecting the Web with Rack
-    │   ├── Dynamic Web Apps with Rack
+    │   ├── Inspecting the Web with Rack Code-along
+    │   ├── Dynamic Web Apps with Rack Lab
     │   └── Rack Responses Lab
     ├── The HTTP Request
     │   └── Rack Routes and GET Params Lab

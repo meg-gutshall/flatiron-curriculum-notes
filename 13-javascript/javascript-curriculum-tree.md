@@ -8,8 +8,8 @@ Full Stack Web Development V7
 │   ├── Data Types
 │   ├── Data Types Quiz
 │   ├── Variables
-│   │   ├── Variables Lab
-│   │   ├── Strings Code-along
+│   │   └── Variables Lab
+│   ├── Strings Code-along
 │   │   └── Arithmetic Lab
 │   ├── Comparisons
 │   ├── Conditionals
@@ -35,7 +35,7 @@ Full Stack Web Development V7
 │   │   └── Objects Lab
 │   └── Objects and Arrays Quiz
 ├── Looping and Iteration
-│   ├────── Looping Code-along
+│   ├── Looping Code-along
 │   ├── Object Iteration
 │   ├── Traversing Nested Objects
 │   ├── Filter
@@ -59,8 +59,8 @@ Full Stack Web Development V7
 │   │   ├── Classes Syntax Lab
 │   │   └── Classes Travel Lab
 │   ├── This
-│   ├── Blind Call Apply
-│   ├── This Blind Call Apply Code-along
+│   ├── Blind Call Apply Code-along
+│   ├── This Blind Call Apply
 │   │   └── Blind Call Apply Lab
 │   ├── Object Relations
 │   └── Object Relations Methods
@@ -73,20 +73,20 @@ Full Stack Web Development V7
 ├── DOM and Events
 │   ├── Intro to the DOM
 │   ├── More on the DOM
-│   │   └── Intro to the DOM Code-along
+│   ├── Intro to the DOM Lab
 │   ├── The DOM Is a Tree
 │   │   └── Hide and Seek Lab
-│   ├── Creating and Inserting DOM Nodes
-│   ├── Listening to Nodes
+│   ├── Creating and Inserting DOM Nodes Code-along
+│   ├── Listening to Nodes Code-along
 │   │   └── Konami Code Lab
-│   ├── Modifying HTML
+│   ├── Modifying HTML Code-along
 │   │   └── Modifying HTML Lab
 │   ├── document.ready
-│   │   ├── jQuery Selectors
+│   │   ├── jQuery Selectors Lab
 │   │   └── Acting on Events Lab
 │   └── DOM Quiz
 ├── Asynchronous JavaScript
-│   ├────── Intro to XHR Code-along
+│   ├── Intro to XHR Code-along
 │   ├────── Hitting APIs Lab
 │   ├── AJAX and Callbacks
 │   ├── REST Refresher
@@ -95,7 +95,7 @@ Full Stack Web Development V7
 │       └── Fetch Lab
 └── Advanced Testing
     ├── Testing Refresher
-    │   └── Intro to Mocha
+    │   └── Intro to Mocha Lab
     ├── Testing with Spies
     └── Testing with Mocks and Stubs
 ```

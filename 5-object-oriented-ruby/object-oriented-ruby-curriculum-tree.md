@@ -13,24 +13,24 @@ Full Stack Web Development V7
 │   └── Instance Methods
 │       └── Instance Methods Lab
 ├── Object Properties
-│   ├────── Instance Variables
+│   ├── Instance Variables Code-along
 │   ├────── Barking Dog Lab
 │   ├── Object Attributes
 │   │   └── Object Attributes Lab
 │   ├── Object Accessors
-│   ├────── Meowing Cat
+│   ├────── Meowing Cat Lab
 │   └── Video Review: Object Properties
 ├── Object Lifecycle
 │   ├── Object Initialization
 │   │   └── Object Initialization Lab
-│   ├────── OO Basics
-│   ├────── OO Basics with Class Constants
-│   └────── OO School Domain
+│   ├────── OO Basics Lab
+│   ├────── OO Basics with Class Constants Lab
+│   └────── OO School Domain Lab
 ├── Object Orientation Review
 │   └── Intro to Object Orientation – Ruby
 ├── Object's Self
 │   ├── Self
-│   └────── OO Counting Sentences
+│   └────── OO Counting Sentences Lab
 ├── Class Variables and Methods
 │   ├── Class Variables and Methods
 │   │   └── Class Variables and Methods Lab
@@ -43,11 +43,11 @@ Full Stack Web Development V7
 │   └── Video Review: Object Models
 ├── OO Tic Tac Toe
 │   ├── Procedural vs Object Oriented Ruby
-│   └────── OO Tic Tac Toe
+│   └────── OO Tic Tac Toe Lab
 ├── Object Labs
-│   ├────── OO Email Parser
-│   ├────── OO Anagram Detector
-│   └────── OO Cash Register
+│   ├────── OO Email Parser Lab
+│   ├────── OO Anagram Detector Lab
+│   └────── OO Cash Register Lab
 ├── Object Relationships
 │   ├── Intro to Object Relationships
 │   │   └── Belongs to Object Lab
@@ -56,36 +56,36 @@ Full Stack Web Development V7
 │   ├── Collaborating Objects
 │   │   └── Collaborating Objects Lab
 │   ├── Collaborating Objects Review
-│   ├────── OO My Pets
-│   ├────── OO Kickstarter
-│   ├────── OO Banking
-│   └── Has Many Objects Through
+│   ├────── OO My Pets Lab
+│   ├────── OO Kickstarter Lab
+│   ├────── OO Banking Lab
+│   └── Has Many Objects Through Code-along
 │       └── Has Many Objects Through Lab
 ├── Object Architecture
-│   ├── Intro to Inheritance
+│   ├── Intro to Inheritance Code-along
 │   │   └── Intro to Inheritance Lab
 │   ├── Super
 │   │   └── Super Lab
-│   └── Intro to Modules
+│   └── Intro to Modules Code-along
 │       └── Intro to Modules Lab
 ├── Metaprogramming
 │   ├── Mass Assignment
 │   ├── Mass Assignment and Metaprogramming
 │   │   └── Mass Assignment Lab
-│   ├────── Custom Errors
-│   └────── OO Triangle
+│   ├── Custom Errors Code-along
+│   └────── OO Triangle Lab
 ├── Scraping
-│   ├────── Gems and Bundler
-│   ├── Scraping
+│   ├── Gems and Bundler Code-along
+│   ├── Scraping Code-along
 │   │   ├── Scraping Lab
 │   │   └── Kickstarter Scraping Lab
 │   └── Video Review: Object Orientation and Scraping
 ├── Video Reviews of OO Ruby
 │   └── OO Ruby Object Orientation Video Review
 └── Final Projects
-    ├── Music Library CLI
-    │   └── Video Review: Music Library CLI
-    ├── Tic Tac Toe with AI
+    ├────── Music Library CLI Lab
+    │       └── Video Review: Music Library CLI
+    ├────── Tic Tac Toe with AI Lab
     ├────── Student Scraper
     └────── CLI Data Gem Portfolio Project
             ├── CLI Data Gem Walkthrough
