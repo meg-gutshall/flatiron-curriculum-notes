@@ -1,7 +1,7 @@
 # Rails and JavaScript Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── Asset Pipeline
 │   ├── What Is the Asset Pipeline

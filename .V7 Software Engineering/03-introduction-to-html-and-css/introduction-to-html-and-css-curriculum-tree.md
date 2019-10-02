@@ -1,7 +1,7 @@
 # Introduction to HTML and CSS Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── The Web and HTML
 │   ├── Transitioning from Ruby to HTML

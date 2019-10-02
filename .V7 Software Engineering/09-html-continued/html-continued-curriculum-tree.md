@@ -1,7 +1,7 @@
 # HTML Continued Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── Document Structure and Lists
 │   ├── HTML Fundamentals

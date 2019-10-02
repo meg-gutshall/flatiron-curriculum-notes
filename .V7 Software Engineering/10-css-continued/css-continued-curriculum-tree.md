@@ -1,7 +1,7 @@
 # CSS Continued Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── CSS Fundamentals
 │   ├── CSS Fundamentals

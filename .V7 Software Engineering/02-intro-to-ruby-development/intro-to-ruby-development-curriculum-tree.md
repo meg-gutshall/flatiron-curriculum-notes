@@ -1,7 +1,7 @@
 # Intro to Ruby Development Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── Intro to Programming
 │   ├── Intro to Tic Tac Toe

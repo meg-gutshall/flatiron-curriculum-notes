@@ -1,7 +1,7 @@
 # Rails Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── Introduction to Rails
 │   ├── Intro to Rails

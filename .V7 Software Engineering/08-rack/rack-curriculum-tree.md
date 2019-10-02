@@ -1,7 +1,7 @@
 # Rack Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 └── Rack and the Internet
     ├── How the Internet Works

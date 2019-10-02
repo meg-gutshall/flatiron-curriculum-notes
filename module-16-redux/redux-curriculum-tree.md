@@ -1,7 +1,7 @@
 # Redux Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V8
 │
 ├── Section 1: Building Redux
 │   ├── Why Redux

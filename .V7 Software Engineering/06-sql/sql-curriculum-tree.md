@@ -1,7 +1,7 @@
 # SQL (Structured Query Language) Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── Topic Introduction
 │   └── What Is SQL

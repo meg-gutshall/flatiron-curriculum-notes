@@ -1,7 +1,7 @@
 # Git and GitHub Curriculum Tree
 
 ```html
-Full Stack Web Development V7
+Software Engineering V7
 │
 ├── Using Git and GitHub
 │   ├── Introduction to Version Control
