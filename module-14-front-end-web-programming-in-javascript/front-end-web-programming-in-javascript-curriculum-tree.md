@@ -116,7 +116,7 @@ Software Engineering V8
 │   ├── Quiz: Reviewing JavaScript Inheritance
 │   ├────── Object Orientation in JavaScript: Class Extensions Super Lab
 │   └── Object Orientation in JavaScript: Liskov's Substitution Principle
-├── Section 11: Object Orientation in JavaScript: Prototypal Inheritance
+├── Section 12: Object Orientation in JavaScript: Prototypal Inheritance
 │   ├── Object Orientation in JavaScript: Intro to Prototypal Inheritance
 │   ├── Object Orientation in JavaScript: Constructor Functions
 │   │   └── Object Orientation in JavaScript: Constructor Functions Lab
