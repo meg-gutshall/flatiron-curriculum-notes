@@ -67,7 +67,7 @@ Software Engineering V8
 │   ├── Extracting a Service Class
 │   └── Using the Fast JSON API Gem
 │       └── Pokemon Teams Project
-├── Section 7: Formalizing JavaScript Data Types, Comparisons, and Conditionals
+├── Section 7: Formalizing JavaScript: Data Types, Comparisons, and Conditionals
 │   ├── JavaScript Fundamentals: Data Types
 │   ├── Quiz: JavaScript Data Types
 │   ├────── JavaScript Fundamentals: Arithmetic Lab
