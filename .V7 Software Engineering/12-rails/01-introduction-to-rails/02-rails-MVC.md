@@ -17,7 +17,7 @@
 
 ## Request Flow
 
-![Flatiron's request flow graphic](https://github.com/meg-gutshall/flatiron-curriculum-notes/blob/master/public/images/rails/mvc_flow_updated.png)
+![Flatiron's request flow graphic](/public/images/rails/mvc-flow.png)
 
 ## Roles and Responsibilities
 
