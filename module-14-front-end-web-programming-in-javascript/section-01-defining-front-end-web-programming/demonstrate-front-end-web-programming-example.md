@@ -36,4 +36,4 @@ To help us learn web programming in three distinct phases, this curriculum is br
 - Manipulate the DOM
 - Communicate with the server
 
-![The Three Pillars of Web Programming](/public/images/rails/the-three-pillars-of-web-programming.png)
+![The Three Pillars of Web Programming](/public/images/front-end-web-programming-in-javascript/the-three-pillars-of-web-programming.png)
