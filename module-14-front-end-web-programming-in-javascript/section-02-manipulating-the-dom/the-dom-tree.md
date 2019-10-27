@@ -62,7 +62,7 @@ We could find the `h5` element with `document.getElementById('greeting')`. Notic
 
 _**Note:** You can use either single (' ') or double (" ") quotes around the `id` within the `id` in `document.getElementById('yourIdGoesHere')`, as long as you use the same kind to open and close them._
 
-### `document.getElementByClassName()`
+### `document.getElementsByClassName()`
 
 This one is also very commonly used in DOM programming. This method finds elements by their `className`. Unlike the previous method, class names do not need to be unique, so this method returns an `HTMLCollection` of the elements with the given class. You can iterate over an `HTMLCollection` with a simple `for` loop.
 
@@ -86,11 +86,11 @@ Given the following DOM tree:
 </div>
 ```
 
-We could find all of the elements with the class name "banner" by calling `document.getElementByClassName("banner")`. We can use the `.length` property on the returned object to find out how many elements came back.
+We could find all of the elements with the class name "banner" by calling `document.getElementsByClassName("banner")`. We can use the `.length` property on the returned object to find out how many elements came back.
 
-If you recall the `for` loop syntax, you might try to write a loop which prints out the `innerHTML` property of every element in the collection. You might find doing so much easier if you save the results of `document.getElementByClassName()` to a variable: `var elements = document.getElementByClassName("yourClassNameHere")`.
+If you recall the `for` loop syntax, you might try to write a loop which prints out the `innerHTML` property of every element in the collection. You might find doing so much easier if you save the results of `document.getElementsByClassName()` to a variable: `var elements = document.getElementsByClassName("yourClassNameHere")`.
 
-### `document.getElementByTagName()`
+### `document.getElementsByTagName()`
 
 If you _don't_ know an element's `id` or `class`, but you _do_ know its tag name (the tag name is the thing between the `<>`, e.g., `div`, `h1`, `header`, `article`, etc.). Since tag names aren't unique, this method returns an `HTMLCollection` also.
 
@@ -125,7 +125,7 @@ How would we go about changing only the second "Hello!" to "Goodbye!"? We're goi
 Let's start by getting the `<main>` element:
 
 ```javascript
-const main = document.getElementByTagName("main")[0]
+const main = document.getElementsByTagName("main")[0]
 ```
 
 Then we can get the children of `main` using `main.children`; so we can get the second child with `main.children[1]`.
@@ -137,9 +137,9 @@ const div = main.children[1]
 We can get and update our `<p>` element with:
 
 ```javascript
-// We can call `getElementByTagName() on an element to constrain the search to its children!
+// We can call `getElementsByTagName() on an element to constrain the search to its children!
 
-const p = div.getElementByTagName("p")[0]
+const p = div.getElementsByTagName("p")[0]
 ```
 
 And lastly, we can change an attribute on the node:
