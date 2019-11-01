@@ -152,4 +152,4 @@ Obviously, this way of accessing that text isn't efficient and won't work on all
 
 ## Resources
 
-- [MDN — Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)
+- [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)

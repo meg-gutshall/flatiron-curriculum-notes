@@ -115,3 +115,6 @@ ul.remove();
 - [`removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
 - [`element.remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
 - [`classList` Property](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+- [`innerHTML` Property](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
+- [`innerText` HTML Property](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText)
+- [`innerContent` Node Property](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent)

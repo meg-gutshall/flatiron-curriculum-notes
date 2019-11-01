@@ -31,7 +31,7 @@ Like all object, `window` also has _methods_. We won't use them too much. We don
 As an _object_, `document` has _properties_:
 
 ```javascript
-document.URL //=> https://www.flatironschool.com
+document.URL // => https://www.flatironschool.com
 ```
 
 As an _object_, `document` also has _methods_:
@@ -45,5 +45,5 @@ The _methods_ and _properties_ that the DOM provides via its objects is called t
 
 ## Resources
 
-[CSS Tricks – What Is the DOM?](https://css-tricks.com/dom/)<br>
-[MDN – The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+- [What Is the DOM?](https://css-tricks.com/dom/)
+- [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)

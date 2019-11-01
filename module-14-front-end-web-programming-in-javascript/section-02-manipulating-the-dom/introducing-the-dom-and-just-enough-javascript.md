@@ -38,20 +38,20 @@ JavaScript has data types. One kind of data type is a `Number`, which can be who
 
 Sometimes you want to hold a `String` or a `Number` under another name. You can easily do this by going to your console and typing either `var`, `let`, or `const` followed by the name of your new variable, the equal sign (`=`), and the value you want to assign your new variable, closing it off with a semi-colon (`;`).
 
-**NOTE:** The `//=>` means "what JavaScript would return back."
+**NOTE:** The `// =>` means "what JavaScript would return back."
 
 ```javascript
-3.14; //=> 3.14
-var pi = 3.14; //=> 'undefined'
-pi; //=> 3.14
+3.14; // => 3.14
+var pi = 3.14; // => 'undefined'
+pi; // => 3.14
 
-3.14; //=> 3.14
-let pi = 3.14; //=> 'undefined'
-pi; //=> 3.14
+3.14; // => 3.14
+let pi = 3.14; // => 'undefined'
+pi; // => 3.14
 
-3.14; //=> 3.14
-const pi = 3.14; //=> 'undefined'
-pi; //=> 3.14
+3.14; // => 3.14
+const pi = 3.14; // => 'undefined'
+pi; // => 3.14
 ```
 
 ### Mathematic Operations Can Be Performed on Numbers
@@ -59,21 +59,21 @@ pi; //=> 3.14
 `Number` data types can be added, subtracted, multiplied, and divided. The results of these operations can be stored in variables.
 
 ```javascript
-1 + 1; //=> 2
-let result = 1 + 1; //=> 'undefined'
-result; //=> 2
-let pi = 3.14; //=> 'undefined'
-let radius = 2; //=> 'undefined'
-let circumference = pi * (radius * 2); //=> 'undefined'
-circumference; //=> 12.56
-10 / 4; //=> 2.5
+1 + 1; // => 2
+let result = 1 + 1; // => 'undefined'
+result; // => 2
+let pi = 3.14; // => 'undefined'
+let radius = 2; // => 'undefined'
+let circumference = pi * (radius * 2); // => 'undefined'
+circumference; // => 12.56
+10 / 4; // => 2.5
 ```
 
 JavaScript also has a symbol for finding the remainder when one `Number` is divided by another (`%`).
 
 ```javascript
-10 % 4 //=> 2
-13 % 5 //=> 3
+10 % 4 // => 2
+13 % 5 // => 3
 ```
 
 ### Strings Can Be Manipulated
@@ -82,54 +82,54 @@ Just as `Number` data types can be added together, it is possible to add `String
 
 ```javascript
 'Ya got trouble, folks, right here in ' + 'River City';
-//=> 'Ya got trouble, folks, right here in River City'
+// => 'Ya got trouble, folks, right here in River City'
 
 let poolTable = 'Trouble';
 poolTable + ' with a capital T';
-//=> 'Trouble with a capital T'
+// => 'Trouble with a capital T'
 ```
 
 Dynamically combining `String` data types and variables is very common in JavaScript, so much so that multiple methods exist for this purpose. One is called `concat`:
 
 ```javascript
 'And that rhymes with '.concat('P');
-//=> 'And that rhymes with P'
+// => 'And that rhymes with P'
 
 let lyric = 'And that stands for ';
 let trouble = 'pool!';
 lyric.concat(trouble);
-//=> 'And that stands for pool!'
+// => 'And that stands for pool!'
 ```
 
 You can also use [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). To use Template Literals in your `String` data types, you _must_ wrap the entire `String` in _backticks_, not quotation marks. Instead of using `+` to combine, a variable is wrapped in brackets preceded by a dollar sign, `${}`, then included _within_ the backticks. Inside these brackets, you can include variables or any other data types that can be converted into a `String`.
 
 ```javascript
 let pool = 'trouble';
-//=> 'undefined'
+// => 'undefined'
 
 `Ya got ${pool}, ${pool}, ${pool}, ${pool}, ${pool}...`;
-//=> 'Ya got trouble, trouble, trouble, trouble, trouble...'
+// => 'Ya got trouble, trouble, trouble, trouble, trouble...'
 
 `Adding two and two equals ${2 + 2}`;
-//=> 'Adding two and two equals 4'
+// => 'Adding two and two equals 4'
 ```
 
 ## JavaScript Can Compare Data Types
 
 ```javascript
-1 < 3; //=> true
-3 == 3; //=> true
-3 != 4; //=> true
-5 > 2; //=> true
+1 < 3; // => true
+3 == 3; // => true
+3 != 4; // => true
+5 > 2; // => true
 ```
 
 Be careful here! `=` means "assign to," like we just did with `var` above. For comparison we use `==` and `===`. We can build on our previous example:
 
 ```javascript
-3.14; //=> 3.14
-const pi = 3.14; //=> 'undefined'
-pi; //=> 3.14
-pi == 3.14; //=> true
+3.14; // => 3.14
+const pi = 3.14; // => 'undefined'
+pi; // => 3.14
+pi == 3.14; // => true
 ```
 
 ## JavaScript Has Conditionals
@@ -138,7 +138,7 @@ With the ability to compare data types, we can build logic into our code using `
 
 ```javascript
 let test = 1;
-test; //=> 1
+test; // => 1
 
 if (test < 2) {
   // Test is less than 2.
@@ -146,7 +146,7 @@ if (test < 2) {
   test = test + 1;
 }
 
-test; //=> 2
+test; // => 2
 
 if (test < 2) {
   // Test NOT is less than 2.
@@ -154,14 +154,14 @@ if (test < 2) {
   test = test + 1;
 }
 
-test; //=> 2
+test; // => 2
 ```
 
 The code inside an `if` statement's brackets will only be executed if the statement is `true`. We can expand our `if` statement to do one thing or another using `else`:
 
 ```javascript
 let test = 1;
-test; //=> 1
+test; // => 1
 
 if (test < 2) { // Test is less than 2.
   test = test + 1; // This code is executed.
@@ -169,7 +169,7 @@ if (test < 2) { // Test is less than 2.
   test = 0; // This code is ignored.
 }
 
-test; //=> 2
+test; // => 2
 
 if (test < 2) { // Test NOT is less than 2.
   test = test + 1; // This code is ignored.
@@ -177,7 +177,7 @@ if (test < 2) { // Test NOT is less than 2.
   test = 0; // This code is executed.
 }
 
-test; //=> 0
+test; // => 0
 ```
 
 ## JavaScript Has Collections
@@ -195,26 +195,26 @@ When talking to an `Object`, you can ask it for a bit of state by using a `.` an
 To ask a poodle its `name` state, you would do it like so:
 
 ```javascript
-poodle.name; ///=> "Byron"
+poodle.name; // => "Byron"
 ```
 
 If you ask an object for a property if doesn't have, JavaScript says `undefined`.
 
 ```javascript
-poodle.favoritePainter; ///=> undefined
+poodle.favoritePainter; // => undefined
 ```
 
 When asking an object to do something (a behavior), you use a `.` and a behavior-name (usually a verb) followed by `()`. Behaviors on objects are called methods.
 
 ```javascript
-poodle.bark(); //=> An ear-splitting bark is heard
+poodle.bark(); // => An ear-splitting bark is heard
 ```
 
 An `Object`'s methods have access to all of that `Object`'s properties.
 
 ```javascript
 poodle.introduceYourselfFormally();
-//=> "Hello, my name is Byron the poodle"
+// => "Hello, my name is Byron the poodle"
 ```
 
 In this case, the method `introduceYourselfFormally` presumably looks at `poodle`'s `name` property and adds some text around it. We might imagine that it's making `"Hello, my name is " + this.name + " the poodle"`. As it turns out, the is entirely valid JavaScript and it is probably what's happening!
@@ -222,15 +222,15 @@ In this case, the method `introduceYourselfFormally` presumably looks at `poodle
 Finally, methods can take arguments. Arguments change the method's operation.
 
 ```javascript
-poodle.eat(1); //=> "Byron eats 1 can of food"
-poodle.eat(1); //=> "Byron eats 2 cans of food"
+poodle.eat(1); // => "Byron eats 1 can of food"
+poodle.eat(2); // => "Byron eats 2 cans of food"
 ```
 
 `Methods` can take multiple arguments.
 
 ```javascript
 poodle.eyeEnviously('Shack Burger', '$', 9.57);
-//=> "Byron eyes your Shack Burger enviously, hoping you will drop some, not caring the least that it cost you $9.57."
+// => "Byron eyes your Shack Burger enviously, hoping you will drop some, not caring the least that it cost you $9.57."
 ```
 
 **A very important object when working with the DOM is called `document`.**

@@ -82,7 +82,7 @@ wrapGifts(gifts);
 
 Notice that we've just moved the initialization and iteration statements—declaring the `i` variable outside the loop and now incrementing it _inside_ the loop.
 
->**CAUTION:** When using `while` loops, it is easy to forget to involve iteration. Leaving iteration out can result in a condition that _always_ evaluates to `true`, causing an infinite loop!
+**CAUTION:** When using `while` loops, it is easy to forget to involve iteration. Leaving iteration out can result in a condition that _always_ evaluates to `true`, causing an infinite loop!
 
 Because of their design, `while` loops are sometimes used when we _want_ a loop to run an indeterminate amount of times. If we were pseudocoding out a program for planting a garden, we could use a `while` loop to organize the work.
 
@@ -123,7 +123,9 @@ Most of the time, a regular `for` loop will suffice. It's by far the most common
 
 ## Resources
 
-- [Codecademy — `for` loop](http://www.codecademy.com/glossary/javascript/loops#for-loops)
-- [Codecademy — `while` loop](http://www.codecademy.com/glossary/javascript/loops#while-loops)
-- [MDN — `for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-- [MDN — `while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+- Codecademy
+  - [`for` loop](http://www.codecademy.com/glossary/javascript/loops#for-loops)
+  - [`while` loop](http://www.codecademy.com/glossary/javascript/loops#while-loops)
+- MDN
+  - [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+  - [`while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)

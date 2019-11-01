@@ -26,21 +26,21 @@ Creating new variables in JavaScript is really a two-step process. First, we dec
 
 ```javascript
 var pi;
-//=> undefined
+// => undefined
 ```
 
 The JavaScript engine sets aside a chunk of memory to store the declared variable. Then, we assign a value to that variable:
 
 ```javascript
 pi = 3.14159;
-//=> 3.14159
+// => 3.14159
 ```
 
 We can package both of the initialization steps—declaration and assignment—in a single line of code:
 
 ```javascript
 var pi = 3.14159;
-//=> undefined
+// => undefined
 ```
 
 ### Multi-line Variable Assignment
@@ -79,7 +79,7 @@ To retrieve a declared variable, refer to its name:
 
 ```javascript
 pi;
-//=> 3.14159
+// => 3.14159
 ```
 
 ### Reassigning Variable Value
@@ -89,10 +89,10 @@ Changing the value of a variable in JavaScript works as follows:
 ```javascript
 var pi = 3.14159;
 pi;
-//=> 3.14159
+// => 3.14159
 pi = 3.14;
 pi;
-//=> 3.14
+// => 3.14
 ```
 
 ### Variable Values
@@ -101,16 +101,16 @@ Upon declaration, all variables are automatically assigned the value of `undefin
 
 ```javascript
 var language;
-//=> undefined
+// => undefined
 
 typeof language;
-//=> "undefined"
+// => "undefined"
 
 language = "JavaScript";
-//=> "JavaScript"
+// => "JavaScript"
 
 typeof language;
-//=> "string"
+// => "string"
 ```
 
 **_Top Tip:_** When writing JavaScript code, it's good practice to **_never_** set a variable equal to `undefined`. Variables will be `undefined` until we explicitly assign a value, so encountering an `undefined` variable is a strong signal that the variable was declared but not assigned prior to reference. That's valuable information that we can use while debugging, and it comes at no additional cost to us.
@@ -122,13 +122,13 @@ var pi = 3.14159;
 //-> undefined
 
 typeof pi;
-//=> "number"
+// => "number"
 
 pi = "the ratio between a circle's circumference and diameter";
-//=> "the ratio between a circle's circumference and diameter"
+// => "the ratio between a circle's circumference and diameter"
 
 typeof pi;
-//=> "string"
+// => "string"
 ```
 
 The data that's stored in our variable might change over time, but at any moment we can retrieve its current contents.
@@ -146,7 +146,7 @@ let pi = 3.14159;
 //-> undefined
 
 let pi = "the ratio between a circle's circumference and diameter";
-//=> Uncaught SyntaxError: Identifier 'pi' has already been declared
+// => Uncaught SyntaxError: Identifier 'pi' has already been declared
 ```
 
 Just like with `var`, we can still reassign a variable declared with `let`:
@@ -156,13 +156,13 @@ let pi = 3.14159;
 //-> undefined
 
 pi = "the ratio between a circle's circumference and diameter";
-//=> "the ratio between a circle's circumference and diameter"
+// => "the ratio between a circle's circumference and diameter"
 
 typeof pi;
-//=> "string"
+// => "string"
 ```
 
-## `const`
+### `const`
 
 Using `let` instead of `var` will help you avoid silly errors like declaring the same variable at two different places within your code, but there's an even better option to use as your default: `const`. Declaring a variable with the `const` reserved word means that not only can it not be redeclared but it also **_cannot be reassigned_**. This is a good thing for three reasons:
 
@@ -172,30 +172,30 @@ Using `let` instead of `var` will help you avoid silly errors like declaring the
 
 ```javascript
 const pi = 3.14159;
-//=> undefined
+// => undefined
 
 pi = 2.71828;
-//=> Uncaught TypeError: Assignment to constant variable.
+// => Uncaught TypeError: Assignment to constant variable.
 ```
 
 **_NOTE:_** With `let`, it's possible to declare a variable without assigning a value, just like `var`:
 
 ```javascript
 let pi;
-//=> undefined
+// => undefined
 
 pi = 3.14159;
-//=> 3.14159
+// => 3.14159
 ```
 
 However, because `const` doesn't allow reassignment after the variable is initialized, we **must** assign a value right away:
 
 ```javascript
 const pi;
-//=> Uncaught SyntaxError: Missing initializer in const declaration
+// => Uncaught SyntaxError: Missing initializer in const declaration
 
 const pi = 3.14159;
-//=> undefined
+// => undefined
 ```
 
 As your JavaScript powers increase with experience, you'll develop a more nuanced understanding of what to use where. However, now for, this is a good rule of thumb:
@@ -208,9 +208,9 @@ Best practice is to always declare variables with `const` and then, if you later
 
 ## Resources
 
-- [MDN — Language basics crash course: Variables](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#Variables)
+- [Language basics crash course: Variables](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#Variables)
 - [Valid JavaScript variable names in ECMAScript 6](https://mathiasbynens.be/notes/javascript-identifiers-es6)
-- [MDN — `var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
-- [MDN — `let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
-- [MDN — `const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+- [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
+- [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)
+- [`const`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 - [JavaScript ES6+: `var`, `let`, or `const`?](https://medium.com/javascript-scene/javascript-es6-var-let-or-const-ba58b8dcde75)

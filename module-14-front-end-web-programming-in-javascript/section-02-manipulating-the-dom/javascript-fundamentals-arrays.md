@@ -14,7 +14,7 @@ document.getElementById() => single element
 
 The first two methods' name hint, with the part **Elements** plural, that they can return multiple matches—a _collection_. This is a collection that we're going to call an `Array`.
 
->**NOTE:** These methods don't actually return an `Array`. An `HTMLCollection` is _actually_ what is returned from the first two methods. This is a major point of confusion in JavaScript! The `HTMLCollection` knows its length like an `Array` and we can iterate across it with a `for... in...` loop, but it's not _technically_ an `Array`. More on this later.
+**_NOTE:_** These methods don't actually return an `Array`. An `HTMLCollection` is _actually_ what is returned from the first two methods. This is a major point of confusion in JavaScript! The `HTMLCollection` knows its length like an `Array` and we can iterate across it with a `for... in...` loop, but it's not _technically_ an `Array`. More on this later.
 
 We can ask a DOM to give us a collection by asking it to do:
 
@@ -34,17 +34,17 @@ An `Array` is a list, with the items listed in a particular order, surrounded by
 
 ```javascript
 ["This", "is", "an", "array", "of", "strings."];
-//=> ["This", "is", "an", "array", "of", "strings."]
+// => ["This", "is", "an", "array", "of", "strings."]
 ```
 
 The _members_ or _elements_ in an array can be data of any type in JavaScript:
 
 ```javascript
 ["Hello, world!", 42, null, NaN];
-//=> ["Hello, world!", 42, null, NaN]
+// => ["Hello, world!", 42, null, NaN]
 ```
 
->**NOTE:** In some other languages arrays _cannot be of multiple types_. In C, C++, Java, and Swift are just a few languages in which you cannot mix types. JavaScript, Python, Ruby, and Lisp are some that permit this behavior.
+>In some other languages arrays _cannot be of multiple types_. In C, C++, Java, and Swift are just a few languages in which you cannot mix types. JavaScript, Python, Ruby, and Lisp are some that permit this behavior.
 
 Arrays are _ordered_, meaning that the elements in them will always appear in the same order. For example, the array `[1, 2, 3]` is different from the array `[3, 2, 1]`.
 
@@ -60,7 +60,7 @@ We can find out how many elements an array contains by checking the array's buil
 ```javascript
 const myArray = ["This", "array", "has", 5, "elements];
 myArray.length;
-//=> 5
+// => 5
 ```
 
 We defined the arrays above using the _array literal_ syntax—that is, we literally typed out the array that we wanted to create, square brackets and all. There are other ways to create new arrays, but they are only necessary for very rare circumstances. For now, we'll just use array literals.
@@ -75,13 +75,13 @@ Every element in an array is assigned a unique index value that corresponds to i
 const winningNumbers = [32, 9, 14, 33, 48, 5];
 
 winningNumbers[0];
-//=> 32
+// => 32
 
 winningNumbers[3];
-//=> 33
+// => 33
 ```
 
->**NOTE:** Most people just call it _bracket notation_ or the _bracket operator_, so don't worry too much about remembering the term _computed member access operator_.
+**_NOTE:_** Most people just call it _bracket notation_ or the _bracket operator_, so don't worry too much about remembering the term _computed member access operator_.
 
 How would we access the **last** element in our array?
 
@@ -89,10 +89,10 @@ How would we access the **last** element in our array?
 const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 alphabet.length
-//=> 26
+// => 26
 
 alphabet[alphabet.length - 1];
-//=> "z"
+// => "z"
 ```
 
 This is why it's called the _**computed** member access operator_. We put an expression (`alphabet.length - 1`) inside the square brackets, and the JavaScript engine _computed_ the value of that expression to determine which element we were trying to access.
@@ -109,10 +109,10 @@ With the `.push()` method, we can add elements to the end of an array.
 const superheroes = ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones"];
 
 superheroes.push("Wonder Woman");
-//=> 5
+// => 5
 
 superheroes;
-//=> ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones", "Wonder Woman"]
+// => ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones", "Wonder Woman"]
 ```
 
 We can also `.unshift()` elements onto the beginning of an array.
@@ -121,10 +121,10 @@ We can also `.unshift()` elements onto the beginning of an array.
 const cities = ["New York", "San Francisco"];
 
 cities.push("Los Angeles");
-//=> 3
+// => 3
 
 cities;
-//=> ["New York", "San Francisco", "Los Angeles"]
+// => ["New York", "San Francisco", "Los Angeles"]
 ```
 
 Notice the value returned by both methods is the `length` of the updated array.
@@ -173,10 +173,10 @@ The `.pop()` method removes the last element in an array, destructively updating
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.pop();
-//=> "Sun"
+// => "Sun"
 
 days;
-//=> ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+// => ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 ```
 
 The `.shift()` method removes the first element in an array, also mutating the original.
@@ -185,10 +185,10 @@ The `.shift()` method removes the first element in an array, also mutating the o
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.shift();
-//=> "Mon"
+// => "Mon"
 
 days;
-//=> ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+// => ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 ```
 
 Notice that the return value for the `.pop()` and `.shift()` methods is the element that was removed.
@@ -417,6 +417,6 @@ The cool thing about representing a game board like this is in how we can access
 
 ## Resources
 
-- [MDN — Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [MDN — `.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
-- [MDN — `.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+- [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [`.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+- [`.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
