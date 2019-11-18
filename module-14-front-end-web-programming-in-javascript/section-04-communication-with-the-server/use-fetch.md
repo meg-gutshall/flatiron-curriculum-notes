@@ -25,12 +25,12 @@ Here's the skeleton for using `fetch()`:
 
 ```javascript
 fetch("string representing a URL to a data source")
-.then(function(response) {
-  return response.json();
-})
-.then(function(json) {
-  // Use this data inside of `json` to do DOM manipulation
-})
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    // Use this data inside of `json` to do DOM manipulation
+  })
 ```
 
 ### `fetch()` Step-By-Step
@@ -43,9 +43,9 @@ Inside of the function, we do whatever processing we need, but at the end, we **
 
 The response has some basic functions on it for the most common data types. The most important ones are `.json()` and `.text()`.
 
-This callback function is usually only one line: returning the content from the response. What we return from this function will be used in the _next_ `.then()` function.
+This callback function is usually only one line: returning the content from the response. What we return from this function will be used in the _next_ `then()` function.
 
-Then next `.then()` function returns the content from the response. We can use that content inside of the callback function that's passed into the _next_ `.then()` function.
+Then next `then()` function returns the content from the response. We can use that content inside of the callback function that's passed into the _next_ `then()` function.
 
 Finally, we can use the data inside of `json` to do DOM manipulation.
 
@@ -71,12 +71,12 @@ Here's a completed example:
 
 ```javascript
 fetch("http://api.open-notify.org/astros.json")
-.then(function(response) {
-  return response.json();
-})
-.then(function(json) {
-  console.log(json)
-});
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(json) {
+    console.log(json)
+  });
 ```
 
 ## Working Around Backwards Compatibility Issues
