@@ -6,7 +6,7 @@ Every function in JavaScript has access to a _scope chain_, which includes refer
 
 For a function declared at the top level of our JavaScript file (meaning, not declared inside of another function), its outer scope is the _global scope_. That means it can access all of the variables and functions declared in the global scope. When that new function is invoked, it creates a new scope and **retains a reference to the _outer scope_ in which it was declared**. Inside the new function's body, in addition to variables and functions declared in that function, **we also have access to variables and functions declared in the outer scope**. Let's see that in action:
 
-```javascript
+```js
 const globalVar = 1;
 
 function firstFunc() {
@@ -33,7 +33,7 @@ We can think of JavaScript scopes as a nested system:
 
 All variables and functions declared in outer scopes are available in inner scopes via the scope chain. This can go on forever, with functions nested in functions nested in functions, each new level creating a new scope that can reference functions and variables declared in its outer scopes through the scope chain:
 
-```javascript
+```js
 const globalVar = 1;
 
 function firstFunc() {
@@ -68,7 +68,7 @@ Inside `secondFunc()`, `firstVar` is accessible via the outer scope, and `global
 
 Remember that when we declare a variable or a function, we provide a name that allows us to refer back to it:
 
-```javascript
+```js
 const myVar = "myVar refers to the variable that contains this string";
 //=> undefined
 
@@ -100,7 +100,7 @@ The second pass is the _execution phase_. The JavaScript engine again steps thro
 
 One of the engine's tasks is the process of matching identifiers to the corresponding values stored in memory. Let's walk through the following code:
 
-```javascript
+```js
 const myVar = 42;
 
 myVar;
@@ -113,7 +113,7 @@ During the execution phase, the value `42` is assigned to `myVar`. When the engi
 
 Let's look at an example. Remember, the engine will continue to move up the scope chain **only** if it can't find a matching identifier in the current scope. Because of this, we can actually use the same identifier to declare variables or functions in multiple scopes:
 
-```javascript
+```js
 const myVar = 42;
 
 function myFunc() {

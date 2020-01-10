@@ -6,7 +6,7 @@ In JavaScript, "hoisting" deals with how function and variable declarations get 
 
 Because the JavaScript engine reads a JavaScript file from top to bottom, it would make sense if we had to define a function before we invoked it:
 
-```javascript
+```js
 function myFunc() {
   return "Hello, world!";
 }
@@ -17,7 +17,7 @@ myFunc();
 
 However, we can invert those two steps and everything works fine:
 
-```javascript
+```js
 myFunc();
 
 function myFunc() {
@@ -28,7 +28,7 @@ function myFunc() {
 
 This reads as though we're invoking the function prior to declaring it, but we're forgetting about the two-phase nature of the JavaScript engine. During the compilation phase, the engine skips right over the invocation and stores the declared function in memory:
 
-```javascript
+```js
 // The engine ignores all function invocations during the compilation phase.
 myFunc();
 
@@ -40,7 +40,7 @@ function myFunc() {
 
 By the time the JavaScript engine reaches the execution phase, `myFunc()` has already been created in memory. The engine starts over at the top of the code and begins executing it line-by-line:
 
-```javascript
+```js
 // During the execution phase, the engine invokes myFunc(), which was already initialized during the compilation phase.
 myFunc();
 
@@ -61,7 +61,7 @@ We're going to look at some of the hoisting issues caused by `var` because you w
 
 Look at the following code:
 
-```javascript
+```js
 function myFunc() {
   console.log(hello);
 
@@ -75,7 +75,7 @@ myFunc();
 
 In JavaScript, hoisting only applies to variables _declarations_; not variables _assignments_. As a quick refresher on that terminology:
 
-```javascript
+```js
 // Declaration:
 let hello;
 
@@ -90,7 +90,7 @@ During the compilation phase, the JavaScript engine initializes the variable `he
 
 The variable will contain `undefined` until it's assigned a different value during the execution phase. Because of this odd behavior, you'll often see variable hoisting explained by taking some sample code...
 
-```javascript
+```js
 function myFunc() {
   console.log(hello);
 
@@ -100,7 +100,7 @@ function myFunc() {
 
 and rearranging it to better indicate the order of events.
 
-```javascript
+```js
 function myFunc() {
   var hello;
   
@@ -112,7 +112,7 @@ function myFunc() {
 
 When rearranged, it's clear that the variable it initialized as `undefined`, that is still contains `undefined` when it's logged out to the console, and that only after the logging event is it assigned the value of `"World!"`. However, armed with knowledge of what's going on under the surface (the distinct compilation and execution phases), we don't need to move the code around. When we invoke the following function, five things happen:
 
-```javascript
+```js
 function myFunc() {
   console.log(hello);
 
@@ -138,7 +138,7 @@ There are two ways to keep the JavaScript engine from "hoisting" your variables:
 
 1. If, for whatever reason, your current project requires that you use `var`, follow our rule for function declarations and declare everything at the **top** of its scope. For example, if you need to declare a variable within a function, declare it at the **top** of that function:
 
-    ```javascript
+    ```js
     // BAD
     function myBadFunc() {
       console.log("Just doing some other stuff before we get around to variable declarations.");
@@ -157,7 +157,7 @@ There are two ways to keep the JavaScript engine from "hoisting" your variables:
 
 Recommended:
 
-```javascript
+```js
 const myOtherVar = "Gotta assign a value for our beloved 'const'.";
 
 myOtherVar;
@@ -166,7 +166,7 @@ myOtherVar;
 
 Not recommended:
 
-```javascript
+```js
 myVar;
 
 let myVar = "Assignment is optional since we used 'let'.";

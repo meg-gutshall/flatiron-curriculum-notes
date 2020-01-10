@@ -23,7 +23,7 @@ The `typeof` operator gives us an idea of what data types we're dealing with. `t
 
 Some programming languages divide numbers up into integers, decimals, doubles, floats, and so on. They do this so that they can have higher _precision_ in their calculations. In a banking application or airplane wing engineering application we want our interest rate or the curve of the wing to be **_as accurate as possible_**. For good reason: we want to make sure we get paid of have a safe plane! When JavaScript was created, this level of precision was not thought to be a thing that would be needed, so JavaScript only has a single, all-encompassing `number` type:
 
-```javascript
+```js
 typeof 42;
 //=> "number"
 
@@ -41,7 +41,7 @@ typeof -Infinity;
 
 Strings are how we represent text in JavaScript. A string consists of a matching pair of `'single quotes'`, `"double quotes"`, or `` `backticks` `` with zero or more characters in between:
 
-```javascript
+```js
 typeof 'I am a string.';
 //=> "string"
 
@@ -54,7 +54,7 @@ typeof `Me three!`;
 
 Even empty strings are strings:
 
-```javascript
+```js
 typeof '';
 //=> "string"
 ```
@@ -63,7 +63,7 @@ typeof '';
 
 A boolean can only be one of two possible values: `true` or `false`. Booleans play a big role in `if` statements and looping in JavaScript.
 
-```javascript
+```js
 typeof true;
 //=> "boolean"
 
@@ -77,7 +77,7 @@ JavaScript objects are a collection of properties bound by curly braces (`{ }`),
 
 The properties can point to values of any data type—even other objects:
 
-```javascript
+```js
 {
   "name": "JavaScript",
   "createdBy": {
@@ -94,7 +94,7 @@ typeof {};
 
 From JavaScript's perspective, what we call "arrays" are just special cases of an object where the keys are all numbers. So while JavaScript has arrays like `let dogs = ["Byron", "Cubby", "Boo Radley", "Luca"]`, JavaScript really thinks that `typeof dogs` is `"object"`.
 
-```javascript
+```js
 let dogs = ["Byron", "Cubby", "Boo Radley", "Luca"];
 typeof dogs;
 //=> "object"
@@ -104,7 +104,7 @@ typeof dogs;
 
 The `null` data type represents an intentionally absent object. For example, is a piece of code returns an object when it successfully executes, we could have it return `null` in the event of an error. Confusingly, the `typeof` operator returns `"object"` when called with `null`:
 
-```javascript
+```js
 typeof null;
 //=> "object"
 ```
@@ -113,7 +113,7 @@ typeof null;
 
 The bane of many JavaScript developers, `undefined` is a bit of a misnomer. Instead of "not defined," it actually means something more like "not yet assigned a value."
 
-```javascript
+```js
 typeof undefined;
 //=> "undefined"
 
@@ -140,14 +140,14 @@ Six of seven JavaScript data types—everything except `Object`—are **primitiv
 
 Every programming language has its own rules governing the ways in which we can operate on data of a given type. For example, it's rather uncontroversial that numbers can be subtracted from other numbers...
 
-```javascript
+```js
 3 - 2;
 //=> 1
 ```
 
 ...and that strings can be added to other strings:
 
-```javascript
+```js
 'Hello' + ", " + `world!`;
 //=> "Hello, world!"
 ```
@@ -176,14 +176,14 @@ That seems like a good baseline. However, JavaScript is a little _too_ nice when
 
 Sometimes this makes _some_ sense:
 
-```javascript
+```js
 'High ' + 5 + '!';
 //=> "High 5!"
 ```
 
 ...to the [comical](https://www.destroyallsoftware.com/talks/wat):
 
-```javascript
+```js
 null ** 2; // null to the power of 2
 //=> 0
 
@@ -198,7 +198,7 @@ Why JavaScript returns a string when we ask it to add two empty objects is anyon
 
 Try to follow along with what's happening here:
 
-```javascript
+```js
 1 + 2 + 3 + 4 + 5;
 //=> 15
 

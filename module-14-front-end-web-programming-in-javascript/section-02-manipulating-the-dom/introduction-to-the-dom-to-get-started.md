@@ -21,7 +21,7 @@ The `window` variable points to an _object_ that represents Chrome's information
 
 In the `window`, JavaScript also tracks operating system browser information like:
 
-```javascript
+```js
 window.innerHeight;
 // returns the inner height of the browser window
 ```
@@ -30,13 +30,13 @@ Like all object, `window` also has _methods_. We won't use them too much. We don
 
 As an _object_, `document` has _properties_:
 
-```javascript
+```js
 document.URL //=> https://www.flatironschool.com
 ```
 
 As an _object_, `document` also has _methods_:
 
-```javascript
+```js
 document.write("Moof");
 // removes all existing DOM content and replaces it with "Moof"
 ```

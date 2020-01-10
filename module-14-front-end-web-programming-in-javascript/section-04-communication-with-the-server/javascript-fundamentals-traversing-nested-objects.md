@@ -6,7 +6,7 @@ When we're looking for occurrences of a word or concept in a book, we often turn
 
 Remember when we said the values in an Object can be _anything_? Well, like the lists in the index in the example above, the values in an Object **can also be other Objects**.
 
-```javascript
+```js
 const person = {
   name: "Eileen Gutshall",
   occupation: {
@@ -29,20 +29,20 @@ If you look closely, you can see that we've kind of seen this before when we loo
 
 How would you imagine we'd access the `yearsHeld` field?
 
-```javascript
+```js
 person.yearsHeld;
 ```
 
 We should see `undefined`. However, we can see that `yearsHeld` is a property of `occupation`, which in turn is a property of `person`. If we try `occupation.yearsHeld`, that will throw an error because `occupation` is not defined globally. It's only a property of `person`. Instead, let's try this:
 
-```javascript
+```js
 person.occupation;
 //=> { title: "Math Teacher", yearsHeld: 11 }
 ```
 
 Great! Now we're getting somewhere. Let's take it a step further:
 
-```javascript
+```js
 person.occupation.yearsHeld;
 //=> 11
 ```
@@ -55,7 +55,7 @@ Let's get a bit more abstract. In the above example, we had a name for each fiel
 
 Working with Arrays isn't all that different. It's just that instead of named properties of objects (and sub-objects), we have indexes of Arrays (and sub-arrays). And, of course, JavaScript is flexible enough that we can mix the two:
 
-```javascript
+```js
 const numberCollections = [1, [2, [4, [5, [6]], 3]]];
 // Get number 6
 
@@ -73,7 +73,7 @@ const numberCollections = [1, [2, [4, [5, [6]], 3]]];
 
 What is we have criteria for finding an element that we know is in a nested data structure? Let's implement a simple `find` function that takes two arguments: an Array (which can contain sub-arrays) and a function that returns `true` for the thing that we're looking for.
 
-```javascript
+```js
 function find(array, criteriaFn) {
   for (let i = 0; i < array.length; i++) {
     if (criteriaFn(array[i])) {
@@ -85,7 +85,7 @@ function find(array, criteriaFn) {
 
 **NOTE:** In JavaScript, functions are "first-class data", just like Numbers. In fact, writing functions that test a condition (also known as a "criteria function") is **_so_** common, JavaScript even has an advanced syntax for writing functions that do one evaluation and return the value: _the arrow function syntax_. The example code below would do something like find all the members in the array that are even.
 
-```javascript
+```js
 // Regular function syntax
 find([1, 2, ["a", "b"]], function(someNumber) { return someNumber % 2 === 0 })
 
@@ -95,7 +95,7 @@ find([1, 2, ["a", "b"]], someNumber => someNumber % 2 === 0 )
 
 The above will work for a flat Array, but what if `array` looks like the `numberCollections` nested array and we want to find the first element that's `>5`? We'll need some way to move down the levels of the Array (like we described above). Let's figure this out step-by-step:
 
-```javascript
+```js
 function find(array, criteriaFn) {
   // Step 1 below
   let current = array;

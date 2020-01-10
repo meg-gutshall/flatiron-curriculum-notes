@@ -12,19 +12,19 @@ We briefly touched on the syntax for an `Object` back in the data types lesson:
 
 We can have empty Objects:
 
-```javascript
+```js
 {};
 ```
 
 Or Objects can have a single _key-value_ pair:
 
-```javascript
+```js
 { key: value };
 ```
 
 When we have to represent multiple key-value pairs in the same Object (which is most of the time), we use commas to separate them out:
 
-```javascript
+```js
 {
   key1: value1,
   key2: value2
@@ -33,7 +33,7 @@ When we have to represent multiple key-value pairs in the same Object (which is 
 
 For a real example, let's see our address as an Object:
 
-```javascript
+```js
 const address = {
   street1: "11 Broadway",
   street2: "2nd Floor",
@@ -53,7 +53,7 @@ There are two ways to access values in an `Object`, one of which we already lear
 
 With _dot notation_, we use the _member access operator_ (a single period) to access values in an `Object`. For example, we can grab the individual pieces of our address as follows:
 
-```javascript
+```js
 address.street1;
 //=> "11 Broadway"
 
@@ -76,7 +76,7 @@ Dot notation is fantastic for readability, as we can just reference the bare key
 
 If we try to access the `country` property of our `address` Object, what will happen?
 
-```javascript
+```js
 address.country;
 //=> undefined
 ```
@@ -87,7 +87,7 @@ It returns `undefined` because there is no matching key on the Object. JavaScrip
 
 With _bracket notation_ we use the _computed member access operator_, which is a pair of square brackets (`[]`). To access the same properties as above, we need to represent them as strings inside the operator:
 
-```javascript
+```js
 address["street1"];
 //=> "11 Broadway"
 
@@ -110,7 +110,7 @@ Bracket notation is a bit harder to read than dot notation, so we always default
 
 If (for whatever reason) you need to use a nonstandard string as an Object's key, you'll only be able to access the properties with bracket notation. For example, the following is a valid Object:
 
-```javascript
+```js
 const wildKeys = {
   "Cash rules everything around me.": "Wu",
   "C.R.E.A.M.": "Tang",
@@ -133,14 +133,14 @@ If you follow those three rules, you'll be able to access all of an Object's pro
 
 The other situation in which bracket notation is required is if we want to dynamically access properties. Remember, we can place any expression inside our _computed member access operator_ and JavaScript will _compute_ its value to figure out which property to access. For example, we can access the `zipCode` property from our `address` Object like so:
 
-```javascript
+```js
 address[ "zip" + "Code"];
 //=> 10004
 ```
 
 However, the real strength of bracket notation lies in its ability to compute the value of variables on the fly. For example:
 
-```javascript
+```js
 const meals = {
   breakfast: "Oatmeal",
   lunch: "Caesar salad",
@@ -155,7 +155,7 @@ meals[mealName];
 
 If we try to use the `mealName` variable with dot notation, it doesn't work:
 
-```javascript
+```js
 mealName = "dinner";
 //=> "dinner"
 
@@ -167,7 +167,7 @@ With dot notation, JavaScript doesn't treat `mealName` as a variable—it checks
 
 The need for bracket notation doesn't stop at dynamically setting properties on an already-created Object. We can also use bracket notation to dynamically set properties _during the creation of a new Object_. For example:
 
-```javascript
+```js
 const morningMeal = "breakfast";
 const middayMeal = "lunch";
 const eveningMeal = "dinner";
@@ -184,7 +184,7 @@ meals;
 
 Let's try doing the same without square brackets:
 
-```javascript
+```js
 const morningMeal = "breakfast";
 const middayMeal = "lunch";
 const eveningMeal = "dinner";
@@ -205,7 +205,7 @@ Without the square brackets, JavaScript treated each key as a literal identifier
 
 To add properties to an `Object`, we can use either dot notation or bracket notation:
 
-```javascript
+```js
 const circle = {};
 
 circle.radius = 5;
@@ -224,7 +224,7 @@ circle;
 
 Multiple properties can have the same value:
 
-```javascript
+```js
 const meals = {
   breakfast: "Avocado toast",
   lunch: "Avocado toast",
@@ -240,7 +240,7 @@ meals.dinner;
 
 But keys must be unique. If the same key is used for multiple properties, only the final value will be retained. The rest will be overwritten:
 
-```javascript
+```js
 const meals = {
   breakfast: "Avocado toast",
   breakfast: "Oatmeal",
@@ -253,7 +253,7 @@ meals;
 
 We can update or overwrite existing properties by assigning a new value to an existing key:
 
-```javascript
+```js
 const mondayMenu = {
   cheesePlate: {
     soft: "Chèvre",
@@ -276,7 +276,7 @@ Note that modifying an Object's properties in the way we did above is _destructi
 
 We can create a method that accepts the old menu and the proposed change:
 
-```javascript
+```js
 function nondestructivelyUpdateObject(obj, key, value) {
   // Code to return new, updated menu object
 }
@@ -284,7 +284,7 @@ function nondestructivelyUpdateObject(obj, key, value) {
 
 Then, with the _spread operator_, we can copy all of the old menu Object's properties into a new Object:
 
-```javascript
+```js
 function nondestructivelyUpdateObject(obj, key, value) {
   const newObj = { ...obj };
 
@@ -294,7 +294,7 @@ function nondestructivelyUpdateObject(obj, key, value) {
 
 And finally, we can update the new menu Object with the proposed change and return the updated menu:
 
-```javascript
+```js
 function nondestructivelyUpdateObject(obj, key, value) {
   const newObj = { ...obj };
   
@@ -320,13 +320,13 @@ Anyway, back to nondestructively returning Objects. We've got our code written, 
 
 JavaScript provides us access to a global `Object` of data type `Object` that has a bunch of helpful methods we can use. One of those methods is `Object.assign()`, which allows us to combine properties from multiple `Object` instances into a single `Object`. The first argument passed to `Object.assign()` is the initial `Object` into which all properties are merged. Every additional argument is an `Object` whose properties we want to merge into the first `Object`:
 
-```javascript
+```js
 Object.assign(initialObject, additionalObject, additionalObject, ...);
 ```
 
 The return value of `Object.assign()` is the initial `Object` after the properties of each additional `Object` have been merged in. Here's an example:
 
-```javascript
+```js
 Object.assign({ eggs: 3 }, { flour: "1 cup" });
 //=> { eggs: 3, flour: "1 cup" }
 
@@ -336,7 +336,7 @@ Object.assign({ eggs: 3 }, { chocolateChips: "1 cups", flour: "2 cups" }, { flou
 
 Pay attention to the `flour` property in the above example. **If multiple Objects have a property with the same key, the last key to be defined wins out.** Essentially, the last call to `Object.assign()` in the above snippet is wrapping all of the following assignments into a single line of code:
 
-```javascript
+```js
 const recipe = { eggs: 3 };
 
 recipe.chocolateChips = "1 cup";
@@ -348,7 +348,7 @@ recipe.flour = "1/2 cup";
 
 A common pattern for `Object.assign()` is to provide an empty Object as the first argument. That way we're composing an entirely new Object instead of modifying or overwriting the properties of an existing Object. This pattern allows us to rewrite the above `destructivelyUpdateObject()` function in a nondestructive way:
 
-```javascript
+```js
 function nondestructivelyUpdateObject(obj, key, value) {
   return Object.assign({}, obj, { [key]: value });
 }
@@ -369,7 +369,7 @@ It's important that we merge everything into a new, empty Object. Otherwise, we 
 
 Let's write a function for our restaurant that accepts an old menu and some changes we want to make and returns a new menu **without modifying the old menu**:
 
-```javascript
+```js
 function createNewMenu(oldMenu, menuChanges) {
   return Object.assign({}, oldMenu, menuChanges);
 }
@@ -404,7 +404,7 @@ tuesdayMenu;
 
 For deep cloning, we need to use other alternatives because `Object.assign()` copies property values. For example, if `newOfferings` did not have an updated value for `hard` cheese such as:
 
-```javascript
+```js
 const newOfferings = {
   cheesePlate: {
     soft: 'Brie',
@@ -416,7 +416,7 @@ const newOfferings = {
 
 Our output for `const wednesdayMenu = createNewMenu(tuesdayMenu, newOfferings);` would look like this:
 
-```javascript
+```js
 wednesdayMenu;
 //=> { cheesePlate: { soft: "Brie", semiSoft: "Fontina" }, fries: "Sweet potato", salad: "Southwestern" }
 ```
@@ -427,7 +427,7 @@ Instead of the desired outcome we saw above.
 
 Another convenience method available on the global `Object` of data type `Object` is `Object.keys()`. When an `Object` is passed as an argument to `Object.keys()`, the return value is an `Array` containing all of the keys at the top level of the `Object`:
 
-```javascript
+```js
 const wednesdayMenu = {
   cheesePlate: {
     soft: "Brie",
@@ -450,7 +450,7 @@ Notice that it didn't pick up the keys in the nested `cheesePlate` Object, just 
 
 We just ran out of Southwestern dressing, so we have to take the salad off the menu. In JavaScript, that's as easy as:
 
-```javascript
+```js
 const wednesdayMenu = {
   cheesePlate: {
     soft: "Brie",
@@ -474,14 +474,14 @@ We pass the property that we'd like to remove to the `delete` operator, and Java
 
 Remember an earlier lesson where we discussed the fundamental data types in JavaScript. We listed off seven types into which all data falls: `Number`, `String`, `Boolean`, `Symbol`, `Object`, `null`, and `undefined`. Why isn't an `Array` a fundamental data type in JavaScript? The answer is that it's _actually_ a special type of `Object`. Yes, that's right: **Arrays are Objects**. To underscore this point, check out what the `typeof` operator returns when we use it on an `Array`:
 
-```javascript
+```js
 typeof [];
 //=> "object"
 ```
 
 We can set properties on an `Array` just like a regular `Object`:
 
-```javascript
+```js
 const myArray = [];
 
 myArray.summary = "Empty array!";
@@ -492,7 +492,7 @@ myArray;
 
 And we can modify and access those properties too:
 
-```javascript
+```js
 myArray["summary"] = "This array is totally empty.";
 
 myArray;
@@ -504,7 +504,7 @@ myArray.summary;
 
 In fact, _everything_ we just learned how to do to `Object` data types can also be done to an `Array` because **Arrays are Objects**; just special ones. To see the special stuff, let's `.push()` some values into our Array:
 
-```javascript
+```js
 myArray.push(2, 3, 5, 7);
 //=> 4
 
@@ -527,7 +527,7 @@ You see, one of the "special" features of an `Array` is that **its Array-style e
 
 This brings up an interesting question: if we add a new property to an `Array` that has a key of `0`, how does the JavaScript engine know whether it should be an Object-style property or an Array-style element?
 
-```javascript
+```js
 const myArray = [];
 
 myArray[0] = "Will this be an `Object` property or an `Array` element?";
@@ -539,7 +539,7 @@ myArray.length;
 
 JavaScript used that assignment operation to add a new Array-style element. What happens if we enclose the integer in quotation marks, turning it into a string?
 
-```javascript
+```js
 myArray["0"] = "What about this one?";
 //=> "What about this one?"
 
@@ -552,7 +552,7 @@ myArray;
 
 This is hitting on a fundamental truth: **all keys in Objects and indexes in Arrays are actually strings**. In `myArray[0]` we're using the integer `0`, but under the hood the JavaScript engine automatically converts that to the string `"0"`. When we access elements or properties of an `Array`, the engine routes all integers and integers masquerading as strings to the Array's special list of elements, and it treats everything else as a simple `Object` property. For example:
 
-```javascript
+```js
 const myArray = [2, 3, 5, 7];
 
 myArray["1"] = "Hi";
@@ -576,14 +576,14 @@ myArray["01"];
 
 After adding our `"01"` property, the `.length` property still returns `4`:
 
-```javascript
+```js
 myArray.length;
 //=> 4
 ```
 
 So it would stand to reason that `Object.keys()` would only return `"01"`, right?
 
-```javascript
+```js
 Object.keys(myArray);
 //=> ["0", "1", "2", "3", "01"]
 ```

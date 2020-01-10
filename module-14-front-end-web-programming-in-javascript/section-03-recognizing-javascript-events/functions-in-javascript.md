@@ -12,7 +12,7 @@ Functions combine series of steps under a new name. That's why they're _abstract
 
 Let's describe a series of single, non-abstract tasks:
 
-```javascript
+```js
 console.log("Wake Byron the poodle");
 console.log("Leash Byron the poodle");
 console.log("Walk to the park with Byron the poodle");
@@ -23,7 +23,7 @@ console.log("Unleash Byron the poodle");
 
 To abstract these single action into a collective name, we do:
 
-```javascript
+```js
 function exerciseByronThePoodle() {
   console.log("Wake Byron the poodle");
   console.log("Leash Byron the poodle");
@@ -48,7 +48,7 @@ Let's make `exerciseByronThePoodle()` more general. Looking at the `console.log(
 
 Let's use string interpolation to generalize the body of our function.
 
-```javascript
+```js
 function exerciseByronThePoodle() {
   let dogName = "Byron";
   let dogBreed = "poodle";
@@ -65,7 +65,7 @@ If we call this function, we'll get to same result as the original `exerciseByro
 
 That's the purpose of _parameters_. Parameters are locally-scoped variables that are usable ("scoped") to inside the function. In our example, our variables `dogName` and `dogBreed` should become parameters. They're defined inside of the function declaration's `()`, like so:
 
-```javascript
+```js
 function exerciseDog(dogName, dogBreed) {
   ...
 }
@@ -73,13 +73,13 @@ function exerciseDog(dogName, dogBreed) {
 
 JavaScript will assign the _arguments_ of "Byron" and "poodle" to the parameters `dogName` and `dogBreed` when this function is called.
 
-```javascript
+```js
 function exerciseDog("Byron", "poodle");
 ```
 
 The full function declaration for `exerciseDog` is:
 
-```javascript
+```js
 function exerciseDog(dogName, dogBreed) {
   console.log(`Wake ${dogName} the ${dogBreed}`);
   console.log(`Leash ${dogName} the ${dogBreed}`);
@@ -96,7 +96,7 @@ If expected arguments aren't given, the parameters won't be set. The parameters'
 
 We can assign default arguments to our parameters. While it's not as attention-grabbing as a real error, it's a helpful signal that we've run off the rails.
 
-```javascript
+```js
 function exerciseDog(dogName = "ERROR the Broken Dog", dogBreed = "Sick Puppy") {
   ...
 }
@@ -106,7 +106,7 @@ function exerciseDog(dogName = "ERROR the Broken Dog", dogBreed = "Sick Puppy") 
 
 Sometimes it's helpful to send something _back_ to the place where the function was called, kind of like a "summary" of what happened in the function.
 
-```javascript
+```js
 let weatherToday = "Rainy";
 
 function exerciseDog(dogName, dogBreed) {
@@ -133,7 +133,7 @@ When a function is called in JavaScript and encounters a `return` statement, it 
 
 JavaScript functions are defined:
 
-```javascript
+```js
 function functionName(argument1, argument2, argument3) {
   body code goes here
 }

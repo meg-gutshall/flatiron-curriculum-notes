@@ -6,7 +6,7 @@ A _data structure_ is a means for associating and organizing information. Outsid
 
 We know that `getElementById()` returns a **singular** element, whereas `getElementsByClassName()` and `getElementsByTagName()` return **all elements** that match the tag or class name.
 
-```javascript
+```js
 document.getElementsByClassName() => [...multiple elements...]
 document.getElementsByTagName() => [...multiple elements...]
 document.getElementById() => single element
@@ -18,13 +18,13 @@ The first two methods' name hint, with the part **Elements** plural, that they c
 
 We can ask a DOM to give us a collection by asking it to do:
 
-```javascript
+```js
 document.getElementsByTagName("p")
 ```
 
 We can get a single member of a collection by providing an element number or, _index_ `[]`, after the collection. This is done as follows:
 
-```javascript
+```js
 document.getElementsByTagName("main")[0]
 ```
 
@@ -32,14 +32,14 @@ document.getElementsByTagName("main")[0]
 
 An `Array` is a list, with the items listed in a particular order, surrounded by square brackets (`[]`):
 
-```javascript
+```js
 ["This", "is", "an", "array", "of", "strings."];
 //=> ["This", "is", "an", "array", "of", "strings."]
 ```
 
 The _members_ or _elements_ in an array can be data of any type in JavaScript:
 
-```javascript
+```js
 ["Hello, world!", 42, null, NaN];
 //=> ["Hello, world!", 42, null, NaN]
 ```
@@ -50,14 +50,14 @@ Arrays are _ordered_, meaning that the elements in them will always appear in th
 
 Just like any other type of JavaScript data, we can assign an `Array` to a variable:
 
-```javascript
+```js
 const primeNumbers = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37];
 const tvShows = ["Game of Thrones", "True Detective", "The Good Wife", "Empire"];
 ```
 
 We can find out how many elements an array contains by checking the array's built-in `length` property:
 
-```javascript
+```js
 const myArray = ["This", "array", "has", 5, "elements];
 myArray.length;
 //=> 5
@@ -71,7 +71,7 @@ Arrays provide organization, and we only have to remember _one_ identifier (the 
 
 Every element in an array is assigned a unique index value that corresponds to its place within the collection. The first element in the array is at index `0` and it increments from there. To access an element, we use the _computed member access operator_, aka "square brackets."
 
-```javascript
+```js
 const winningNumbers = [32, 9, 14, 33, 48, 5];
 
 winningNumbers[0];
@@ -85,7 +85,7 @@ winningNumbers[3];
 
 How would we access the **last** element in our array?
 
-```javascript
+```js
 const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 alphabet.length
@@ -105,7 +105,7 @@ JavaScript allows us to manipulate the members in an array in a number of ways.
 
 With the `.push()` method, we can add elements to the end of an array.
 
-```javascript
+```js
 const superheroes = ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones"];
 
 superheroes.push("Wonder Woman");
@@ -117,7 +117,7 @@ superheroes;
 
 We can also `.unshift()` elements onto the beginning of an array.
 
-```javascript
+```js
 const cities = ["New York", "San Francisco"];
 
 cities.push("Los Angeles");
@@ -137,7 +137,7 @@ Both `.push()` and `.unshift()` update or _mutate_ the original array, adding el
 
 ES2015 introduced the _spread operator_, which looks like an ellipsis (`...`). The spread operator allows us to spread out the contents of an existing array into a new array, adding new elements while at the same time preserving the original.
 
-```javascript
+```js
 const coolCities = ["New York", "San Francisco"];
 const allCities = ["Los Angeles", ...coolCities];
 
@@ -150,7 +150,7 @@ allCities;
 
 We created a new array instead of modifying the original one—our `coolCities` array was untouched. We can also use the spread operator to add a new item to the end of an array without modifying the original.
 
-```javascript
+```js
 const coolCats = ["Hobbes", "Felix", "Tom"];
 const allCats = [...coolCats, "Garfield"];
 
@@ -169,7 +169,7 @@ As compliments for `.push()` and `.unshift()`, respectively, we have `.pop()` an
 
 The `.pop()` method removes the last element in an array, destructively updating the original array.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.pop();
@@ -181,7 +181,7 @@ days;
 
 The `.shift()` method removes the first element in an array, also mutating the original.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.shift();
@@ -201,7 +201,7 @@ To remove elements from an array nondestructively, we can use the `.slice()` met
 
 If we don't provide any arguments, `.slice()` will return a copy of the original array with all elements intact.
 
-```javascript
+```js
 const primes = [2, 3, 5, 7];
 const copyOfPrimes = primes.slice();
 
@@ -218,7 +218,7 @@ Note that the array returned by `.slice()` has the same elements as the original
 
 We can provide two arguments to `.slice()`: the index where the slice should begin and the index **before which** it should end.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(2, 5);
@@ -227,7 +227,7 @@ days.slice(2, 5);
 
 If no second argument is provided, the slice will run from the index specified bt the first argument to the end of the array.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(5);
@@ -236,7 +236,7 @@ days.slice(5);
 
 To remove the first element and return a new array, we call `.slice(1)`.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(1);
@@ -245,7 +245,7 @@ days.slice(1);
 
 And we can remove the last element in a way that will look familiar from earlier in this lesson.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(0, days.length - 1);
@@ -254,7 +254,7 @@ days.slice(0, days.length - 1);
 
 In fact, `.slice()` provides an easier syntax for grabbing the last element in an array.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(-1);
@@ -272,13 +272,13 @@ While `.slice()` allows us to return a piece of an array without mutating the or
 
 #### With a Single Argument
 
-```javascript
+```js
 array.splice(start)
 ```
 
 The first argument expected by `.splice()` is the index at which to begin the splice. If we only provide one argument, `.splice()` will destructively remove a chunk of the original array beginning at the provided index and continuing to the end of the array.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.splice(2);
@@ -290,7 +290,7 @@ days;
 
 Notice that `.splice()` returns the removed chunk and leaves the remaining elements in the original array. With a negative start index, the opposite happens.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.splice(-2);
@@ -302,13 +302,13 @@ days;
 
 #### With Two Arguments
 
-```javascript
+```js
 array.splice(start, deleteCount)
 ```
 
 When we provide two arguments to `.splice()`, the first is still the index at which to begin splicing, and the second dictates how many elements we want to remove from the array.
 
-```javascript
+```js
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 // Remove `3` elements, starting with the element at index `2`
@@ -324,13 +324,13 @@ days;
 
 ### `.splice()` with 3+ Arguments
 
-```javascript
+```js
 array.splice(start, deleteCount, item1, item2, ...)
 ```
 
 After the first two, every additional argument passed to `.splice()` will be inserted into the array at the position indicated by the first argument. We can replace a single element in an array as follows, discarding a card and drawing a new one:
 
-```javascript
+```js
 const cards = ["Ace of Spades", "Jack of Clubs", "Nine of Clubs", "Nine of Diamonds", "Three of Hearts"];
 
 cards.splice(2, 1, "Ace of Clubs");
@@ -342,7 +342,7 @@ cards;
 
 Or we can remove two elements and insert three new ones as our restaurant expands its vegetarian options:
 
-```javascript
+```js
 const menu = ["Jalapeño Poppers", "Cheeseburger", "Fish and Chips", "French Fries", "Onion Rings"];
 
 menu.splice(1, 2, "Veggie Burger", "House Salad", "Teriyaki Tofu");
@@ -354,7 +354,7 @@ menu;
 
 We aren't required to remove anything with `.splice()`—we can use it to insert elements anywhere within an array. Here we're adding new books to our library in alphabetical order:
 
-```javascript
+```js
 const books = ["Bleak House", "David Copperfield", "Our Mutual Friend"];
 
 books.splice(2, 0, "Great Expectations", "Oliver Twist");
@@ -370,7 +370,7 @@ Notice that `.splice()` returns an empty array when we provide a second argument
 
 If we only need to replace a single elements in an array, there's a simpler solution than `.splice()`.
 
-```javascript
+```js
 const cards = ["Ace of Spades", "Jack of Clubs", "Nine of Clubs", "Nine of Diamonds", "Three of Hearts"];
 
 cards[2] = "Ace of Clubs";
@@ -386,7 +386,7 @@ However, using that computed member access operator (`[]`) is still _destructive
 
 Combining `.slice()` and the spread operator allows us to replace elements _nondestructively_, leaving the original array unharmed.
 
-```javascript
+```js
 const menu = ["Jalapeño Poppers", "Cheeseburger", "Fish and Chips", "French Fries", "Onion Rings"];
 
 const newMenu = [...menu.slice(0, 1), "Veggie Burger", "House Salad", "Teriyaki Tofu", ...menu.slice(3)];
@@ -402,7 +402,7 @@ newMenu;
 
 An array can contain elements of **any** data type, including **other arrays**. In general, try to keep your arrays to no more than two levels deep. Two levels is perfect for representing two-dimensional things like a tic-tac-toe board:
 
-```javascript
+```js
 const board = [
   ["X", "O", " "],
   [" ", "X", "O"],

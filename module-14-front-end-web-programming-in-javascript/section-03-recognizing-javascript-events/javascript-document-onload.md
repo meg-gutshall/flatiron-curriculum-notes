@@ -15,7 +15,7 @@ We need to make sure to wait until _after_ the `DOMContentLoaded` event is trigg
 
 As always, `addEventListener` takes a `String` with the name of the event and a callback function.
 
-```javascript
+```js
 document.addEventListener("DOMContentLoaded", function() {
   console.log("The DOM has loaded");
 });

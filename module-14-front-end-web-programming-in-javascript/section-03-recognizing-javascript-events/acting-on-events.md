@@ -6,6 +6,6 @@ One way to "act on an event" in JavaScript is to move elements on a page in resp
 
 We can access the `style` property of an element by calling `.style` followed by the CSS style property.
 
-```javascript
+```js
 element.style.property;
 ```

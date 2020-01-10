@@ -6,7 +6,7 @@
 
 Creating an element in JavaScript is an easy process. Simply call `document.createElement("tagName")`, where `tagName` is the name of any valid HTML tag.
 
-```javascript
+```js
 let element = document.createElement("div");
 ```
 
@@ -18,13 +18,13 @@ To get an element to appear in the DOM, we have to `append` it to an existing DO
 
 Let's append `element` to `body` to start.
 
-```javascript
+```js
 document.body.appendChild(element);
 ```
 
 We can continue to update `element` since we have reference to it.
 
-```javascript
+```js
 let ul = document.createElement("ul");
 
 for (let i = 0; i < 3; i++) {
@@ -42,14 +42,14 @@ Creating elements and then appending them into the DOM is a multi-step process. 
 
 That said, there's another route which is commonly used: `Element.innerHTML`. If you can get a node with `getElementById` or `querySelector` or any of the modes you've learned thus far, you can imagine that you have that node's opening and closing HTML tag. You can update the node's `innerHTML` property with a string of HTML and it will be _just as if_ you changed the HTML source for that node.
 
-```javascript
+```js
 let element = document.querySelector("p#greeting");
 element.innerHTML = "Hello, DOM!"
 ```
 
 There are dangers with using `innerHTML`, however. If you put user-driven data into the DOM using `innerHTML`, someone could do something nasty. Consider the following code:
 
-```javascript
+```js
 content = someTextArea.value;
 node.innerHTML = `Hi, ${content}!`;
 ```
@@ -66,20 +66,20 @@ While you're not familiar with events (_yet!_), it should be clear that `doSomet
 
 We can change properties on DOM nodes to change their appearance.
 
-```javascript
+```js
 element.style.backgroundColor = "#27647B";
 ```
 
 Perhaps the most common way to change how things appear in the DOM is by changing an element's `class` attribute. As you know from CSS, we often change the way a bit of rendered HTML appears by changing its `class` attribute: adding a name or removing a name. It's very common, therefore, to grab an element with JavaScript and update its `className` property—which is the same as setting the `class` property in the HTML. The `className` property expects a `String` where each class name is separated by a space.
 
-```javascript
+```js
 element.className = "dog"
 element.className = "pet-listing dog"
 ```
 
 Sometimes it's easier to add classes programmatically instead of creating a long string first. JavaScript makes this friendly by having elements provide a `classList` [property](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) which has `.add()` and `.remove()` methods. So provided the CSS rules for `.this-is-fine` and `.the-room-is-on-fire` exist, you could change the display of `element` like so:
 
-```javascript
+```js
 element.classList.remove("this-is-fine");
 element.classList.add("the-room-is-on-fire");
 ```
@@ -96,7 +96,7 @@ Why go through the trouble of defining appearance in a stylesheet which is appli
 
 Let's really use the power of `querySelector` and method chaining. The `removeChild()` method requires us to find a parent and tell it to remove its already-found child.
 
-```javascript
+```js
 ul.removeChild(ul.querySelector("li:nth-child(2)"));
 ```
 
@@ -104,7 +104,7 @@ ul.removeChild(ul.querySelector("li:nth-child(2)"));
 
 We can just call `remove()` on the element itself as well.
 
-```javascript
+```js
 ul.remove();
 ```
 

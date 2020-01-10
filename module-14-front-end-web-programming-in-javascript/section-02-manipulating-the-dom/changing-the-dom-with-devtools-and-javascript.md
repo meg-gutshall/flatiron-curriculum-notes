@@ -22,7 +22,7 @@ Since `document` is an `object`, which means that it has properties and `methods
 
 In the **Console** type:
 
-```javascript
+```js
 document.querySelector('header')
 ```
 
@@ -32,7 +32,7 @@ This will return something like this: `<header class="site-header">...</header>`
 
 Now type:
 
-```javascript
+```js
 document.querySelector('header').remove()
 ```
 

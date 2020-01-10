@@ -16,7 +16,7 @@ Up to this point, almost all of the JavaScript code we've written has lived in t
 
 Here's what that looks like in JavaScript:
 
-```javascript
+```js
 // `myFunc` is declared in the global scope and available everywhere in your code
 function myFunc() {
   return 42;
@@ -39,7 +39,7 @@ myVar;
 
 When we declare a new function and write some code in the function body, we're no longer in the global execution context. The function creates a new execution context with its own scope. Inside the function body, we can reference variables and functions declared in the function's scope.
 
-```javascript
+```js
 function myFunc() {
   const myVar = 42;
 
@@ -53,7 +53,7 @@ myFunc();
 
 However, from outside the function, we can't reference anything declared inside of it.
 
-```javascript
+```js
 function myFunc() {
   const myVar = 42;
 }
@@ -69,7 +69,7 @@ A block statement also creates its own scope... kind of. As of ES2015, JavaScrip
 
 Variables declared with `var` are **not** block-scoped.
 
-```javascript
+```js
 if (true) {
   var myVar = 42;
 }
@@ -80,7 +80,7 @@ myVar;
 
 However, variables created with `const` and `let` **are** block-scoped.
 
-```javascript
+```js
 if (true) {
   const myVar = 42;
 
@@ -100,7 +100,7 @@ This is yet another reason to **never use** `var`. As long as you stick to decla
 
 In a perfect world, you'd always remember to declare new variables with `const` and `let` and you'd never run into any scoping issues. However, it's inevitable that at some point, you're going to forget the `const` or `let` and accidentally do something like:
 
-```javascript
+```js
 firstName = "Ada";
 ```
 

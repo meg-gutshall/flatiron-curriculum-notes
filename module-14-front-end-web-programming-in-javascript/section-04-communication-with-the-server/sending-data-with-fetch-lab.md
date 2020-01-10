@@ -56,7 +56,7 @@ We should expect that our "mini-browser" `fetch()` will need those same bits of 
 
 Sending a POST request with `fetch()` is more complicated than what we've seen up to this point. It still takes a URL in the form of a String as the first argument, but as we will see below, `fetch()` can also take a JavaScript Object as the _second_ argument. This Object can be given certain [properties](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch#Parameters) with certain values in order to change the default behavior for `fetch()`.
 
-```javascript
+```js
 fetch(destinationURL, configurationObject);
 ```
 
@@ -66,7 +66,7 @@ The `configurationObject` contains three core components that are needed for sta
 
 So far, comparing to an HTML form, we've only got the destination URL. The next thing we need is to include the HTTP verb. By default, the verb is GET, which is why we can send simple GET requests with _only_ a destination URL. To tell `fetch()` that this is a POST request, we need to add a `method` key to our `configurationObject`:
 
-```javascript
+```js
 configurationObject = {
   method: "POST"
 };
@@ -78,7 +78,7 @@ The second piece we need to include is some _metadata_ about the actual data we 
 
 One very common header is [`"Content-Type"`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type). `"Content-Type"` is used to indicate what format the data being sent is in. With JavaScript's `fetch()`, [JSON](https://www.json.org/json-en.html) is the most common format we will be using. We want to make sure that the destination of our POST request knows this. To do this, we'll include the `"Content-Type"` header:
 
-```javascript
+```js
 configurationObject = {
   method: "POST",
   headers: {
@@ -93,7 +93,7 @@ When sending data, the server destination URL will send back a response, often i
 
 To do this, we add a second header, [`"Accept"`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept), and assign it to `"application/json"` as well:
 
-```javascript
+```js
 configurationObject = {
   method: "POST",
   headers: {
@@ -111,7 +111,7 @@ We now have the destination URL, our HTTP verb, and headers that include informa
 
 Data being sent in `fetch()` must be stored in the `body` of the `configurationObject`:
 
-```javascript
+```js
 configurationObject = {
   method: "POST",
   headers: {
@@ -128,7 +128,7 @@ There is a catch here to be aware of: When data is exchanged between a client (y
 
 When sending data using `fetch()`, we often send multiple pieces of information in one request. In our code, we often organize this information using Objects. However, we can't just assign our Object to `body`, as it isn't a String. Instead, we convert it to JSON. Consider the following:
 
-```javascript
+```js
 // A JavaScript Object
 {
   dogName: "Byron",
@@ -143,7 +143,7 @@ Here, using JSON has enabled us to preserve the key/value pairs of our Object wi
 
 Fortunately, JavaScript comes with a built-in method for converting Objects to Strings, `JSON.stringify()`. By passing an object in, `JSON.stringify()` will return a String, formatted and ready to send in our request:
 
-```javascript
+```js
 configurationObject = {
   method: "POST",
   headers: {
@@ -161,7 +161,7 @@ configurationObject = {
 
 We've got all the pieces we need, but we don't have to define everything inside of one anonymous Object. We could also write:
 
-```javascript
+```js
 let formData = {
   dogName: "Byron",
   dogBreed: "Poodle"
@@ -183,7 +183,7 @@ fetch("http://localhost:3000/dogs", configObj);
 
 Just like when we use `fetch()` to send GET requests, we have to handle responses to `fetch()`. As mentioned before, servers will send a [Response](https://developer.mozilla.org/en-US/docs/Web/API/Response) that might include useful information. To access this information, we use a series of calls to `then()` which are given function _callbacks_. Building on the previous implementation, we might write the following:
 
-```javascript
+```js
 let formData = {
   dogName: "Byron",
   dogBreed: "Poodle"
@@ -211,7 +211,7 @@ Notice that the first `then()` is passed a callback function that takes in `resp
 
 Sending the example above to our JSON server, once the request is successfully resolved, we would see the following log:
 
-```javascript
+```js
 {dogName: "Byron", dogBreed: "Poodle", id: 6}
 ```
 
@@ -223,7 +223,7 @@ When something goes wrong in a `fetch()` request, JavaScript will look down the 
 
 When something goes wrong in a `fetch()`, the next `catch()` is called so that error work can be performed. By including a `catch()` statement, JavaScript doesn't fail silently:
 
-```javascript
+```js
 let formData = {
   dogName: "Byron",
   dogBreed: "Poodle"

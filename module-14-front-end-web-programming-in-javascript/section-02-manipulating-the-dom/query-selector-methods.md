@@ -58,7 +58,7 @@ Selectors aren't limited to using one tag name in their argument though, otherwi
 </body>
 ```
 
-```javascript
+```js
 const li2 = document.querySelector("ul.ranked-list li ul li");
 li2;
 //=> <li>2</li>
@@ -90,7 +90,7 @@ Given a document like:
 
 If we called:
 
-```javascript
+```js
 document.getElementById("app").querySelectorAll("ul.ranked-list li")
 ```
 

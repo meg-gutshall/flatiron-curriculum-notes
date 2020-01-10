@@ -17,7 +17,7 @@ For example, the statement `let foo = "bar"` is split into **two** separate step
 
 Take a look at the following code snippet:
 
-```javascript
+```js
 const myVar = "Foo";
 
 function first() {
@@ -35,7 +35,7 @@ function second() {
 
 JavaScript looks up the scope chain to perform identifier resolution. Given that information, what do you think  will get logged out to the console when we invoke `second()`? Let's try it out:
 
-```javascript
+```js
 second();
 // LOG: Inside first()
 // LOG: myVar is currently equal to: Foo
@@ -44,7 +44,7 @@ second();
 
 At first glance, it might seem like `"Bar"` should get printed out. Inside `second()`, that string is assigned to the `myVar` variable right before `first()` is invoked:
 
-```javascript
+```js
 function second() {
   const myVar = "Bar";
 
@@ -60,7 +60,7 @@ In the following diagram, the red `myVar` is declared in the global scope, and t
 
 No variable named `myVar` exists inside `first()`. When the JavaScript engine reaches the second line of code inside the function, it has to consult the scope chain to figure out what `myVar` is:
 
-```javascript
+```js
 console.log("myVar is currently equal to:", myVar);
 ```
 
@@ -72,7 +72,7 @@ In the example above, we typed our declaration for `first()` in the global scope
 
 By contrast, if we declare `first()` **_inside_** of `second()`, then `first()`'s reference to its outer scope points at `second()` instead of at the global scope:
 
-```javascript
+```js
 const myVar = "Foo";
 
 function second() {
@@ -90,7 +90,7 @@ function second() {
 
 When we invoke `second()` this time, it creates a local `myVar` variable set to "Bar". Then, it invokes `first()`:
 
-```javascript
+```js
 second();
 // LOG: Inside first()
 // LOG: myVar is currently equal to: Bar

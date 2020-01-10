@@ -2,7 +2,7 @@
 
 So far, we've used code like:
 
-```javascript
+```js
 const input = document.getElementById("input");
 input.addEventListener("click", function(event)) {
   alert("I was clicked!");
@@ -13,7 +13,7 @@ to find DOM elements and attach event listeners to them.
 
 Now we'll dig deeper into JavaScript functions—the part of the code that looks like:
 
-```javascript
+```js
 function(event) {
   alert("I was clicked!");
 }

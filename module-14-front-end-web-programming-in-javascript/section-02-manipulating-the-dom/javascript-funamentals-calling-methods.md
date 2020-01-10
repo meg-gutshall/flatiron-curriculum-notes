@@ -6,7 +6,7 @@ Let's consider the `document.querySelector` method. This code _calls_ the _metho
 
 _Calling_ is the same as _running_. We do that when we write:
 
-```javascript
+```js
 document.querySelector(); // Notice the addition of ()
 ```
 

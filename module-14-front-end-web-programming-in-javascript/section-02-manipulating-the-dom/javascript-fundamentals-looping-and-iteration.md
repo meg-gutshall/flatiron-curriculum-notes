@@ -6,7 +6,7 @@ Sometimes, we have to run the same code repeatedly. Instead of calling the same 
 
 Of the loops in JavaScript, the `for` loop is the most common. The `for` loop is made up of four statements in the following structure:
 
-```javascript
+```js
 for ([initialization]; [condition]; [iteration]) {
   [loop body]
 }
@@ -26,7 +26,7 @@ for ([initialization]; [condition]; [iteration]) {
 
 Use a `for` loop when you know exactly how many times you want the loop to run (for example, when you have an array of known size). The `for` loop is often used to iterate over every element in an array. Here's an example of a gift wrapping action using a `for` loop:
 
-```javascript
+```js
 const gifts = ["teddy bear", "drone", "doll"];
 
 function wrapGifts(gifts) {
@@ -52,7 +52,7 @@ In our loop body, notice that we reference `gifts[i]`. Since `i` starts out as `
 
 The `while` loop is similar to a `for` loop, repeating an action in a loop based on a condition. Both will continue to loop until that condition evaluates to `false`. Unlike `for`, `while` only requires condition and loop statements.
 
-```javascript
+```js
 while ([condition]) {
   [loop body]
 }
@@ -60,7 +60,7 @@ while ([condition]) {
 
 The initialization and iteration statements of the `for` loop have not disappeared though. In fact, we could rewrite out original `for` loop gift wrapping example using a `while` loop and achieve the exact same result:
 
-```javascript
+```js
 const gifts = ["teddy bear", "drone", "doll"];
 
 function wrapGifts(gifts) {
@@ -86,7 +86,7 @@ Notice that we've just moved the initialization and iteration statements—decla
 
 Because of their design, `while` loops are sometimes used when we _want_ a loop to run an indeterminate amount of times. If we were pseudocoding out a program for planting a garden, we could use a `while` loop to organize the work.
 
-```javascript
+```js
 function plantGarden() {
   let keepWorking = true;
   while (keepWorking) {
@@ -104,7 +104,7 @@ We can imagine that _while_ we have seeds, we take the same steps over and over.
 
 JavaScript, like many programming languages, provides a variety of looping options. Loops like `for` and `while` are actually just slight variations of the same process. By providing a variety, we as programmers have a larger vocabulary to work with. Often, you will see `while` loops simply being used as an alternative to `for` loops.
 
-```javascript
+```js
 let countup = 0;
 while (countup < 10) {
   console.log(countup++);
@@ -113,7 +113,7 @@ while (countup < 10) {
 
 This is perfectly fine as an alternative way to describe:
 
-```javascript
+```js
 for (let countup = 0; countup < 10; countup++) {
   console.log(countup);
 }

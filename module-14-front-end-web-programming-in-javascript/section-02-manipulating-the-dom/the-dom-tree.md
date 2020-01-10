@@ -8,7 +8,7 @@ DOM programming is using JavaScript to:
 
 Remember, the command to find the HTML element we want is:
 
-```javascript
+```js
 document.querySelector(selector)
 ```
 
@@ -124,19 +124,19 @@ How would we go about changing only the second "Hello!" to "Goodbye!"? We're goi
 
 Let's start by getting the `<main>` element:
 
-```javascript
+```js
 const main = document.getElementsByTagName("main")[0]
 ```
 
 Then we can get the children of `main` using `main.children`; so we can get the second child with `main.children[1]`.
 
-```javascript
+```js
 const div = main.children[1]
 ```
 
 We can get and update our `<p>` element with:
 
-```javascript
+```js
 // We can call `getElementsByTagName() on an element to constrain the search to its children!
 
 const p = div.getElementsByTagName("p")[0]
@@ -144,7 +144,7 @@ const p = div.getElementsByTagName("p")[0]
 
 And lastly, we can change an attribute on the node:
 
-```javascript
+```js
 p.textContent = "Goodbye!"
 ```
 

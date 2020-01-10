@@ -23,7 +23,7 @@ The `fetch()` function retrieves data. It's a global _method_ on the `window` ob
 
 Here's the skeleton for using `fetch()`:
 
-```javascript
+```js
 fetch("string representing a URL to a data source")
   .then(function(response) {
     return response.json();
@@ -55,7 +55,7 @@ First, we'll provide a `String` argument to `fetch()`. JSON is a way to send a c
 
 The `then()` take a function. Here is wear you tell JavaScript to ask the network response to be turned into JSON. When you first start using `fetch()` most of your first `then()` methods are going to look like this:
 
-```javascript
+```js
 function(response) {
   return response.json();
 }
@@ -69,7 +69,7 @@ Then final `then()` is when you actually get some JSON passed in. You can then d
 
 Here's a completed example:
 
-```javascript
+```js
 fetch("http://api.open-notify.org/astros.json")
   .then(function(response) {
     return response.json();

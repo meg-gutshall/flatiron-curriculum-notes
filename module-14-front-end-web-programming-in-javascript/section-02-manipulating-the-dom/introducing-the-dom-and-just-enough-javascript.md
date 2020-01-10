@@ -40,7 +40,7 @@ Sometimes you want to hold a `String` or a `Number` under another name. You can 
 
 **NOTE:** The `//=>` means "what JavaScript would return back."
 
-```javascript
+```js
 3.14; //=> 3.14
 var pi = 3.14; //=> 'undefined'
 pi; //=> 3.14
@@ -58,7 +58,7 @@ pi; //=> 3.14
 
 `Number` data types can be added, subtracted, multiplied, and divided. The results of these operations can be stored in variables.
 
-```javascript
+```js
 1 + 1; //=> 2
 let result = 1 + 1; //=> 'undefined'
 result; //=> 2
@@ -71,7 +71,7 @@ circumference; //=> 12.56
 
 JavaScript also has a symbol for finding the remainder when one `Number` is divided by another (`%`).
 
-```javascript
+```js
 10 % 4 //=> 2
 13 % 5 //=> 3
 ```
@@ -80,7 +80,7 @@ JavaScript also has a symbol for finding the remainder when one `Number` is divi
 
 Just as `Number` data types can be added together, it is possible to add `String` data types together as well.
 
-```javascript
+```js
 'Ya got trouble, folks, right here in ' + 'River City';
 //=> 'Ya got trouble, folks, right here in River City'
 
@@ -91,7 +91,7 @@ poolTable + ' with a capital T';
 
 Dynamically combining `String` data types and variables is very common in JavaScript, so much so that multiple methods exist for this purpose. One is called `concat`:
 
-```javascript
+```js
 'And that rhymes with '.concat('P');
 //=> 'And that rhymes with P'
 
@@ -103,7 +103,7 @@ lyric.concat(trouble);
 
 You can also use [Template Literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals). To use Template Literals in your `String` data types, you _must_ wrap the entire `String` in _backticks_, not quotation marks. Instead of using `+` to combine, a variable is wrapped in brackets preceded by a dollar sign, `${}`, then included _within_ the backticks. Inside these brackets, you can include variables or any other data types that can be converted into a `String`.
 
-```javascript
+```js
 let pool = 'trouble';
 //=> 'undefined'
 
@@ -116,7 +116,7 @@ let pool = 'trouble';
 
 ## JavaScript Can Compare Data Types
 
-```javascript
+```js
 1 < 3; //=> true
 3 == 3; //=> true
 3 != 4; //=> true
@@ -125,7 +125,7 @@ let pool = 'trouble';
 
 Be careful here! `=` means "assign to," like we just did with `var` above. For comparison we use `==` and `===`. We can build on our previous example:
 
-```javascript
+```js
 3.14; //=> 3.14
 const pi = 3.14; //=> 'undefined'
 pi; //=> 3.14
@@ -136,7 +136,7 @@ pi == 3.14; //=> true
 
 With the ability to compare data types, we can build logic into our code using `if` statements:
 
-```javascript
+```js
 let test = 1;
 test; //=> 1
 
@@ -159,7 +159,7 @@ test; //=> 2
 
 The code inside an `if` statement's brackets will only be executed if the statement is `true`. We can expand our `if` statement to do one thing or another using `else`:
 
-```javascript
+```js
 let test = 1;
 test; //=> 1
 
@@ -194,25 +194,25 @@ When talking to an `Object`, you can ask it for a bit of state by using a `.` an
 
 To ask a poodle its `name` state, you would do it like so:
 
-```javascript
+```js
 poodle.name; //=> "Byron"
 ```
 
 If you ask an object for a property if doesn't have, JavaScript says `undefined`.
 
-```javascript
+```js
 poodle.favoritePainter; //=> undefined
 ```
 
 When asking an object to do something (a behavior), you use a `.` and a behavior-name (usually a verb) followed by `()`. Behaviors on objects are called methods.
 
-```javascript
+```js
 poodle.bark(); //=> An ear-splitting bark is heard
 ```
 
 An `Object`'s methods have access to all of that `Object`'s properties.
 
-```javascript
+```js
 poodle.introduceYourselfFormally();
 //=> "Hello, my name is Byron the poodle"
 ```
@@ -221,14 +221,14 @@ In this case, the method `introduceYourselfFormally` presumably looks at `poodle
 
 Finally, methods can take arguments. Arguments change the method's operation.
 
-```javascript
+```js
 poodle.eat(1); //=> "Byron eats 1 can of food"
 poodle.eat(2); //=> "Byron eats 2 cans of food"
 ```
 
 `Methods` can take multiple arguments.
 
-```javascript
+```js
 poodle.eyeEnviously('Shack Burger', '$', 9.57);
 //=> "Byron eyes your Shack Burger enviously, hoping you will drop some, not caring the least that it cost you $9.57."
 ```
@@ -243,7 +243,7 @@ Sometimes you don't want to manually type something out multiple times, but you 
 
 "For each" character in the `slytherin` collection (or `Array`), we would like the `harry_potter` object to invoke its `expelliarmus` method on the wizard or witch who is passed in as an argument:
 
-```javascript
+```js
 for (let i = 0; i < slytherins.count; i += 1) {
   harry_potter.expelliarmus(slytherins[i])
 }
@@ -259,7 +259,7 @@ The JavaScript method `console.log()` is used to print something. Often it's use
 
 Building on the loop example, let's say we want to know who `harry_potter` is defending against:
 
-```javascript
+```js
 for (let i = 0; i < slytherins.count; i += 1 ) {
   console.log(`Harry is about to disarm ${slytherins[i]}`);
   harry_potter.expelliarmus(slytherins[i]);

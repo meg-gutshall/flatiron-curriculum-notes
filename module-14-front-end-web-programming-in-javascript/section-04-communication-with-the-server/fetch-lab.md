@@ -14,7 +14,7 @@ JSON is a language-agnostic way of formatting data. If we send a web request to 
 
 Getting data from the [Game of Thrones API](https://anapioficeandfire.com/) with `fetch()` is a pretty easy process. If we're just trying to `GET` some JSON, we can add the following code to our JavaScript console in the browser:
 
-```javascript
+```js
 fetch("https://anapioficeandfire.com/api/books")
   .then(resp => resp.json())
   .then(json => console.log(json));

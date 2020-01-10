@@ -6,7 +6,7 @@ Browsers use an _asynchronous_ execution model, or "they do little bits of lots 
 
 So far in JavaScript, we've written _synchronous_ code and the execution model didn't matter.
 
-```javascript
+```js
 let sum = 1 + 1; // Line 1
 let lis = document.querySelectorAll("li"); // Line 2
 ```
@@ -15,7 +15,7 @@ In this case, when we hit the definition of `sum`, this work doesn't rely on any
 
 But let's consider a "blocking" operation. Imagine we had a synchronous function called `synchronousFetch("URL STRING")` that fetches data from the network.
 
-```javascript
+```js
 let tooMuchData = synchronousFetch("https://genome.example.com/..."); // Line 1
 let lis = document.querySelectorAll("li"); // Line 2
 console.log(tooMuchData);
@@ -36,7 +36,7 @@ Let's imagine a function called `asynchronousFetch` that takes as arguments:
 1. A URL String
 2. An arrow function that will have the fetched data passed into it as its first arguments when the `asynchronousFetch` work is done
 
-```javascript
+```js
 asynchronousFetch("https://genome.example.com/...", tonOfGeneticData => sequenceClone(tonOfGeneticData)); // Line 1
 let lis = document.querySelectorAll("li"); // Line 2
 ```

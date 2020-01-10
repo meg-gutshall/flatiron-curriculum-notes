@@ -24,21 +24,21 @@ The `var` reserved word is the classic way to declare a variable. It's been arou
 
 Creating new variables in JavaScript is really a two-step process. First, we declare the variable:
 
-```javascript
+```js
 var pi;
 //=> undefined
 ```
 
 The JavaScript engine sets aside a chunk of memory to store the declared variable. Then, we assign a value to that variable:
 
-```javascript
+```js
 pi = 3.14159;
 //=> 3.14159
 ```
 
 We can package both of the initialization steps—declaration and assignment—in a single line of code:
 
-```javascript
+```js
 var pi = 3.14159;
 //=> undefined
 ```
@@ -49,7 +49,7 @@ You can easily declare multiple variables. Instead of repeating `var` over and o
 
 Let's condense the below code into one line:
 
-```javascript
+```js
 var a = 5;
 var b = 2;
 var c = 3;
@@ -59,7 +59,7 @@ var e = [];
 
 The above is equivalent to:
 
-```javascript
+```js
 var a = 5,
     b = 2,
     c = 3,
@@ -69,7 +69,7 @@ var a = 5,
 
 Which can be converted to:
 
-```javascript
+```js
 var a = 5, b = 2, c = 3, d = {}, e = [];
 ```
 
@@ -77,7 +77,7 @@ var a = 5, b = 2, c = 3, d = {}, e = [];
 
 To retrieve a declared variable, refer to its name:
 
-```javascript
+```js
 pi;
 //=> 3.14159
 ```
@@ -86,7 +86,7 @@ pi;
 
 Changing the value of a variable in JavaScript works as follows:
 
-```javascript
+```js
 var pi = 3.14159;
 pi;
 //=> 3.14159
@@ -99,7 +99,7 @@ pi;
 
 Upon declaration, all variables are automatically assigned the value of `undefined`. It's only after we assign a new value that the variable will contain something other than undefined. We can use the `typeof` operator to check the data type of the value currently stored in a variable:
 
-```javascript
+```js
 var language;
 //=> undefined
 
@@ -117,7 +117,7 @@ typeof language;
 
 Once a variable has been created with `var`, we can reassign it to our heart's content:
 
-```javascript
+```js
 var pi = 3.14159;
 //-> undefined
 
@@ -141,7 +141,7 @@ Because of its ubiquity in legacy code and StackOverflow posts, it's important t
 
 ES2015 introduced two new ways to create variables: `let` and `const`. Both solve all of `var`'s scope issues. Both also throw an error if you try to declare the same variable a second time:
 
-```javascript
+```js
 let pi = 3.14159;
 //-> undefined
 
@@ -151,7 +151,7 @@ let pi = "the ratio between a circle's circumference and diameter";
 
 Just like with `var`, we can still reassign a variable declared with `let`:
 
-```javascript
+```js
 let pi = 3.14159;
 //-> undefined
 
@@ -170,7 +170,7 @@ Using `let` instead of `var` will help you avoid silly errors like declaring the
 2. When we assign an object to a variable declared with `const`, we know that variable will _always_ point to the same object (though the object's properties can still be modified).
 3. When another developer looks at our code and sees a `const` declaration, they immediately know that variable points to the same object or has the same value every other time it's referenced in the program. For variables declared with `let` or `var`, the developer cannot be so sure and will have to keep track of how those variables change throughout the program. The extra information provided by `const` is valuable, and it comes at no extra cost to you! Just use `const` as much as possible and reap the benefits.
 
-```javascript
+```js
 const pi = 3.14159;
 //=> undefined
 
@@ -180,7 +180,7 @@ pi = 2.71828;
 
 **_NOTE:_** With `let`, it's possible to declare a variable without assigning a value, just like `var`:
 
-```javascript
+```js
 let pi;
 //=> undefined
 
@@ -190,7 +190,7 @@ pi = 3.14159;
 
 However, because `const` doesn't allow reassignment after the variable is initialized, we **must** assign a value right away:
 
-```javascript
+```js
 const pi;
 //=> Uncaught SyntaxError: Missing initializer in const declaration
 
