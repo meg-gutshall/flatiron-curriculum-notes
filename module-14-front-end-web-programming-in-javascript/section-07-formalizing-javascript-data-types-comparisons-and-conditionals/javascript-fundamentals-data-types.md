@@ -73,7 +73,7 @@ typeof false;
 
 ### Objects
 
-JavaScript objects are a collection of properties bound by curly braces (`{}`), similar to a hash in Ruby or a dictionary in Python.
+JavaScript objects are a collection of properties bound by curly braces (`{ }`), similar to a hash in Ruby or a dictionary in Python.
 
 The properties can point to values of any data type—even other objects:
 
