@@ -141,7 +141,7 @@ Six of seven JavaScript data types—everything except `Object`—are **primitiv
 Every programming language has its own rules governing the ways in which we can operate on data of a given type. For example, it's rather uncontroversial that numbers can be subtracted from other numbers...
 
 ```javascript
-3 - 3;
+3 - 2;
 //=> 1
 ```
 
