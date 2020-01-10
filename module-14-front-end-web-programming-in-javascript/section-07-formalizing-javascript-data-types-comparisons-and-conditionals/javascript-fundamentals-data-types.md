@@ -21,7 +21,7 @@ The `typeof` operator gives us an idea of what data types we're dealing with. `t
 
 ### Numbers
 
-Some programming languages divide numbers up into integers, decimals, doubles, floats, and so on. They do this so that they can have higher _precision_ in their calculations. In a banking application or airplane wing engineering application we want our interest rate or the curve of the wing to be **_as accurate as possible_**. For good reason: we want to make sure we get paid of have a safe plane! When JavaScript was created, this level of precision was not thought to be a thing that would be needed, so JavaScript only has a single, all-encompassing `number` type:
+Some programming languages divide numbers up into integers, decimals, doubles, floats, and so on. They do this so that they can have higher _precision_ in their calculations. In a banking application or airplane wing engineering application we want our interest rate or the curve of the wing to be **_as accurate as possible_**. For good reason: we want to make sure we get paid or have a safe plane! When JavaScript was created, this level of precision was not thought to be a thing that would be needed, so JavaScript only has a single, all-encompassing number type:
 
 ```js
 typeof 42;
@@ -102,7 +102,7 @@ typeof dogs;
 
 ### `null`
 
-The `null` data type represents an intentionally absent object. For example, is a piece of code returns an object when it successfully executes, we could have it return `null` in the event of an error. Confusingly, the `typeof` operator returns `"object"` when called with `null`:
+The `null` data type represents an intentionally absent object. For example, if a piece of code returns an object when it successfully executes, we could have it return `null` in the event of an error. Confusingly, the `typeof` operator returns `"object"` when called with `null`:
 
 ```js
 typeof null;
@@ -111,7 +111,7 @@ typeof null;
 
 ### `undefined`
 
-The bane of many JavaScript developers, `undefined` is a bit of a misnomer. Instead of "not defined," it actually means something more like "not yet assigned a value."
+The bane of many JavaScript developers, `undefined` is a bit of a misnomer. Instead of 'not defined,' it actually means something more like 'not yet assigned a value.'
 
 ```js
 typeof undefined;
@@ -156,7 +156,7 @@ But what happens if you mix them?
 
 Some programming languages, such as Python, are strict about how data of different types can interact, and they will refuse to compile a program that blends types. Well, that's rather strict.
 
-Other Languages, such as Ruby, will attempt to handle the interaction by converting one of the data types so all data is of the same type. For example, instead of throwing an error when an integer (`3`) is added to a floating-point number (`0.14159`), Ruby will simply convert the integer into a floating-point number and correctly calculate the sum:
+Other languages, such as Ruby, will attempt to handle the interaction by converting one of the data types so all data is of the same type. For example, instead of throwing an error when an integer (`3`) is added to a floating-point number (`0.14159`), Ruby will simply convert the integer into a floating-point number and correctly calculate the sum:
 
 ```ruby
 3 + 0.14159
@@ -170,7 +170,7 @@ Ruby throws errors when some stranger cases come up:
 TypeError: no implicit conversion of FixNum into String
 ```
 
-This seems pretty reasonable: I don't know how to make the `Integer`, `1138`, a `String` without being directly told that you want it to be a `String` (same as Python's rule).
+That seems pretty reasonable: I don't know how to make the `Integer`, `1138`, a `String` without being directly told that you want it to be a `String` (same as Python's rule).
 
 That seems like a good baseline. However, JavaScript is a little _too_ nice when handling conflicting data types. **No matter what weird combination of types you give it, JavaScript won't throw an error and will return _something_ (though that _something_ might make no sense at all).**
 
