@@ -230,4 +230,4 @@ Data types are representation of pieces of information and JavaScript defines se
 
 - [JavaScript Data Types and Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 - [Types](https://www.destroyallsoftware.com/compendium/types?share_key=baf6b67369843fa2): A cross-language examination of type in various languages
-- [Wat](https://www.destroyallsoftware.com/talks/wat): A beloved **_and hilarious_** talk in which JavaScript's friendliness when mixing types is discussed at a fever pace—with awesome slides
+- [Wat](https://www.destroyallsoftware.com/talks/wat): A beloved **_and hilarious_** talk in which JavaScript's friendliness when mixing types is discussed at a feverish pace—with awesome slides
