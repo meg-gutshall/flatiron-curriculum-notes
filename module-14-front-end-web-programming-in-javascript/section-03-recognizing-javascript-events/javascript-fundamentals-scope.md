@@ -21,14 +21,14 @@ Here's what that looks like in JavaScript:
 function myFunc() {
   return 42;
 }
-// => undefined
+//=> undefined
 
 // `myVar` is able to reference and invoke `myFunc` because both are declared in the same scope (the global execution context)
 const myVar = myFunc() * 2;
-// => undefined
+//=> undefined
 
 myVar;
-// => 84
+//=> 84
 ```
 
 ![JavaScript global execution context (continued)](/public/images/front-end-web-programming-in-javascript/global-scope-02.png)
@@ -45,10 +45,10 @@ function myFunc() {
 
   return myVar * 2;
 }
-// => undefined
+//=> undefined
 
 myFunc();
-// => 84
+//=> 84
 ```
 
 However, from outside the function, we can't reference anything declared inside of it.
@@ -57,7 +57,7 @@ However, from outside the function, we can't reference anything declared inside 
 function myFunc() {
   const myVar = 42;
 }
-// => undefined
+//=> undefined
 
 myVar * 2;
 // Uncaught ReferenceError: myVar is not defined
@@ -75,7 +75,7 @@ if (true) {
 }
 
 myVar;
-// => 42
+//=> 42
 ```
 
 However, variables created with `const` and `let` **are** block-scoped.

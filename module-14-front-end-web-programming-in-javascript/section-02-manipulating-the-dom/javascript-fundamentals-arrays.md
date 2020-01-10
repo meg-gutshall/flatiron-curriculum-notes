@@ -34,14 +34,14 @@ An `Array` is a list, with the items listed in a particular order, surrounded by
 
 ```javascript
 ["This", "is", "an", "array", "of", "strings."];
-// => ["This", "is", "an", "array", "of", "strings."]
+//=> ["This", "is", "an", "array", "of", "strings."]
 ```
 
 The _members_ or _elements_ in an array can be data of any type in JavaScript:
 
 ```javascript
 ["Hello, world!", 42, null, NaN];
-// => ["Hello, world!", 42, null, NaN]
+//=> ["Hello, world!", 42, null, NaN]
 ```
 
 >In some other languages arrays _cannot be of multiple types_. In C, C++, Java, and Swift are just a few languages in which you cannot mix types. JavaScript, Python, Ruby, and Lisp are some that permit this behavior.
@@ -60,7 +60,7 @@ We can find out how many elements an array contains by checking the array's buil
 ```javascript
 const myArray = ["This", "array", "has", 5, "elements];
 myArray.length;
-// => 5
+//=> 5
 ```
 
 We defined the arrays above using the _array literal_ syntax—that is, we literally typed out the array that we wanted to create, square brackets and all. There are other ways to create new arrays, but they are only necessary for very rare circumstances. For now, we'll just use array literals.
@@ -75,10 +75,10 @@ Every element in an array is assigned a unique index value that corresponds to i
 const winningNumbers = [32, 9, 14, 33, 48, 5];
 
 winningNumbers[0];
-// => 32
+//=> 32
 
 winningNumbers[3];
-// => 33
+//=> 33
 ```
 
 **_NOTE:_** Most people just call it _bracket notation_ or the _bracket operator_, so don't worry too much about remembering the term _computed member access operator_.
@@ -89,10 +89,10 @@ How would we access the **last** element in our array?
 const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 alphabet.length
-// => 26
+//=> 26
 
 alphabet[alphabet.length - 1];
-// => "z"
+//=> "z"
 ```
 
 This is why it's called the _**computed** member access operator_. We put an expression (`alphabet.length - 1`) inside the square brackets, and the JavaScript engine _computed_ the value of that expression to determine which element we were trying to access.
@@ -109,10 +109,10 @@ With the `.push()` method, we can add elements to the end of an array.
 const superheroes = ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones"];
 
 superheroes.push("Wonder Woman");
-// => 5
+//=> 5
 
 superheroes;
-// => ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones", "Wonder Woman"]
+//=> ["Catwoman", "Miss Marvel", "She-Hulk", "Jessica Jones", "Wonder Woman"]
 ```
 
 We can also `.unshift()` elements onto the beginning of an array.
@@ -121,10 +121,10 @@ We can also `.unshift()` elements onto the beginning of an array.
 const cities = ["New York", "San Francisco"];
 
 cities.push("Los Angeles");
-// => 3
+//=> 3
 
 cities;
-// => ["New York", "San Francisco", "Los Angeles"]
+//=> ["New York", "San Francisco", "Los Angeles"]
 ```
 
 Notice the value returned by both methods is the `length` of the updated array.
@@ -142,10 +142,10 @@ const coolCities = ["New York", "San Francisco"];
 const allCities = ["Los Angeles", ...coolCities];
 
 coolCities;
-// => ["New York", "San Francisco"]
+//=> ["New York", "San Francisco"]
 
 allCities;
-// => ["Los Angeles", "New York", "San Francisco"]
+//=> ["Los Angeles", "New York", "San Francisco"]
 ```
 
 We created a new array instead of modifying the original one—our `coolCities` array was untouched. We can also use the spread operator to add a new item to the end of an array without modifying the original.
@@ -155,10 +155,10 @@ const coolCats = ["Hobbes", "Felix", "Tom"];
 const allCats = [...coolCats, "Garfield"];
 
 coolCats;
-// => ["Hobbes", "Felix", "Tom"]
+//=> ["Hobbes", "Felix", "Tom"]
 
 allCats;
-// => ["Hobbes", "Felix", "Tom", "Garfield"]
+//=> ["Hobbes", "Felix", "Tom", "Garfield"]
 ```
 
 ## Removing Elements from an Array
@@ -173,10 +173,10 @@ The `.pop()` method removes the last element in an array, destructively updating
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.pop();
-// => "Sun"
+//=> "Sun"
 
 days;
-// => ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+//=> ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 ```
 
 The `.shift()` method removes the first element in an array, also mutating the original.
@@ -185,10 +185,10 @@ The `.shift()` method removes the first element in an array, also mutating the o
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.shift();
-// => "Mon"
+//=> "Mon"
 
 days;
-// => ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+//=> ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 ```
 
 Notice that the return value for the `.pop()` and `.shift()` methods is the element that was removed.
@@ -206,10 +206,10 @@ const primes = [2, 3, 5, 7];
 const copyOfPrimes = primes.slice();
 
 primes;
-// => [2, 3, 5, 7]
+//=> [2, 3, 5, 7]
 
 copyOfPrimes;
-// => [2, 3, 5, 7]
+//=> [2, 3, 5, 7]
 ```
 
 Note that the array returned by `.slice()` has the same elements as the original, but it's a copy—**the two arrays point to different objects in memory.** If you add an element to one of the arrays, it does not get added to the other.
@@ -222,7 +222,7 @@ We can provide two arguments to `.slice()`: the index where the slice should beg
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(2, 5);
-// => ["Wed", "Thu", "Fri"]
+//=> ["Wed", "Thu", "Fri"]
 ```
 
 If no second argument is provided, the slice will run from the index specified bt the first argument to the end of the array.
@@ -231,7 +231,7 @@ If no second argument is provided, the slice will run from the index specified b
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(5);
-// => ["Sat", "Sun"]
+//=> ["Sat", "Sun"]
 ```
 
 To remove the first element and return a new array, we call `.slice(1)`.
@@ -240,7 +240,7 @@ To remove the first element and return a new array, we call `.slice(1)`.
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(1);
-// => ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+//=> ["Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 ```
 
 And we can remove the last element in a way that will look familiar from earlier in this lesson.
@@ -249,7 +249,7 @@ And we can remove the last element in a way that will look familiar from earlier
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(0, days.length - 1);
-// => ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+//=> ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
 ```
 
 In fact, `.slice()` provides an easier syntax for grabbing the last element in an array.
@@ -258,10 +258,10 @@ In fact, `.slice()` provides an easier syntax for grabbing the last element in a
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.slice(-1);
-// => ["Sun"]
+//=> ["Sun"]
 
 days.slice(-3);
-// => ["Fri", "Sat", "Sun"]
+//=> ["Fri", "Sat", "Sun"]
 ```
 
 When we provide a negative index, the JavaScript engine know to start counting from the last element in the array instead of the first. **`.slice` is used everywhere in JavaScript code so familiarize yourself with this method and its parameters!**
@@ -282,10 +282,10 @@ The first argument expected by `.splice()` is the index at which to begin the sp
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.splice(2);
-// => ["Wed", "Thu", "Fri", "Sat", "Sun"]
+//=> ["Wed", "Thu", "Fri", "Sat", "Sun"]
 
 days;
-// => ["Mon", "Tue"]
+//=> ["Mon", "Tue"]
 ```
 
 Notice that `.splice()` returns the removed chunk and leaves the remaining elements in the original array. With a negative start index, the opposite happens.
@@ -294,10 +294,10 @@ Notice that `.splice()` returns the removed chunk and leaves the remaining eleme
 const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 days.splice(-2);
-// => ["Sat", "Sun"]
+//=> ["Sat", "Sun"]
 
 days;
-// => ["Mon", "Tue", "Wed", "Thu", "Fri"]
+//=> ["Mon", "Tue", "Wed", "Thu", "Fri"]
 ```
 
 #### With Two Arguments
@@ -314,10 +314,10 @@ const days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 // Remove `3` elements, starting with the element at index `2`
 
 days.splice(2, 3);
-// => ["Wed", "Thu", "Fri"]
+//=> ["Wed", "Thu", "Fri"]
 
 days;
-// => ["Mon", "Tue", "Sat", "Sun"]
+//=> ["Mon", "Tue", "Sat", "Sun"]
 ```
 
 ## Replacing Elements in an Array
@@ -334,10 +334,10 @@ After the first two, every additional argument passed to `.splice()` will be ins
 const cards = ["Ace of Spades", "Jack of Clubs", "Nine of Clubs", "Nine of Diamonds", "Three of Hearts"];
 
 cards.splice(2, 1, "Ace of Clubs");
-// => ["Nine of Clubs"]
+//=> ["Nine of Clubs"]
 
 cards;
-// => ["Ace of Spades", "Jack of Clubs", "Ace of Clubs", "Nine of Diamonds", "Three of Hearts"]
+//=> ["Ace of Spades", "Jack of Clubs", "Ace of Clubs", "Nine of Diamonds", "Three of Hearts"]
 ```
 
 Or we can remove two elements and insert three new ones as our restaurant expands its vegetarian options:
@@ -346,10 +346,10 @@ Or we can remove two elements and insert three new ones as our restaurant expand
 const menu = ["Jalapeño Poppers", "Cheeseburger", "Fish and Chips", "French Fries", "Onion Rings"];
 
 menu.splice(1, 2, "Veggie Burger", "House Salad", "Teriyaki Tofu");
-// => ["Cheeseburger", "Fish and Chips"]
+//=> ["Cheeseburger", "Fish and Chips"]
 
 menu;
-// => ["Jalapeño Poppers", "Veggie Burger", "House Salad", "Teriyaki Tofu", "French Fries", "Onion Rings"]
+//=> ["Jalapeño Poppers", "Veggie Burger", "House Salad", "Teriyaki Tofu", "French Fries", "Onion Rings"]
 ```
 
 We aren't required to remove anything with `.splice()`—we can use it to insert elements anywhere within an array. Here we're adding new books to our library in alphabetical order:
@@ -358,10 +358,10 @@ We aren't required to remove anything with `.splice()`—we can use it to insert
 const books = ["Bleak House", "David Copperfield", "Our Mutual Friend"];
 
 books.splice(2, 0, "Great Expectations", "Oliver Twist");
-// => []
+//=> []
 
 books;
-// => ["Bleak House", "David Copperfield", "Great Expectations", "Oliver Twist", "Our Mutual Friend"]
+//=> ["Bleak House", "David Copperfield", "Great Expectations", "Oliver Twist", "Our Mutual Friend"]
 ```
 
 Notice that `.splice()` returns an empty array when we provide a second argument of `0`. This makes sense because the return value is the set of elements that were removed, and we're telling it to remove `0` elements.
@@ -374,10 +374,10 @@ If we only need to replace a single elements in an array, there's a simpler solu
 const cards = ["Ace of Spades", "Jack of Clubs", "Nine of Clubs", "Nine of Diamonds", "Three of Hearts"];
 
 cards[2] = "Ace of Clubs";
-// => "Ace of Clubs"
+//=> "Ace of Clubs"
 
 cards;
-// => ["Ace of Spades", "Jack of Clubs", "Ace of Clubs", "Nine of Diamonds", "Three of Hearts"]
+//=> ["Ace of Spades", "Jack of Clubs", "Ace of Clubs", "Nine of Diamonds", "Three of Hearts"]
 ```
 
 However, using that computed member access operator (`[]`) is still _destructive_—it modifies the original array. There's a _nondestructive_ way to replace or add items at arbitrary points withing an array, and it involves two of the concepts we learned earlier.
@@ -392,10 +392,10 @@ const menu = ["Jalapeño Poppers", "Cheeseburger", "Fish and Chips", "French Fri
 const newMenu = [...menu.slice(0, 1), "Veggie Burger", "House Salad", "Teriyaki Tofu", ...menu.slice(3)];
 
 menu;
-// => ["Jalapeño Poppers", "Cheeseburger", "Fish and Chips", "French Fries", "Onion Rings"]
+//=> ["Jalapeño Poppers", "Cheeseburger", "Fish and Chips", "French Fries", "Onion Rings"]
 
 newMenu;
-// => ["Jalapeño Poppers", "Veggie Burger", "House Salad", "Teriyaki Tofu", "French Fries", "Onion Rings"]
+//=> ["Jalapeño Poppers", "Veggie Burger", "House Salad", "Teriyaki Tofu", "French Fries", "Onion Rings"]
 ```
 
 ## Identify Nested Arrays
@@ -410,7 +410,7 @@ const board = [
 ];
 
 board;
-// => [["X", "O", " "], [" ", "X", "O"], ["X", " ", "O"]]
+//=> [["X", "O", " "], [" ", "X", "O"], ["X", " ", "O"]]
 ```
 
 The cool thing about representing a game board like this is in how we can access the different squares by specifying coordinates. The first `[]` operator grabs the row that we want: top (`board[0]`), middle (`board[1]`), or bottom (`board[2]`). The second `[]` operator specifies the square within that row: left (`board[1][0]`), middle (`board[1][1]`), or right (`board[1][2]`). Effectively, we're using X and Y coordinates to refer to data within a two-dimensional structure.

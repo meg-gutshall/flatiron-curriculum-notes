@@ -37,14 +37,14 @@ We should see `undefined`. However, we can see that `yearsHeld` is a property of
 
 ```javascript
 person.occupation;
-// => { title: "Math Teacher", yearsHeld: 11 }
+//=> { title: "Math Teacher", yearsHeld: 11 }
 ```
 
 Great! Now we're getting somewhere. Let's take it a step further:
 
 ```javascript
 person.occupation.yearsHeld;
-// => 11
+//=> 11
 ```
 
 Now we get the value we want.

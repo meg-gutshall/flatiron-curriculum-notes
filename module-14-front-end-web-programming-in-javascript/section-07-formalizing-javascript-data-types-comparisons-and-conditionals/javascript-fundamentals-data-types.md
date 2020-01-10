@@ -25,16 +25,16 @@ Some programming languages divide numbers up into integers, decimals, doubles, f
 
 ```javascript
 typeof 42;
-// => "number"
+//=> "number"
 
 typeof 3.141592653589793;
-// => "number"
+//=> "number"
 
 typeof 5e-324;
-// => "number"
+//=> "number"
 
 typeof -Infinity;
-// => "number"
+//=> "number"
 ```
 
 ### Strings
@@ -43,20 +43,20 @@ Strings are how we represent text in JavaScript. A string consists of a matching
 
 ```javascript
 typeof 'I am a string.';
-// => "string"
+//=> "string"
 
 typeof "Me too!";
-// => "string"
+//=> "string"
 
 typeof `Me three!`;
-// => "string"
+//=> "string"
 ```
 
 Even empty strings are strings:
 
 ```javascript
 typeof '';
-// => "string"
+//=> "string"
 ```
 
 ### Booleans
@@ -65,10 +65,10 @@ A boolean can only be one of two possible values: `true` or `false`. Booleans pl
 
 ```javascript
 typeof true;
-// => "boolean"
+//=> "boolean"
 
 typeof false;
-// => "boolean"
+//=> "boolean"
 ```
 
 ### Objects
@@ -89,7 +89,7 @@ The properties can point to values of any data type—even other objects:
 }
 
 typeof {};
-// => "object"
+//=> "object"
 ```
 
 From JavaScript's perspective, what we call "arrays" are just special cases of an object where the keys are all numbers. So while JavaScript has arrays like `let dogs = ["Byron", "Cubby", "Boo Radley", "Luca"]`, JavaScript really thinks that `typeof dogs` is `"object"`.
@@ -97,7 +97,7 @@ From JavaScript's perspective, what we call "arrays" are just special cases of a
 ```javascript
 let dogs = ["Byron", "Cubby", "Boo Radley", "Luca"];
 typeof dogs;
-// => "object"
+//=> "object"
 ```
 
 ### `null`
@@ -106,7 +106,7 @@ The `null` data type represents an intentionally absent object. For example, is 
 
 ```javascript
 typeof null;
-// => "object"
+//=> "object"
 ```
 
 ### `undefined`
@@ -115,15 +115,15 @@ The bane of many JavaScript developers, `undefined` is a bit of a misnomer. Inst
 
 ```javascript
 typeof undefined;
-// => "undefined"
+//=> "undefined"
 
 let unassignedVariable;
 typeof unassignedVariable;
-// => "undefined"
+//=> "undefined"
 
 unassignedVariable = '';
 typeof unassignedVariable;
-// => "string"
+//=> "string"
 ```
 
 Any variable declared but not defined will be `undefined` until a value is assigned.
@@ -142,14 +142,14 @@ Every programming language has its own rules governing the ways in which we can 
 
 ```javascript
 3 - 3;
-// => 1
+//=> 1
 ```
 
 ...and that strings can be added to other strings:
 
 ```javascript
 'Hello' + ", " + `world!`;
-// => "Hello, world!"
+//=> "Hello, world!"
 ```
 
 But what happens if you mix them?
@@ -178,20 +178,20 @@ Sometimes this makes _some_ sense:
 
 ```javascript
 'High ' + 5 + '!';
-// => "High 5!"
+//=> "High 5!"
 ```
 
 ...to the [comical](https://www.destroyallsoftware.com/talks/wat):
 
 ```javascript
 null ** 2; // null to the power of 2
-// => 0
+//=> 0
 
 undefined ** null; // undefined to the power of null
-// => 1
+//=> 1
 
 {}+{}; // empty object plus empty object
-// => "[object Object][object Object]" <-- That's a string!
+//=> "[object Object][object Object]" <-- That's a string!
 ```
 
 Why JavaScript returns a string when we ask it to add two empty objects is anyone's guess, but its heart is in the right place. The language always tries to bend over backwards for its human masters, returning actionable data instead of throwing errors. However, JavaScript's eagerness occasionally results in data type issues that surprise both novice and expert programmers alike.
@@ -200,22 +200,22 @@ Try to follow along with what's happening here:
 
 ```javascript
 1 + 2 + 3 + 4 + 5;
-// => 15
+//=> 15
 
 '1' + 2 + 3 + 4 + 5;
-// => "12345"
+//=> "12345"
 
 1 + '2' + 3 + 4 + 5;
-// => "12345"
+//=> "12345"
 
 1 + 2 + '3' + 4 + 5;
-// => "3345"
+//=> "3345"
 
 1 + 2 + 3 + '4' + 5;
-// => "645"
+//=> "645"
 
 1 + 2 + 3 + 4 + '5';
-// => "105"
+//=> "105"
 ```
 
 As long as we are only adding numbers to other numbers, JavaScript performs the expected addition. However, as soon as we throw a strong in the mix, we stop adding and start concatenating everthing together into a string.

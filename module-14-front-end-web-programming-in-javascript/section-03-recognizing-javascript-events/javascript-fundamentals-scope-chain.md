@@ -16,7 +16,7 @@ function firstFunc() {
 }
 
 firstFunc();
-// => 3
+//=> 3
 ```
 
 `firstVar` is declared inside the function, and `globalVar` is declared in the outer scope, but we have access to **both** inside `firstFunc()`. When we invoke `firstFunc()`, the first line of code inside the function runs first, creating a new local variable. When the JavaScript engine reaches the function's second line, it sees the reference to `firstVar` and knows exactly where to go to get that variable. Then, the engine encounters the reference to `globalVar` and needs to do a little more searching.
@@ -51,7 +51,7 @@ function firstFunc() {
 }
 
 firstFunc();
-// => 6
+//=> 6
 ```
 
 Inside `firstFunc()`, we've defined a second function, `secondFunc()`. That second function creates yet another scope, and in it we can reference `firstVar` **and** `globalVar` via the scope chain:
@@ -70,12 +70,12 @@ Remember that when we declare a variable or a function, we provide a name that a
 
 ```javascript
 const myVar = "myVar refers to the variable that contains this string";
-// => undefined
+//=> undefined
 
 function myFunc() {
   return "myFunc refers to this function that returns this string";
 }
-// => undefined
+//=> undefined
 ```
 
 We call those names _identifiers_ because they allow us to **identify** the variable or function we're referring to.
@@ -104,7 +104,7 @@ One of the engine's tasks is the process of matching identifiers to the correspo
 const myVar = 42;
 
 myVar;
-// => 42
+//=> 42
 ```
 
 During the compilation phase, a reference to the identifier `myVar` is stored in memory. The variable isn't yet assigned a value, and the second line (`myVar;`) is skipped over entirely because it isn't a declaration.
@@ -123,7 +123,7 @@ function myFunc() {
 }
 
 myFunc();
-// => 9001
+//=> 9001
 ```
 
 During the compilation phase, a reference to `myVar` is created in the global scope, and a reference to a **different** `myVar` is created in `myFunc()`'s scope. The global `myVar` exists in the scope chain for `myFunc()`, but the engine never makes it that far. The engine finds a matching reference with `myFunc()`, and it resolves the `myVar` identifier to `9001` without having to traverse up the scope chain.

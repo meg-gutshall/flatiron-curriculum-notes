@@ -124,7 +124,7 @@ function exerciseDog(dogName, dogBreed) {
 
 let result = exerciseDog("Byron", "poodle");
 console.log(result);
-// => "Byron did not exercise due to rain"
+//=> "Byron did not exercise due to rain"
 ```
 
 When a function is called in JavaScript and encounters a `return` statement, it "returns" the value of the thing that appears to the right of the word. The thing could be a `String`, a `Number`, or an expression like `1 + 1`. When a `return` is reached in the code, no further code behavior happens. Above, if `weatherToday` is `truthy` **the only thing that happens** is the evaluation of the `String`. Return values can be saved to variables or used as inputs to other functions.

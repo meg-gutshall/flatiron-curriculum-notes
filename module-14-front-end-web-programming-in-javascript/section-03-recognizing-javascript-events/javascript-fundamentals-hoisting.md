@@ -12,7 +12,7 @@ function myFunc() {
 }
 
 myFunc();
-// => "Hello, world!"
+//=> "Hello, world!"
 ```
 
 However, we can invert those two steps and everything works fine:
@@ -23,7 +23,7 @@ myFunc();
 function myFunc() {
   return "Hello, world!";
 }
-// => "Hello, world!"
+//=> "Hello, world!"
 ```
 
 This reads as though we're invoking the function prior to declaring it, but we're forgetting about the two-phase nature of the JavaScript engine. During the compilation phase, the engine skips right over the invocation and stores the declared function in memory:
@@ -35,7 +35,7 @@ myFunc();
 function myFunc() {
   return "Hello, world!";
 }
-// => "Hello, world!"
+//=> "Hello, world!"
 ```
 
 By the time the JavaScript engine reaches the execution phase, `myFunc()` has already been created in memory. The engine starts over at the top of the code and begins executing it line-by-line:
@@ -48,7 +48,7 @@ myFunc();
 function myFunc() {
   return "Hello, world!";
 }
-// => "Hello, world!"
+//=> "Hello, world!"
 ```
 
 This process is called _hoisting_ because it feels like your declarations are being hoisted, or raised, to the top of the current scope. Your declarations **are** being evaluated before the rest of your code gets run, but hoisting is a bit of a misnomer: the physical location of the code isn't actually changing at all.
@@ -70,7 +70,7 @@ function myFunc() {
 
 myFunc();
 // LOG: undefined
-// => undefined
+//=> undefined
 ```
 
 In JavaScript, hoisting only applies to variables _declarations_; not variables _assignments_. As a quick refresher on that terminology:
@@ -123,7 +123,7 @@ function myFunc() {
 
 myFunc();
 // LOG: undefined
-// => "World!"
+//=> "World!"
 ```
 
 1. The declaration of `hello` (`var hello`) is evaluated during the compilation phase, and the identifier, `hello`, is stored in memory as `undefined`.
@@ -161,7 +161,7 @@ Recommended:
 const myOtherVar = "Gotta assign a value for our beloved 'const'.";
 
 myOtherVar;
-// => "Gotta assign a value for our beloved 'const'."
+//=> "Gotta assign a value for our beloved 'const'."
 ```
 
 Not recommended:

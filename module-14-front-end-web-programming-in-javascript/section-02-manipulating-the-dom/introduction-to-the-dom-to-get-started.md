@@ -31,7 +31,7 @@ Like all object, `window` also has _methods_. We won't use them too much. We don
 As an _object_, `document` has _properties_:
 
 ```javascript
-document.URL // => https://www.flatironschool.com
+document.URL //=> https://www.flatironschool.com
 ```
 
 As an _object_, `document` also has _methods_:

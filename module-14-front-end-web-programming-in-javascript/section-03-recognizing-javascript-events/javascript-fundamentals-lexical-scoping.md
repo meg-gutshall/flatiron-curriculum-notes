@@ -39,7 +39,7 @@ JavaScript looks up the scope chain to perform identifier resolution. Given that
 second();
 // LOG: Inside first()
 // LOG: myVar is currently equal to: Foo
-// => undefined
+//=> undefined
 ```
 
 At first glance, it might seem like `"Bar"` should get printed out. Inside `second()`, that string is assigned to the `myVar` variable right before `first()` is invoked:
@@ -94,7 +94,7 @@ When we invoke `second()` this time, it creates a local `myVar` variable set to 
 second();
 // LOG: Inside first()
 // LOG: myVar is currently equal to: Bar
-// => undefined
+//=> undefined
 ```
 
 While `first()` is executing, it again encounters the reference to `myVar` and realizes it doesn't have a local variable or function with that name. `first()` looks up the scope chain again, but this time `first()`'s outer scope isn't the global scope. It's the scope of `second()` because `first()` was declared **_inside_** of `second()`. So `first()` uses the copy of `myVar` from the `second()` scope, which contains the string `"Bar"`.

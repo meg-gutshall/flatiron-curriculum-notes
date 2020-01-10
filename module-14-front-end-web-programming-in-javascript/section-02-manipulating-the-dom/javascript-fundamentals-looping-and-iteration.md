@@ -41,7 +41,7 @@ wrapGifts(gifts);
 // LOG: Wrapped teddy bear and added a bow!
 // LOG: Wrapped drone and added a bow!
 // LOG: Wrapped doll and added a bow!
-// => ["teddy bear", "drone", "doll"]
+//=> ["teddy bear", "drone", "doll"]
 ```
 
 We started our counter, `i` at `0` because arrays have zero-based indexes. Our condition states that we should run the code in the loop body while `i` is less than `gifts.length` (`3` in the above example). Our iteration, `i++`, increments our counter by `1` at the end of each pass through the loop.
@@ -77,7 +77,7 @@ wrapGifts(gifts);
 // LOG: Wrapped teddy bear and added a bow!
 // LOG: Wrapped drone and added a bow!
 // LOG: Wrapped doll and added a bow!
-// => ["teddy bear", "drone", "doll"]
+//=> ["teddy bear", "drone", "doll"]
 ```
 
 Notice that we've just moved the initialization and iteration statements—declaring the `i` variable outside the loop and now incrementing it _inside_ the loop.

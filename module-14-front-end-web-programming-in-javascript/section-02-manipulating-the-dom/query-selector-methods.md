@@ -61,11 +61,11 @@ Selectors aren't limited to using one tag name in their argument though, otherwi
 ```javascript
 const li2 = document.querySelector("ul.ranked-list li ul li");
 li2;
-// => <li>2</li>
+//=> <li>2</li>
 
 const div4 = document.querySelector("ul.ranked-list li div");
 div4;
-// => <div>4</div>
+//=> <div>4</div>
 ```
 
 ### `querySelectorAll()`
