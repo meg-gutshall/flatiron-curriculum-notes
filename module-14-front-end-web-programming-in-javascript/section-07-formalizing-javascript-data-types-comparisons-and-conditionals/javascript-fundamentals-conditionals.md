@@ -89,7 +89,7 @@ Block statements return the value of the last evaluated expression inside the cu
 
 _Truthiness_ and _falsiness_ indicate what happens when the value is converted into a boolean. If, upon conversion, the value becomes `true`, we say that it's a **truthy** value. If it becomes `false`, we say that it's **falsy**.
 
-In JavaScript, the following values are **falsy**:
+In JavaScript, the following values are falsy:
 
 - `false`
 - `null`
@@ -150,7 +150,7 @@ if (condition) {
 }
 ```
 
-If the condition returns a **truthy** value, run the code inside the **block**:
+If the condition returns a truthy value, run the code inside the **block**:
 
 ```js
 const age = 30;
@@ -165,7 +165,7 @@ isAdult;
 //=> true
 ```
 
-If the condition returns a **falsy** value, do nothing:
+If the condition returns a falsy value, do nothing:
 
 ```js
 const age = 14;
@@ -182,7 +182,7 @@ isAdult;
 
 ### `else` Clause
 
-If we want to run some code when condition returns a **falsy** value, we can use an `else` clause:
+If we want to run some code when condition returns a falsy value, we can use an `else` clause:
 
 ```js
 const age = 14;
@@ -269,7 +269,7 @@ canWork;
 //=> true
 ```
 
-As soon as one of the conditions returns a **truthy** value, the attached code block runs and the conditional exits. If none of the conditions evaluate to a **truthy** value, then the `else` code block runs (or, in the absence of an `else` clause, the conditional simply exits). Note that unlike the nested `if` statements above, **at most one code block will run**. In the absence of an `else` statement, it's possible that none of the `if` conditions return a **truthy** value and **no block is run**. However, it's impossible for more than one block in a linked `if...else if...else` control flow to run.
+As soon as one of the conditions returns a truthy value, the attached code block runs and the conditional exits. If none of the conditions evaluate to a truthy value, then the `else` code block runs (or, in the absence of an `else` clause, the conditional simply exits). Note that unlike the nested `if` statements above, **at most one code block will run**. In the absence of an `else` statement, it's possible that none of the `if` conditions return a truthy value and **no block is run**. However, it's impossible for more than one block in a linked `if...else if...else` control flow to run.
 
 ### `switch` Statement
 
@@ -488,7 +488,7 @@ The ternary operator, the final piece of the conditional puzzle, is a good way t
 condition ? expression1 : expression2;
 ```
 
-If the condition returns a **truthy** value, run the code in `expression1`. If the condition returns a **falsy** value, run the code in `expression2`.
+If the condition returns a truthy value, run the code in `expression1`. If the condition returns a falsy value, run the code in `expression2`.
 
 ```js
 const age = 45;
