@@ -37,3 +37,7 @@ To help us learn web programming in three distinct phases, this curriculum is br
 - Communicate with the server
 
 ![The Three Pillars of Web Programming](/public/images/front-end-web-programming-in-javascript/the-three-pillars-of-web-programming.png)
+
+## Conclusion
+
+Web Programming is creating documents with HTML, styling/positioning the documents' content with CSS, and updating that content and servers based on events using JavaScript. We can break down the JavaScript part of web programming into three pillars that involve working with the DOM, JavaScript eventing and communication with the server. Now that we've seen how these pillars are connected in the abstract, we are ready to dive into seeing how they work together in detail.
