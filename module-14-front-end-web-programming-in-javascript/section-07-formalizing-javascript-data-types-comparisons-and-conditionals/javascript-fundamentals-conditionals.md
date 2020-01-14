@@ -533,12 +533,16 @@ canEnlist;
 //=> false
 ```
 
-## Resources
+## Conclusion
 
-- [Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)
-- [Block Statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
-- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
-- [Conditional Statements](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#Conditional_statements)
-- [`if...else` Statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-- [Conditional (Ternary) Operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
-- [`switch` Statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+Conditional statements are in integral part of the Internet. The more comfortable you are with controlling the flow of your code with conditional statements, the more complex websites you will be able to build.
+
+### Resources
+
+- [Expressions (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Expressions)
+- [Block Statement (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block)
+- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy) and [Falsy (MDN)](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
+- [Conditional Statements (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#Conditional_statements)
+- [`if...else` Statement (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [Conditional (Ternary) Operator (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)
+- [`switch` Statement (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)

@@ -139,9 +139,13 @@ If you aren't sure what data type you a going to be receiving, but you still nee
 
 **_Top Tip_**: Stick to comparing _numerical_ values with the relational operators.
 
-## Resources
+## Conclusion
 
-- [Comparison Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
-- [Equality Comparisons and Sameness](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
+JavaScript contains both equality and comparison operators that assist us in writing functional code. Make sure you're preferring the strict equality operators, and only comparing numerical values with the relational operators, and you'll avoid those annoying troubleshooting errors that can be time consuming!
+
+### Resources
+
+- [Comparison Operators (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators)
+- [Equality Comparisons and Sameness (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness)
 - [JavaScript Equality Table](http://dorey.github.io/JavaScript-Equality-Table/)
-- [JavaScript Comparison Operators](https://forum.freecodecamp.org/t/javascript-comparison-operators/14660)
+- [JavaScript Comparison Operators (freeCodeCamp)](https://forum.freecodecamp.org/t/javascript-comparison-operators/14660)
