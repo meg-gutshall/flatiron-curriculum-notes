@@ -1,4 +1,4 @@
-# Events and Functions Intro
+# Lesson: Events and Functions Intro
 
 So far, we've used code like:
 

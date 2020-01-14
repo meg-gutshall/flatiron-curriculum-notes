@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Scope Chain
+# Lesson: Scope Chain (JavaScript Fundamentals)
 
 Every function in JavaScript has access to a _scope chain_, which includes references to the function's outer scope (the scope which the function declared), the outer scope's outer scope, and so on.
 

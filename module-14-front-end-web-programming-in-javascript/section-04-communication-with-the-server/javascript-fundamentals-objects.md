@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Objects
+# Lesson: Objects (JavaScript Fundamentals)
 
 Arrays are great for representing simple, ordered data sets, but they're generally not so great at modeling a more complex structure. For that, we need the `Object` data type.
 

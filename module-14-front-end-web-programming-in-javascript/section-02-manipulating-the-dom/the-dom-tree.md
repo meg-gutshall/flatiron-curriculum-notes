@@ -1,4 +1,4 @@
-# The DOM Tree
+# Lesson: The DOM Tree
 
 DOM programming is using JavaScript to:
 

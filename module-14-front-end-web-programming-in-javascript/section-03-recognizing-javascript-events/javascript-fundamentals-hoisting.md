@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Hoisting
+# Lesson: Hoisting (JavaScript Fundamentals)
 
 In JavaScript, "hoisting" deals with how function and variable declarations get raised to the top of the current scope. While it can cause problems, you can avoid these problems by following standard rules for where and how declarations should happen within your code.
 

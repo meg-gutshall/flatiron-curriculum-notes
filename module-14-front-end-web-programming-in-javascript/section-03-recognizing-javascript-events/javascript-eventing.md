@@ -1,4 +1,4 @@
-# JavaScript Eventing
+# Lesson: JavaScript Eventing
 
 Most web apps are _not_ used by people editing the DOM. Instead, people _do something_ and then _work happens_. "Doing work" in response to "something happening" is known as _event handling_. _Events_ are the "something that happens" and the "_callback function_" is the work that will happen in response to the event being triggered. When JavaScript recognizes an event that applies to an "event handler" that has been set up, it will execute that "handler's" work, which is stored in a _callback function_. For now, we'll focus on the first half of that relationship: the event.
 

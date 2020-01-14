@@ -1,4 +1,4 @@
-# Communicating with the Server
+# Lesson: Communicating with the Server
 
 ## The Process of Communicating with the Server
 

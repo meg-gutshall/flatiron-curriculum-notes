@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Looping and Iteration
+# Code-along: Looping and Iteration (JavaScript Fundamentals)
 
 Sometimes, we have to run the same code repeatedly. Instead of calling the same function over and over again, we use a loop! With a loop, we can write the repeated action **once** and perform the action on **every item in the collection**. Loops are used to execute the same block of code a specified number of times. In JavaScript, loops come in different flavors, but the main two are `for` and `while` loops.
 

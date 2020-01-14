@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Conditionals
+# Lesson: Conditionals (JavaScript Fundamentals)
 
 In programming, the logic of a code let's us dictate that we only want an action to happen _if_ a certain condition is met. This is called **control flow**.
 

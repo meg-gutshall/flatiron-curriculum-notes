@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Traversing Nested Objects
+# Lesson: Traversing Nested Objects (JavaScript Fundamentals)
 
 When we're looking for occurrences of a word or concept in a book, we often turn to the index. The index tells us where we can find more information on that concept by giving us a list (or page numbers) that we can use to loop up more information in the book. Additionally, it might include information that is related to the heading that we looked up in a _sublist_ (e.g. Animals > Vertebrate; Animals > Invertebrate). We link the connections between these lists in our heads, and it doesn't cause any issues to think of one list containing other lists. The index itself, after all, is a kind of list.
 

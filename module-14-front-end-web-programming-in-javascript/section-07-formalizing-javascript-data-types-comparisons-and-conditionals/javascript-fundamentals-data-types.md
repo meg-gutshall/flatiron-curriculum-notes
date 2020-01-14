@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Data Types
+# Lesson: Data Types (JavaScript Fundamentals)
 
 In JavaScript, _concrete_ instances of data can be categorized into _abstract_ names called "data type" or, more simply, "type."
 

@@ -1,4 +1,4 @@
-# Fetch Lab
+# Lab: Fetch Lab
 
 ## What's an API?
 

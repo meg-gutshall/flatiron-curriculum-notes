@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Logical Operators
+# Lesson: Logical Operators (JavaScript Fundamentals)
 
 Logical operators in JavaScript are the powerful backbone on which most website logic is based. Using JavaScript's three logical operators, NOT (`!`), AND (`&&`), and OR (`||`), we'll learn how to negate and combine expressions.
 

@@ -1,4 +1,4 @@
-# Functions in JavaScript
+# Lesson: Functions in JavaScript
 
 Functions are the single most important unit of code in JavaScript. Much like a `<div>` or a `<section>` in HTML, functions serve as ways to group together related bits of JavaScript code. Grouped code is easier to read, debug, and improve.
 

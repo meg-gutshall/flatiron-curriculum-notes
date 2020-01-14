@@ -1,4 +1,4 @@
-# Functions as First-Class Data
+# Lab: Functions as First-Class Data
 
 Since functions in JavaScript are "first-class" objects, it means they can be treated like any other data type in JavaScript (`Number`, `String`, etc.).
 

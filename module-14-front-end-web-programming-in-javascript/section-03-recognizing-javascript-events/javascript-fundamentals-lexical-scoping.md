@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Lexical Scoping
+# Lesson: Lexical Scoping (JavaScript Fundamentals)
 
 How does JavaScript decide which outer scope to place into the scope chain for a new function?
 

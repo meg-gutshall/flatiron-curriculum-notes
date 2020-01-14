@@ -1,4 +1,4 @@
-# JavaScript Document Onload
+# Lab: JavaScript Document Onload
 
 An important part of working with JavaScript is ensuring that your code runs at the right time. Every now and then, you may have to run some extra code to ensure you code doesn't run before the page is ready. There are many factors that go into determining the "right time." There are two events that represent two important milestones in terms of page load:
 

@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Arrays
+# Lesson: Arrays (JavaScript Fundamentals)
 
 A _data structure_ is a means for associating and organizing information. Outside of the programming world, we use data structures all the time! Some examples are shopping lists and address books. If we have a lot of related data, it's best to represent it in a related system.
 

@@ -1,4 +1,4 @@
-# querySelector Methods
+# Lesson: `querySelector` Methods
 
 One of the most essential skills in our web development toolbox is finding elements in the DOM.
 

@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Scope
+# Lesson: Scope (JavaScript Fundamentals)
 
 ## How Scope Works in JavaScript
 

@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Object Iteration
+# Lesson: Object Iteration (JavaScript Fundamentals)
 
 ## Loopings vs. Iteration
 

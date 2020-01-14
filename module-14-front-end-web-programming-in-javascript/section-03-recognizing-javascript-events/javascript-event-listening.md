@@ -1,4 +1,4 @@
-# JavaScript Event Listening
+# Lab: JavaScript Event Listening
 
 JavaScript programmers often say we are "listening" for an event in order to "execute" or "call" a _callback function_.
 

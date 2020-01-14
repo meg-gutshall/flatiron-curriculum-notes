@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Comparisons
+# Lesson: Comparisons (JavaScript Fundamentals)
 
 In addition to performing arithmetic and assigning value to variables, JavaScript has additional operators for comparing values. The value returned by a comparison is **always** `true` or `false`.
 

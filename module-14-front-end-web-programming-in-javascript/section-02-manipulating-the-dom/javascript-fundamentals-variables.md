@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Variables
+# Lesson: Variables (JavaScript Fundamentals)
 
 "Saving" information to a variable allows us to _save_ a result so we can use it again later. Storing calculations to _temporary storage places_ is the heart of making efficient programs. It's a simple idea that has powerful consequences.
 

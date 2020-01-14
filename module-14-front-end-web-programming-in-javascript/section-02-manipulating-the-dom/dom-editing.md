@@ -1,4 +1,4 @@
-# DOM Editing
+# Lab: DOM Editing
 
 We've started looking at the DOM and its structure, now it's time to see what we can do with it.
 

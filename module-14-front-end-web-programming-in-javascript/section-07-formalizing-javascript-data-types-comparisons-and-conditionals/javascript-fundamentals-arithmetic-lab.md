@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Arithmetic Lab
+# Lab: Arithmetic Lab (JavaScript Fundamentals)
 
 We're going to discuss a number of the common operators and objects we'll use to perform arithmetic operations in JavaScript.
 

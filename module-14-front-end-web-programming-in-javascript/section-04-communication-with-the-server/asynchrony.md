@@ -1,4 +1,4 @@
-# Asynchrony
+# Lesson: Asynchrony
 
 Browsers use an _asynchronous_ execution model, or "they do little bits of lots of tasks until the tasks are done."
 

@@ -1,4 +1,4 @@
-# JavaScript Fundamentals: Calling Methods
+# Lesson: Calling Methods (JavaScript Fundamentals)
 
 ## Defining a JavaScript Method
 

@@ -1,4 +1,4 @@
-# Removing, Altering, and Inserting HTML
+# Lab: Removing, Altering, and Inserting HTML
 
 ## Creating DOM Elements Programmatically
 

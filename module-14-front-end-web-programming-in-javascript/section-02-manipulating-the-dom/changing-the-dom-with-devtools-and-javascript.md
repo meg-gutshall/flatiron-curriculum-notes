@@ -1,4 +1,4 @@
-# Changing the DOM with Dev Tools and JavaScript
+# Lesson: Changing the DOM with Dev Tools and JavaScript
 
 ## Delete an Element with Chrome DevTools
 

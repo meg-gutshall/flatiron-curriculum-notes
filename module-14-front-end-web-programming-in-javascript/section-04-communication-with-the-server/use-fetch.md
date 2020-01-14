@@ -1,4 +1,4 @@
-# Use Fetch
+# Lesson: Use Fetch
 
 Browsers won't show anything until they've processed all of their received data. To speed up this process as well as provide other great features, we use a technique called AJAX.
 
