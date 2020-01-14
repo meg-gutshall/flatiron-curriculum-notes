@@ -226,8 +226,8 @@ You'll encounter a lot of these weird data type behaviors throughout your JavaSc
 
 Data types are representation of pieces of information and JavaScript defines seven different types: numbers, strings, booleans, symbols, objects, `null`, and `undefined`.
 
-## Resources
+### Resources
 
-- [JavaScript Data Types and Data Structures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
-- [Types](https://www.destroyallsoftware.com/compendium/types?share_key=baf6b67369843fa2): A cross-language examination of type in various languages
-- [Wat](https://www.destroyallsoftware.com/talks/wat): A beloved **_and hilarious_** talk in which JavaScript's friendliness when mixing types is discussed at a feverish pace—with awesome slides
+- [JavaScript Data Types and Data Structures (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [Types (Destroy All Software)](https://www.destroyallsoftware.com/compendium/types?share_key=baf6b67369843fa2): A cross-language examination of type in various languages
+- [Wat (Destroy All Software)](https://www.destroyallsoftware.com/talks/wat): A beloved **_and hilarious_** talk in which JavaScript's friendliness when mixing types is discussed at a feverish pace—with awesome slides

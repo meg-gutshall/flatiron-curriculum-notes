@@ -324,13 +324,13 @@ Math.floor(Math.random() * 10) + 1;
 
 `Math.random()` returns a number between `0` and `0.999...`, which we multiply by `10` to give us a number between `0` and `9.999...`. We then pass that number to `Math.floor()`, which returns an integer between `0` and `9`. That's one less than the desired range (`1` to `10`), so we add one at the end of the equation.
 
-## Resources
+### Resources
 
-- [Basic Math in JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math)
-- [Arithmetic Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
-- [Operator Precedence](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
-- [Assignment Operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
-- [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
-- [`Number`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-- [`Math`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
-- [How Numbers Are Encoded in JavaScript](http://2ality.com/2012/04/number-encoding.html)
+- [Basic Math in JavaScript (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math)
+- [Arithmetic Operators (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
+- [Operator Precedence (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+- [Assignment Operators (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+- [`NaN` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+- [`Number` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+- [`Math` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math)
+- [How Numbers Are Encoded in JavaScript (2ality)](http://2ality.com/2012/04/number-encoding.html)
