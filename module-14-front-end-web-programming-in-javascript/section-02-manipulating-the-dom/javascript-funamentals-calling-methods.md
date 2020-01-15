@@ -16,6 +16,6 @@ When we _call_ `document.querySelector()`, we provide it an [_argument_](https:/
 
 The thing `document.querySelector()` return is _also_ an object. It too has both information and methods, state and behavior, properties and methods (they all mean the same thing). This `HTMLElement` [_instance_](https://developer.mozilla.org/en-US/docs/Glossary/Instance) has methods like `remove()`.
 
-## Resources
+## Conclusion
 
-- [JavaScript Object Methods](https://www.w3schools.com/js/js_object_methods.asp)
+JavaScript methods are actions that can be performed on objects. Objects have many useful methods that help us modify and iterate through them. The DOM selection method `document.querySelector()` is a powerful tool for finding elements needed to make updates and changes to the DOM using methods like `remove()`.

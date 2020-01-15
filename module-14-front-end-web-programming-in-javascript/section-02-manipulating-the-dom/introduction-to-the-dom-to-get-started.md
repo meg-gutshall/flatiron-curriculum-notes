@@ -43,7 +43,7 @@ document.write("Moof");
 
 The _methods_ and _properties_ that the DOM provides via its objects is called the DOM's "Application Programming Interface," or "API." It's a programming word that means "the things that these objects know how to do."
 
-## Resources
+## Conclusion
 
-- [What Is the DOM?](https://css-tricks.com/dom/)
-- [The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+The DOM is a JavaScript object that is a representation of the HTML, CSS, and JavaScript loaded by the browser when we visit a page. We normally interact with it through the `document` object. Because it is the "source of truth" for what browsers display, changes to the DOM create changes in the browser screen.
+

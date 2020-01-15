@@ -206,9 +206,10 @@ As your JavaScript powers increase with experience, you'll develop a more nuance
 
 Best practice is to always declare variables with `const` and then, if you later realize that the value has to change over the course of your program, circle back to change it to `let`.
 
-## Resources
+## Conclusion
 
-- [Language basics crash course: Variables](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics#Variables)
+We covered what a variable is, how to initialize and retrieve it, and how to assign its values. We also looked at best practices for using `var`, `let`, and `const`.
+
 - [Valid JavaScript variable names in ECMAScript 6](https://mathiasbynens.be/notes/javascript-identifiers-es6)
 - [`var`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var)
 - [`let`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)

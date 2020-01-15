@@ -594,10 +594,10 @@ Unfortunately not. The reason why Arrays have this behavior would take us deep i
 - **Be wary of setting Object-style properties on an Array.** There's rarely any reason to and it's usually more trouble than it's worth.
 - **Remember that all Object keys, including Array indexes, are strings.** This will really come into play when we learn how to iterate over Objects, so keep it in the back of your mind.
 
-## Resources
+## Conclusion
 
-- [`Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-- [`Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+We identified what an `Object` is and how to access values stored in it. We also covered how to add and remove properties, and use the convenience methods `Object.assign()` and `Object.keys()`. We also traced the link between the `Object` data type and `Array` data type.
+
 - [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
 - [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 - [Objects in JavaScript: `Object.assign()`/Deep Copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)

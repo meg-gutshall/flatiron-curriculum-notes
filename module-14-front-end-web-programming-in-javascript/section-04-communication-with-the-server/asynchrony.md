@@ -44,3 +44,9 @@ let lis = document.querySelectorAll("li"); // Line 2
 In this case, JavaScript _starts_ the `asynchronousFetch` in Line 1, and then sets `lis` in Line 2. Some time later, the fetch of data finishes and _that_ data is passed into the "callback" function as `tonOfGeneticData` back on Line 1.
 
 Most asynchronous functions in JavaScript have this quality of "being passed a callback function." It's a helpful tool for spotting asynchronous code "in the wild."
+
+## Conclusion
+
+JavaScript in the browser has an asynchronous execution model. This fact has little impact when you're writing simple code, but when you start doing work that might block the browser, you'll need to leverage asynchronous functions. Remember, these functions can be surprising and nearly every JavaScript developer sooner or later forgets to reckon with asynchrony.
+
+While working asynchronously can be a bit of a headache for developers, it allows JavaScript to do other work whenever it has the opportunity. Important methods which require us to think asynchronously are `setTimeout()` and `fetch()`, among others.

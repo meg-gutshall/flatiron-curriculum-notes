@@ -108,10 +108,10 @@ We can just call `remove()` on the element itself as well.
 ul.remove();
 ```
 
-## Resources
+## Conclusion
 
-- [`document.createElement()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
-- [`appendChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+Now you know how to create, append, and remove elements in the DOM with JavaScript.
+
 - [`removeChild()`](https://developer.mozilla.org/en-US/docs/Web/API/Node/removeChild)
 - [`element.remove()`](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/remove)
 - [`classList` Property](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)

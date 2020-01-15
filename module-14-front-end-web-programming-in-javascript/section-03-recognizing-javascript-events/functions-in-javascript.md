@@ -129,9 +129,9 @@ console.log(result);
 
 When a function is called in JavaScript and encounters a `return` statement, it "returns" the value of the thing that appears to the right of the word. The thing could be a `String`, a `Number`, or an expression like `1 + 1`. When a `return` is reached in the code, no further code behavior happens. Above, if `weatherToday` is `truthy` **the only thing that happens** is the evaluation of the `String`. Return values can be saved to variables or used as inputs to other functions.
 
-## Boilerplate Function Definition
+## Conclusion
 
-JavaScript functions are defined:
+We learned about the idea of abstraction. Abstractions reduce complexity by allowing us to think in groups of activities or things instead of being fully zoomed-in all the time. JavaScript functions are defined:
 
 ```js
 function functionName(argument1, argument2, argument3) {
@@ -139,7 +139,7 @@ function functionName(argument1, argument2, argument3) {
 }
 ```
 
-## Resources
+Functions are "called" by entering the function's name followed by the _invocation operator_, `()`. "Invoke" and "execute" mean the same thing. Arguments that the function declaration expects should be passed inside of the invocation operator. Functions can, but are not obligated to, return _return values_ at the end of their execution. Return values are often results of a process, grand totals, or success/failure data.
 
 - [Functions: Reusable Blocks of Code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
 - [Function Return Values](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values)

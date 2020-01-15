@@ -13,3 +13,7 @@ The user doesn't see this entire process happening. Ideally, the process moves q
 _AJAX_ is the shortened version of "asynchronous JavaScript and XML," and it's the general way we make requests to the server without reloading the web page, and then work with data we receive from the server. We give the user HTML and CSS first, then JavaScript, behind the scenes, fills in the rest of the action we want the page to offer. There are a few different ways to do this technically, and next we'll take a look at one of the most efficient ways: `fetch()`.
 
 The data that comes back from the server is not sent in HTML. While (once) sent back in XML, it's now most often sent back in a format known as JSON. JavaScript Object Notation (JSON) is a `String` that JavaScript knows how to turn into an `Object`.
+
+## Conclusion
+
+The last skill we need to be effective JavaScript web developers is communication with the server, which links together what we've learned about how to manipulate the DOM and how to work with events. With the AJAX technique, we'll learn how to send and receive data quickly so that we keep our users' experience a positive one.

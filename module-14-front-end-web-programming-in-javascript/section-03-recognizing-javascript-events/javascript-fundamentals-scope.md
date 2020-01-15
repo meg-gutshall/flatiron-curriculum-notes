@@ -108,7 +108,7 @@ Variables created without a `const`, `let`, or `var` keyword are **always global
 
 Declaring global variables and functions should only be used as a last resort if you absolutely need access to something **everywhere** in your program. In general, it's best practice to make variables and functions available only where they're needed—and nowhere else. Making a variable available in a place that shouldn't have access to it can only lead to bad things and make your debugging process more complex. The more pieces of code that can access a given variable, the more places you have to check for bugs if/when that variable contains an unexpected value... So keep your scopes small and specific!
 
-## Resources
+## Conclusion
 
-- [Scope](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
-- [Function Scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_scope)
+We've now covered how scope works in JavaScript. We talked about how our declared variables and methods have their own execution contexts and global-, function-, and block-level scopes. We also discussed that it's best practice to make variables and functions available only where they're needed.
+

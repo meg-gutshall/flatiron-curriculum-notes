@@ -415,8 +415,8 @@ board;
 
 The cool thing about representing a game board like this is in how we can access the different squares by specifying coordinates. The first `[]` operator grabs the row that we want: top (`board[0]`), middle (`board[1]`), or bottom (`board[2]`). The second `[]` operator specifies the square within that row: left (`board[1][0]`), middle (`board[1][1]`), or right (`board[1][2]`). Effectively, we're using X and Y coordinates to refer to data within a two-dimensional structure.
 
-## Resources
+## Conclusion
 
-- [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-- [`.slice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+We dove into data structures and the `Array`, including how to create an `Array`, access elements in an `Array`, add elements to an `Array`, remove elements from an `Array`, and replace elements in an `Array`. We also covered the difference between destructive and non-destructive `Array` manipulation.
+
 - [`.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)

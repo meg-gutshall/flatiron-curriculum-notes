@@ -128,6 +128,6 @@ myFunc();
 
 During the compilation phase, a reference to `myVar` is created in the global scope, and a reference to a **different** `myVar` is created in `myFunc()`'s scope. The global `myVar` exists in the scope chain for `myFunc()`, but the engine never makes it that far. The engine finds a matching reference with `myFunc()`, and it resolves the `myVar` identifier to `9001` without having to traverse up the scope chain.
 
-## Resources
+## Conclusion
 
-- [Functions — Name Conflicts](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Name_conflicts)
+We covered a lot of details that might seem unnecessary, but they're critical to understanding how identifier lookups happen in JavaScript. That is, when the JavaScript engine encounters a variable or function, how it knows what value or function to retrieve from memory. If the engine finds the identifier declared locally, it uses that value. However, if it doesn't find a local match, it then looks up (or down, depending on your perspective) the scope chain until it either finds a match in an outer scope or throws an `Uncaught ReferenceError`.

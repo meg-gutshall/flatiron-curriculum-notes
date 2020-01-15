@@ -24,8 +24,8 @@ HTML pages often use a submit button to submit a form to a server. When a user s
 
 As you seek to build more complicated applications, you'll need to handle and trigger work on more events. Some other commons events are `scroll`, `mouseenter` and `mouseleave`, `focus`, `blur`, and `onchange`. Here's a list of a [ton of browser events](http://help.dottoro.com/larrqqck.php).
 
-## Resources
+## Conclusion
 
-- [Web Events](https://developer.mozilla.org/en-US/docs/Web/Events)
-- [Bubbling and Capturing](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing)
+JavaScript allows us to trigger work when it detects events. Some other common events are `scroll`, `mouseenter` and `mouseleave`, `focus`, `blur`, and `onchange`. When JavaScript recognizes an event that applies to an "event handler" that has been set up, it will execute that "handler's" work, which is stored in a _callback function_.
+
 - [Event Order](http://www.quirksmode.org/js/events_order.html)

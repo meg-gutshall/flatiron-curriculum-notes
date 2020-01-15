@@ -258,3 +258,12 @@ Failed to execute 'fetch' on 'Window': Request with GET/HEAD method cannot have 
 ```
 
 While `catch()` may not stop _all_ silent errors, it is useful to have as a way to gracefully handle unexpected results. We can use it, for instance, to display a message in the DOM for a user, rather than leave them with nothing.
+
+## Conclusion
+
+You can now use `fetch()`, the browser inside your browser's JavaScript environment, to both:
+
+- Read data using HTTP GET (whose response you can put in the DOM)
+- Send data using HTTP POST (whose response you can put in the DOM)
+
+With this, we're ready to stitch server updates (reads **and** updates) with DOM updating and event handling.
