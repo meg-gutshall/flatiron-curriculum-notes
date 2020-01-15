@@ -419,4 +419,8 @@ The cool thing about representing a game board like this is in how we can access
 
 We dove into data structures and the `Array`, including how to create an `Array`, access elements in an `Array`, add elements to an `Array`, remove elements from an `Array`, and replace elements in an `Array`. We also covered the difference between destructive and non-destructive `Array` manipulation.
 
-- [`.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+### Resources
+
+- [Array (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+- [`.slice()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
+- [`.splice()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)

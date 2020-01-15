@@ -141,6 +141,8 @@ function functionName(argument1, argument2, argument3) {
 
 Functions are "called" by entering the function's name followed by the _invocation operator_, `()`. "Invoke" and "execute" mean the same thing. Arguments that the function declaration expects should be passed inside of the invocation operator. Functions can, but are not obligated to, return _return values_ at the end of their execution. Return values are often results of a process, grand totals, or success/failure data.
 
-- [Functions: Reusable Blocks of Code](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
-- [Function Return Values](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values)
-- [Function Declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
+### Resources
+
+- [Functions: Reusable Blocks of Code (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions)
+- [Function Return Values (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Return_values)
+- [Function Declaration (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)

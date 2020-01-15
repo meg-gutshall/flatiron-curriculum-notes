@@ -19,3 +19,7 @@ The thing `document.querySelector()` return is _also_ an object. It too has both
 ## Conclusion
 
 JavaScript methods are actions that can be performed on objects. Objects have many useful methods that help us modify and iterate through them. The DOM selection method `document.querySelector()` is a powerful tool for finding elements needed to make updates and changes to the DOM using methods like `remove()`.
+
+### Resources
+
+- [JavaScript Object Methods (W3 Schools)](https://www.w3schools.com/js/js_object_methods.asp)

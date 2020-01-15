@@ -100,4 +100,8 @@ We'd get back a list of Nodes corresponding to: `<li>1</li>, <li>2</li>, <li>10<
 
 The DOM selection methods `document.querySelector()` and `document.querySelectorAll()` are powerful tools for finding elements we need to update and change. They use the CSS selector syntax and the helps keep human brains happy: we only need to learn _one_ selector language. Wasn't that considerate?
 
-- [`querySelectorAll()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)
+### Resources
+
+- [Reference Table of CSS Selectors (MDN)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#Reference_table_of_selectors)
+- [`querySelector()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+- [`querySelectorAll()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll)

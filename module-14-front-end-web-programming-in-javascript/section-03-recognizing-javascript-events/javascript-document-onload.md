@@ -45,7 +45,7 @@ The `DOMContentLoaded` event is now a widely accepted standard. However, modern 
 
 This functions in a similar way to `DOMContentLoaded`. The JavaScript code stored in `index.js` will be loaded up but won't execute until the HTML page completely loads.
 
-## Resources
+### Resources
 
-- [`DOMContentLoaded`](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
+- [`DOMContentLoaded` (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
 - [Running Your Code at the Right Time](https://www.kirupa.com/html5/running_your_code_at_the_right_time.htm)

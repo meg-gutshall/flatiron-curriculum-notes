@@ -153,3 +153,7 @@ Obviously, this way of accessing that text isn't efficient and won't work on all
 ## Conclusion
 
 Understanding the tree structure of the DOM helps us navigate all kinds of trees. In subtrees and branches we can find the nodes we need by IDs, class names, or tag names. Once we've selected our elements, we can use JavaScript to manipulate them.
+
+### Resources
+
+- [Document Object Model (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model)

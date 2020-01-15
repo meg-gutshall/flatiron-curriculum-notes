@@ -9,8 +9,8 @@ JavaScript programmers often say we are "listening" for an event in order to "ex
 1. The event name to listen for
 2. The _callback function_ that will be executed when the node "hears" the event, "handling" the event
 
-## Resources
+### Resources
 
-- [Web Events](https://developer.mozilla.org/en-US/docs/Web/Events)
-- [Bubbling and Capturing](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing)
-- [Event Order](http://www.quirksmode.org/js/events_order.html)
+- [Web Events (MDN)](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [Bubbling and Capturing (StackOverflow)](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing)
+- [Event Order (QuirksMode)](http://www.quirksmode.org/js/events_order.html)

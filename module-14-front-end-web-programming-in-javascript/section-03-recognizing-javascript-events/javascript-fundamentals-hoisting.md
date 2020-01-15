@@ -184,6 +184,7 @@ If you read any pre-ES2015 JavaScript materials, hoisting is sure to come up as 
 
 Hoisting is often cited as an annoyance with JavaScript, but most of those complaints are from a pre-ES2015 world. Rejoice!
 
+### Resources
 
-- [Back to Basics: JavaScript Hoisting](https://www.sitepoint.com/back-to-basics-javascript-hoisting/)
-- [`var` Hoisting](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting)
+- [Back to Basics: JavaScript Hoisting (SitePoint)](https://www.sitepoint.com/back-to-basics-javascript-hoisting/)
+- [`var` Hoisting (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var#var_hoisting)

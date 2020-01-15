@@ -28,4 +28,8 @@ As you seek to build more complicated applications, you'll need to handle and tr
 
 JavaScript allows us to trigger work when it detects events. Some other common events are `scroll`, `mouseenter` and `mouseleave`, `focus`, `blur`, and `onchange`. When JavaScript recognizes an event that applies to an "event handler" that has been set up, it will execute that "handler's" work, which is stored in a _callback function_.
 
-- [Event Order](http://www.quirksmode.org/js/events_order.html)
+### Resources
+
+- [Web Events (MDN)](https://developer.mozilla.org/en-US/docs/Web/Events)
+- [Bubbling and Capturing (StackOverflow)](http://stackoverflow.com/questions/4616694/what-is-event-bubbling-and-capturing)
+- [Event Order (QuirksMode)](http://www.quirksmode.org/js/events_order.html)

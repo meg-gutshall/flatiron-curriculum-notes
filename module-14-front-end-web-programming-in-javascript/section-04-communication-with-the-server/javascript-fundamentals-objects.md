@@ -598,6 +598,10 @@ Unfortunately not. The reason why Arrays have this behavior would take us deep i
 
 We identified what an `Object` is and how to access values stored in it. We also covered how to add and remove properties, and use the convenience methods `Object.assign()` and `Object.keys()`. We also traced the link between the `Object` data type and `Array` data type.
 
-- [`delete`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
-- [Object Basics](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
+### Resources
+
+- [`Object.assign()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
+- [`Object.keys()` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+- [`delete` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/delete)
+- [Object Basics (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Basics)
 - [Objects in JavaScript: `Object.assign()`/Deep Copy](https://medium.com/@tkssharma/objects-in-javascript-object-assign-deep-copy-64106c9aefab)

@@ -125,7 +125,10 @@ Most of the time, a regular `for` loop will suffice. It's by far the most common
 
 After some time programming in JavaScript, writing a `for` loop will come naturally.
 
-  - [`while` loop](http://www.codecademy.com/glossary/javascript/loops#while-loops)
-- MDN
-  - [`for` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-  - [`while` loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+### Resources
+
+- [`for` Loop (Codecademy)](http://www.codecademy.com/glossary/javascript/loops#for-loops)
+- [`while` Loop (Codecademy)](http://www.codecademy.com/glossary/javascript/loops#while-loops)
+- [`for` Loop (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+- [`while` Loop (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+- [Loops and Iteration (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)

@@ -118,7 +118,7 @@ As a general rule, don't use `for...in` with arrays. When iterating over an arra
 
 Additionally, in the pre-ES2015 days, using `for...in` would often result in different browsers iterating over the same object's properties in different orders. Cross-browser consistency is very important. A lot of progress has been made towards standardizing the behavior of `for...in` across all major browsers, but there's still no reason to use `for...in` with arrays when we have the wonderfully consistent `for...of` tailor-made for the job.
 
-## Resources
+### Resources
 
-- [`for...of`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
-- [`for...in`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+- [`for...of` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+- [`for...in` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)

@@ -105,7 +105,7 @@ Lexical scope is the scope defined by author-time decisions of where functions a
 
 When a variable contains an unexpected value, understanding the scope chain will save you hours of painful debugging. When you're wondering where to declare a function so that it can access the proper variables, your familiarity with JavaScript's lexical scoping will be useful.
 
-## Resources
+### Resources
 
 - [JavaScript: Understanding the Weird Parts — The First 3.5 Hours](https://www.youtube.com/watch?v=Bv_5Zv5c-Ts) (Video)
 - [What Is a Closure?](https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36)

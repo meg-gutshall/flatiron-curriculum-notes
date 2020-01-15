@@ -95,3 +95,7 @@ The AJAX technique opens up a lot of uses!
 Many pages use AJAX to provide users fast and engaging sites. It's certainly not required in all sites. Using it for every site is a step backward when simple HTML would suffice. However, as sites have more and more material, the AJAX technique is a great tool to have.
 
 Using `fetch()`, we can include requests for data wherever we need to in our code. We can `fetch()` data on the click of a button or the expansion of an accordion display. There are many older methods for fetching data, but `fetch()` is the future.
+
+### Resources
+
+- [Fetch API (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)

@@ -47,3 +47,7 @@ The _methods_ and _properties_ that the DOM provides via its objects is called t
 
 The DOM is a JavaScript object that is a representation of the HTML, CSS, and JavaScript loaded by the browser when we visit a page. We normally interact with it through the `document` object. Because it is the "source of truth" for what browsers display, changes to the DOM create changes in the browser screen.
 
+### Resources
+
+- [What Is the DOM? (CSS Tricks)](https://css-tricks.com/dom/)
+- [The DOM (MDN)](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)

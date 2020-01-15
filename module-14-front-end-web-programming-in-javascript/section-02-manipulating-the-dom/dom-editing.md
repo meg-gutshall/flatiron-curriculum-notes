@@ -27,3 +27,8 @@ Some nodes only have a starting tag. Those are called self-closing elements. The
 ```
 
 Every HTML element has a `display` value. Since these are known by modern browsers, you don't have to worry about specifying the value unless you want to change it. That value can be many things (including `none`, which hides the element), but the default value for most elements is either [`block`](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) or [`inline`](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements). For the image above, the value is `inline`.
+
+### Resources
+
+- [HTML Block Elements (MDN)](https://developer.mozilla.org/en/docs/Web/HTML/Block-level_elements)
+- [HTML Inline Elements (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements)

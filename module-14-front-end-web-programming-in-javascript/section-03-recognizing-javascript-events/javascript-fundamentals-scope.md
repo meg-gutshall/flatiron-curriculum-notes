@@ -112,3 +112,7 @@ Declaring global variables and functions should only be used as a last resort if
 
 We've now covered how scope works in JavaScript. We talked about how our declared variables and methods have their own execution contexts and global-, function-, and block-level scopes. We also discussed that it's best practice to make variables and functions available only where they're needed.
 
+### Resources
+
+- [Scope (MDN)](https://developer.mozilla.org/en-US/docs/Glossary/Scope)
+- [Function Scope (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#Function_scope)
