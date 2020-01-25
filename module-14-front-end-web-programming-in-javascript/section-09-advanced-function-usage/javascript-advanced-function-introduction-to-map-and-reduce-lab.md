@@ -1,4 +1,4 @@
-# Lab: Introduction to Map and Reduce Lab (JavaScript Advanced Functions)
+# Lab: Introduction to `map` and `reduce` Lab (JavaScript Advanced Functions)
 
 ## What Is `map`?
 

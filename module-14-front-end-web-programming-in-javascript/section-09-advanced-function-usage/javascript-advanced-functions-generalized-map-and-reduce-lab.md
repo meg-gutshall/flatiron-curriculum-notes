@@ -1,4 +1,4 @@
-# Lab: Generalized Map and Reduce Lab (JavaScript Advanced Functions)
+# Lab: Generalized `map` and `reduce` Lab (JavaScript Advanced Functions)
 
 ## Define the Term Callback
 
@@ -70,7 +70,7 @@ function functionUsingCallback(en, es, zh, name) {
 
 In this case, `functionUsingCallback` will receive each of the three functions passed to it and will store those functions in `en`, `es`, and `zh`. Now let's call those functions.
 
-## Invoke a Callback from within a Function
+## Invoke a Callback from Within a Function
 
 ```js
 function sayHello(name = "") {
