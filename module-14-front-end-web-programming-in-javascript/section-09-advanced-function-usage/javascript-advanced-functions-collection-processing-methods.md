@@ -1,4 +1,4 @@
-# Lesson: Collection-Processing Methods (JavaScript Advanced Functions)
+# Lesson: Collection-processing Methods (JavaScript Advanced Functions)
 
 As programmers, we wonder about the world, come up with questions, and then ask a computer to help us manipulate data to find answers. Many of those questions can be resolved by "polling" every member in a collection. We'd typically "poll" each number in the collection and feed that value to a calculation _or_ aggregate that value into a running value (like a total).
 
