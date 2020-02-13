@@ -107,6 +107,7 @@ Software Engineering V8
 │   ├── Object Orientation in JavaScript: Method Types
 │   │   ├── Object Orientation in JavaScript: Getter and Setter Methods Lab
 │   │   └── Object Orientation in JavaScript: Static Methods Lab
+│   ├── Video: Object Orientation in JavaScript
 │   ├── Quiz: Reviewing JavaScript Object Orientation
 │   └── Quiz: Predicting Constructor Effects
 ├── Section 11: Object Orientation in JavaScript: Inheritance
@@ -115,7 +116,8 @@ Software Engineering V8
 │   ├── Object Orientation in JavaScript: Class Extension and Inheritance Super
 │   ├── Quiz: Reviewing JavaScript Inheritance
 │   ├────── Object Orientation in JavaScript: Class Extensions Super Lab
-│   └── Object Orientation in JavaScript: Liskov's Substitution Principle
+│   ├── Object Orientation in JavaScript: Liskov's Substitution Principle
+│   └── JavaScript Project Planning Resources
 ├── Section 12: Object Orientation in JavaScript: Prototypal Inheritance
 │   ├── Object Orientation in JavaScript: Intro to Prototypal Inheritance
 │   ├── Object Orientation in JavaScript: Constructor Functions

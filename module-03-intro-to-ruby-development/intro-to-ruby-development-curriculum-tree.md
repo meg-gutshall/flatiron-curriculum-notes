@@ -6,24 +6,31 @@ Software Engineering V8
 ├── Section 1: Intro to Programming
 │   ├── Intro to Tic Tac Toe
 │   ├── MINASWAN: Yukihuro Matsumoto
-│   └── What Is a Program?
-│       └── Hello World Lab
+│   ├── What Is a Program?
+│   │   └── Hello World Lab
+│   └── Video: Environment Overview
 ├── Section 2: Debugging
-│   └── Intro to IRB
-│       └── Reading Error Messages Lab
+│   ├── Intro to IRB
+│   ├── Video: IRB
+│   │   └── Reading Error Messages Lab
+│   └── Video: Error Messages
 ├── Section 3: Variables
 │   ├── About Variable Assignment
+│   ├── Video: Variable Assignment
 │   │   └── Variable Assignment Lab
 │   ├── Ruby Data Types
+│   ├── Video: Ruby Data Types
 │   ├── Array Basics
 │   └────── Tic Tac Toe Board Lab
 ├── Section 4: Methods
-│   ├── TDD, RSpec, and Learn Code-along
+│   ├── Intro to TDD, RSpec, and Learn Code-along
+│   ├── Video: Intro to TDD, RSpec, and Learn
 │   ├── Intro to Methods Code-along
 │   ├── String Interpolation
 │   ├── Puts and Return
 │   │   └── Display Tic Tac Toe Board Example Lab
 │   ├── Methods and Arguments
+│   ├── Video: Methods and Arguments
 │   ├── Default Arguments
 │   │   ├── Say Hello Lab
 │   │   └── Interpolation Super Power Lab
@@ -40,6 +47,7 @@ Software Engineering V8
 │   ├── About Ruby Conditionals
 │   │   └── RSpec FizzBuzz Lab
 │   ├────── Tic Tac Toe Position Taken Lab
+│   ├── Video: Writing Dynamic Programs
 │   └────── Valid Tic Tac Toe Move Lab
 ├── Section 7: Loops
 │   ├── Intro to Loops

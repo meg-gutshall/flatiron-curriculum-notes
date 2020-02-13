@@ -28,6 +28,7 @@ Software Engineering V8
 │   ├────── Basic Sinatra Forms Lab
 │   ├── Layouts and Yield
 │   ├── Integrating Models for a Full MVC Code-along
+│   ├── Video: Sinatra MVC
 │   │   └── Sinatra MVC Lab
 │   ├────── Sinatra Basic Forms Lab
 │   └── Sinatra Nested Forms
@@ -56,7 +57,8 @@ Software Engineering V8
 │   ├── Sinatra Multiple Controllers
 │   │   └── Sinatra Complex Form Associations Code-along
 │   ├────── Sinatra Playlister Lab
-│   └────── Sinatra NYC Lab
+│   ├────── Sinatra NYC Lab
+│   └── Sinatra Project Planning Resources
 ├── Section 6: ERB Outside of Sinatra
 │   ├── Video Review: Building a Site Generator (Part 1)
 │   └── Video Review: Building a Site Generator (Part 2)

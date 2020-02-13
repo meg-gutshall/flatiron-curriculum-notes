@@ -47,8 +47,9 @@ Software Engineering V8
 │   ├── Intro to Arrays
 │   ├── Using Arrays
 │   │   └── Using Arrays Lab
-│   └── Arrays and Methods
-│       └── Arrays and Methods Lab
+│   ├── Arrays and Methods
+│   │   └── Arrays and Methods Lab
+│   └── Video: Intro to Arrays
 ├── Section 7: Iteration
 │   ├── Iteration and Abstraction
 │   ├── Intro to Ruby Iterators
@@ -60,10 +61,12 @@ Software Engineering V8
 │   │   ├── Reverse Each Word Lab
 │   │   ├── Yield and Blocks Code-along
 │   │   ├── Each Lab
+│   │   │   └── Video: The Each Method
 │   │   ├── Return from Yield Statements
 │   │   └── Collect Lab
 │   ├── Boolean Enumerators
 │   ├── Search Enumerators
+│   ├── Video: Higher Level Iterators
 │   │   ├── My All? Lab
 │   │   ├── My Find Lab
 │   │   └── Cartoon Collections Lab
@@ -76,16 +79,18 @@ Software Engineering V8
 │   │   └── Using Hashes Lab
 │   ├── Symbols
 │   ├── Hash Iteration with Each Code-along
-│   └── Hash Iteration with Collect
-│       └── Hash Iteration Lab
+│   ├── Hash Iteration with Collect
+│   │   └── Hash Iteration Lab
+│   └── Video: Intro to Hashes
 └── Section 9: Data Structures
     ├── Intro to Nested Hashes
     ├── Building Nested Hashes
     │   ├── Building Nested Hashes Lab
     │   ├── Nested Hashes Lab
     │   └── Multitype Collections Lab
-    ├── Nested Hashes Iteration
+    ├── Nested Hash Iteration
     │   └── Iterating Over Nested Hashes Code-along
     ├── Other Hashes Code-along
+    ├── Video: Nested Data Structures
     └────── Hashes Manipulation Lab
 ```

@@ -27,9 +27,10 @@ Software Engineering V8
 │   ├── Redux Index Code-along
 │   │   ├── Cooking with Redux Lab
 │   │   └── Building Forms Lab
-│   └── Redux Delete Code-along
-│       ├── Redux Delete Lab
-│       └── CRUD Lab
+│   ├── Redux Delete Code-along
+│   │   ├── Redux Delete Lab
+│   │   └── CRUD Lab
+│   └── React Redux Project Planning
 ├── Section 4: Async Redux
 │   └── Redux Thunk
 │       └── Redux Thunk Lab

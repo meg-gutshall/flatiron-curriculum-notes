@@ -62,6 +62,7 @@ Software Engineering V8
 │   └── The Virtual DOM
 └── Section 11: Client-side Routing
     ├── Introduction to React Router
+    ├── Components as Routes
     │   └── Components as Routes Lab
     └────── Nested Routes Code-along
 ```

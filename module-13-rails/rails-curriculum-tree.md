@@ -98,8 +98,9 @@ Software Engineering V8
 │   ├── Omniauth Code-along
 │   │   ├── Omniauth Review Lecture in TodoMVC
 │   │   └── Omniauth Lab
-│   └── Authentication and Authorization Recap and Common Gems
-│       └── Rails Amusement Park Lab
+│   ├── Authentication and Authorization Recap and Common Gems
+│   │   └── Rails Amusement Park Lab
+│   └── Rails Project Planning Resources
 ├── Section 13: Popular Gems
 │   └── How to Find Gems
 └── Section 14: Rails Project Mode

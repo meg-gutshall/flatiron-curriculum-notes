@@ -17,6 +17,7 @@ Software Engineering V8
 │   ├── Dynamic ORMs Code-along
 │   │   ├── Dynamic ORMs with Inheritance
 │   │   └── Video Review: ORMs and SQL Joins
+│   ├────── Dynamic ORM Lab
 │   ├── Video Review: Building a Metaprogrammed Abstract ORM
 │   └── Video Review: Building a Room Scraper and ORM Code-along
 ├── Section 2: Active Record

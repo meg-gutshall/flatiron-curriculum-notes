@@ -12,6 +12,8 @@ Software Engineering V8
     ├── The HTTP Request
     │   └── Rack Routes and GET Params Lab
     ├── Dynamic URL Routes
+    ├── Rack Video Review: How the Web Works (Part 1)
+    ├── Rack Video Review: How the Web Works (Part 2)
     └── HTTP Status Codes
         └── Dynamic URLs and Status Codes Lab
 ```

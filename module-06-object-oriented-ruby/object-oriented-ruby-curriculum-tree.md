@@ -87,6 +87,7 @@ Software Engineering V8
     │       └── Video Review: Music Library CLI
     ├────── Tic Tac Toe with AI Lab
     ├────── Student Scraper Lab
+    ├────── CLI Project Planning Resources
     └────── CLI Data Gem Portfolio Project
             ├── CLI Data Gem Walkthrough
             ├── CLI Data Gem Walkthrough: Creating a CLI Scraper Gem
