@@ -1,4 +1,4 @@
-# Lab: Custom JSON Rendering Using Rails
+# Code-along: Custom JSON Rendering Using Rails
 
 By using `render json:` in our Rails controller, we can take entire models or even collections of models, have Rails convert them to JSON, and send them out on request.
 

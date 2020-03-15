@@ -1,4 +1,4 @@
-# Lab: Rendering Related Object Data in JSON
+# Code-along: Rendering Related Object Data in JSON
 
 Using `only` and `except`, we can be selective in what attributes we want to render to JSON in our basic Rails API. But what if we want to be _inclusive_ rather than selective? With Rails models, we're often dealing with many different related objects. Using `include` when rendering JSON, our API can send data about one resource along with data about its associated resources.
 
