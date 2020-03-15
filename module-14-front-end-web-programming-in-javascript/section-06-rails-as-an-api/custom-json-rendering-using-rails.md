@@ -8,7 +8,7 @@ The way we structure our data matters—it can lead to better, simpler code in t
 
 The simplest way to make data more useful to us is to provide more routes and actions that help to divide and organize our data. For instance, we could add a `show` action to allow us to send specific record/model instances. First, we'd add a route:
 
-```js
+```ruby
 Rails.application.routes.draw do
   get '/birds' => 'birds#index'
   get '/birds/:id' => 'birds#show'
@@ -17,7 +17,7 @@ end
 
 Then we could add an additional action:
 
-```js
+```ruby
 class BirdsController < ApplicationController
   def index
     birds = Bird.all
@@ -69,7 +69,7 @@ Sometimes when sending JSON data, such as an entire model, we don't want or need
 
 For our birdwatching purposes, we probably don't need bits of data like `created_at` and `updated_at`. Rather than send this unnecessary info when rendering, we could just pick and choose what we want to send:
 
-```js
+```ruby
 def show
   bird = Bird.find_by(id: params[:id])
   render json: {id: bird.id, name: bird.name, species: bird.species}
@@ -88,7 +88,7 @@ Here, we've created a new hash out of three keys, assigning the keys manually wi
 
 Another option would be to use Ruby's built-in `slice` method. On the `show` action, that would look like this:
 
-```js
+```ruby
 def show
   bird = Bird.find_by(id: params[:id])
   render json: bird.slice(:id, :name, :species)
@@ -107,7 +107,7 @@ This achieves the same result but in a slightly different way. Rather than havin
 
 While `slice` works fine for a single hash, it won't work for an array of hashes like the one we have in our `index` action:
 
-```js
+```ruby
 def index
   birds = Bird.all
   render json: birds
@@ -116,7 +116,7 @@ end
 
 In this case, we can add in the `only:` option directly after listing an object we want to render to JSON:
 
-```js
+```ruby
 def index
   birds = Bird.all
   render json: birds, only: [:id, :name, :species]
@@ -152,7 +152,7 @@ Visiting or fetching `http://localhost:3000/birds` will now produce our array of
 
 Alternatively, rather than specifically listing every key we want to include, we could also exclude particular content using the `except:` option, like so:
 
-```js
+```ruby
 def index
   birds = Bird.all
   render json: birds, except: [:created_at, :updated_at]
@@ -165,7 +165,7 @@ The above code would achieve the same result, producing only `id`, `name`, and `
 
 The `only` and `except` keywords are actually parameters of the `to_json` method, obscured by Rails magic. The last code snippet can be rewritten in full to show what is actually happening:
 
-```js
+```ruby
 def index
   birds = Bird.all
   render json: birds.to_json(except: [:created_at, :updated_at])
@@ -178,7 +178,7 @@ As customization becomes more complicated, writing in full sometimes helps to cl
 
 With the power to create our own APIs, we also have the power to define what to do when things go wrong. In our `show` action, we are currently using `Bird.find_by`, passing in `id: params[:id]`:
 
-```js
+```ruby
 def show
   bird = Bird.find_by(id: params[:id])
   render json: { id: bird.id, name: bird.name, species: bird.species }
@@ -189,7 +189,7 @@ When using `find_by`, if the record is not found, `nil` is returned. As we have 
 
 As `nil` is a _falsy_ value in Ruby, this gives us the ability to write our own error messaging in the event that a request is made for a record that doesn't exist:
 
-```js
+```ruby
 def show
   bird = Bird.find_by(id: params[:id])
   if bird

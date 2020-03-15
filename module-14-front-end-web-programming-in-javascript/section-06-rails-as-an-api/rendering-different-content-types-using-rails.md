@@ -48,6 +48,7 @@ class BirdsController < ApplicationController
   end
 end
 ```
+
 ```ruby
 class BirdsController < ApplicationController
   def index
@@ -91,7 +92,7 @@ When we include an array or hash after `render json:`, it turns out that Rails i
 
 We can choose to explicitly convert our array or hash, without any problem by adding `to_json` to the end:
 
-```js
+```ruby
 class BirdsController < ApplicationController
   def index
     @birds = Bird.all
@@ -108,7 +109,7 @@ Rails favors convention as well as a clean and clutter-free controller, so it ha
 
 So far in controller actions, we've typically seen instance variables being used. However, we really only needed instance variables when we were rendering to ERB. Now that we a directly rendering to JSON in the same action, we no longer need to deal with instance variables and can instead just use a local variable:
 
-```js
+```ruby
 class BirdsController < ApplicationController
   def index
     birds = Bird.all
