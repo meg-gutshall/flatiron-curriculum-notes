@@ -6,13 +6,13 @@ Using `only` and `except`, we can be selective in what attributes we want to ren
 
 In our birdwatching app, we already have the `Bird` resource created with `name` and `species` attributes. It seems that the next logical step would be to create a location-based _bird sighting_ system so next, let's build the `Location` resource to connect specific birds to specific locations. We'll use the built-in Rails model generator and give `Location` the `latitude` and `longitude` attributes:
 
-```ruby
+```sh
 rails g model location latitude:float longitude:float
 ```
 
 Now, we'll create the `Sighting` resource to connect a specific bird and location. A bird sighting in real life is an event that ties birds to their locations at a specific time. Similarly, a `Sighting` will do the same by tying one `Bird` to one `Location`. Let's use Rails' built-in resource generator to create `Sighting` and add its associations:
 
-```ruby
+```sh
 rails g resource sighting bird:belongs_to location:belongs_to
 ```
 
@@ -82,7 +82,7 @@ end
 
 With the Rails server running, visiting `http://localhost:3000/sightings/1` should produce an object representing a _sighting_:
 
-```js
+```json
 {
   "id": 1,
   "bird_id": 1,
@@ -105,7 +105,7 @@ end
 
 This produces nested objects in our rendered JSON for `"birds"` and `"location"`:
 
-```js
+```json
 {
   "id": 2,
   "bird": {
@@ -140,7 +140,7 @@ end
 
 This produces similar JSON as the previous custom configuration:
 
-```js
+```json
 {
   "id": 2,
   "bird_id": 2,
@@ -227,7 +227,7 @@ end
 
 This does produce a more specific set of data:
 
-```js
+```json
 {
   "id": 2,
   "bird_id": 2,

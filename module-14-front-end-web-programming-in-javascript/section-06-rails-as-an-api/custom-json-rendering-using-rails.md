@@ -35,7 +35,7 @@ end
 
 Now, visiting `http://localhost:3000/birds` will produce an array of `Bird` objects, but `http://localhost:3000/birds/2` will produce just one:
 
-```js
+```json
 {
   "id": 2,
   "name": "Grackle",
@@ -57,7 +57,7 @@ Even though we are no longer serving up views the same way, maintaining RESTful 
 
 Sometimes when sending JSON data, such as an entire model, we don't want or need to send the entire thing. Some data is sensitive, for instance. An API that sends user information might contain details of a user internally that it does not want to ever share externally. Sometimes, data is just extra clutter we don't need. Consider the last piece of data:
 
-```js
+```json
 {
   "id": 2,
   "name": "Grackle",
@@ -78,7 +78,7 @@ end
 
 Here, we've created a new hash out of three keys, assigning the keys manually with the attributes of `bird`. The result is that when we visit a specific bird's endpoint, like `http://localhost:3000/bird/3`, we'll see just the id, name, and species:
 
-```js
+```json
 {
   "id": 3,
   "name": "Common Starling",
@@ -97,7 +97,7 @@ end
 
 This achieves the same result but in a slightly different way. Rather than having to spell out each key, the hash [`slice` method](https://ruby-doc.org/core-2.7.0/Hash.html#method-i-slice) returns a _new_ hash with only the keys that are passed into `slice`. In this case, `id`, `name`, and `species` were passed in, so `created_at` and `updated_at` get left out, just like before.
 
-```js
+```json
 {
   "id": 3,
   "name": "Common Starling",
@@ -125,7 +125,7 @@ end
 
 Visiting or fetching `http://localhost:3000/birds` will now produce our array of bird objects and each object will _only_ have the `id`, `name`, and `species` values, leaving out everything else:
 
-```js
+```json
 [
   {
     "id": 1,
@@ -202,7 +202,7 @@ end
 
 Now, if we were to send a request to an invalid endpoint, rather than receiving a general HTTP error, we would still receive a response from the API:
 
-```js
+```json
 {
   "message": "Bird not found"
 }
