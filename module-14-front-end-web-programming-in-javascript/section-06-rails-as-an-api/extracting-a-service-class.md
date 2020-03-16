@@ -4,7 +4,7 @@ We started to see how customizing JSON data in the controller works but can star
 
 The complication comes when we start to scale. More models, more data, more pieces to customize until it becomes unmanageable.
 
-## Initial Configuration
+## Our Initial Configuration
 
 There are already three resources set up based on where we left off: birds, locations, and sightings. Birds and locations are related together through sightings:
 
