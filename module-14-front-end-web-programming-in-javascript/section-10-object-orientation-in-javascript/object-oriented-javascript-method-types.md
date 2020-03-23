@@ -351,5 +351,7 @@ In the object-oriented JavaScript world, we have a variety of ways to build our 
 ### Resources
 
 - [Static Methods (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)
+- [Classes: Static Methods (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Static_methods)
 - [`get` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
 - [`set` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set)
+- [Property Getters and Setters (The Modern JavaScript Tutorial)](https://javascript.info/property-accessors)
