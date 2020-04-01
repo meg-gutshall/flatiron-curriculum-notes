@@ -91,4 +91,5 @@ Class extensions and inheritance in JavaScript allow us to leverage object-orien
 
 - [Inheritance in JavaScript (MDN)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance)
 - [`extends` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends)
+- [`getter` (MDN)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)
 - ["Super" and "Extends" in JavaScript ES6 — Understanding the Tough Parts (Beginner's Guide to Mobile Web Development)](https://medium.com/beginners-guide-to-mobile-web-development/super-and-extends-in-javascript-es6-understanding-the-tough-parts-6120372d3420)
