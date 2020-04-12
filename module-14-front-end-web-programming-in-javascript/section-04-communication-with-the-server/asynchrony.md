@@ -2,7 +2,7 @@
 
 Browsers use an _asynchronous_ execution model, or "they do little bits of lots of tasks until the tasks are done."
 
-## A Synchronous Code Bloc
+## A Synchronous Code Block
 
 So far in JavaScript, we've written _synchronous_ code and the execution model didn't matter.
 
@@ -25,7 +25,7 @@ That work in Line 1 could take a long time (e.g. slow network), or might fail (e
 
 It's possible that the `let lis` in Line 2 _will never execute_! While JavaScript is executing `synchronousFetch` it will appear "locked up."
 
-## An Asynchronous Code Bloc
+## An Asynchronous Code Block
 
 Asynchronous code in JavaScript looks a lot like event handlers. And if we think about it, that makes sense. You tell JavaScript:
 
