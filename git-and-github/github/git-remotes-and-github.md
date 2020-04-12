@@ -4,7 +4,7 @@
 
 ### Creating a new repository in GitHub
 
-1. While logged into GitHub, click the + in the menubar and select `New repository`.
+1. While logged into GitHub, click the + in the menu bar and select `New repository`.
 2. Enter a name for your repository in the `Repository name` field, then click the green `Create repository` button.
 3. After you create the repo, you should see a "Quick setup" page. Click the "Copy to clipboard" symbol next to the repo URL to copy the URL.
 

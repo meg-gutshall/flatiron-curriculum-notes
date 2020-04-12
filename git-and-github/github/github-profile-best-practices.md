@@ -29,4 +29,3 @@
 - Bonus Tips
   - Building out tests is impressive—especially at a junior level.
   - Add comments into your code.
-  

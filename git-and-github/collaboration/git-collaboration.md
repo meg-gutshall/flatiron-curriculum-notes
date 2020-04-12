@@ -28,4 +28,3 @@
   - We can access this with `git checkout`, which will trigger Git to make a local branch to track that remote and switch to that branch.
 - Generally, if you are in `master` you want to immediately `fetch` and `merge` any changes to the remote master.
   - Do this more simply by typing `git pull`.
-  
