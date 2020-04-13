@@ -12,7 +12,7 @@
 
 - All HTML documents begin with a "doctype declaration" tag, which tells our web browser which version of HTML to use.
   - Since it's not wrapping any content, our doctype declaration doesn't require a closing tag.
-- Next, we add an opening adn closing `html` tag. This tells the web browser to interpret everything inside the tags as HTML code.
+- Next, we add an opening and closing `html` tag. This tells the web browser to interpret everything inside the tags as HTML code.
 - Every HTML page is made up of two primary sections: a `head` and a `body`. The `head` element contains metadata about the HTML document and other information for the browser, while the `body` element contains the actual content.
 - Common HTML elements include: links (`a`), paragraphs (`p`), headers (`h1` through `h6`), images (`img`), and lists (`ul`, `ol`, and `li`)
   - In addition to changing how the text is displayed, search engines use headers to help determine what a web page is about. A well-structured article will generally have its principle arguments bracketed by low-number header tags.

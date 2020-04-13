@@ -10,4 +10,3 @@
   - It displays only the content of the HTML document but uses the HTML elements to determine how the content is meant to be structured and displayed.
   - This display is called a rendered page.
   - Right-click and select "View Page Source" on any website to see the HTML document that the browser used to "render" the site.
-  
