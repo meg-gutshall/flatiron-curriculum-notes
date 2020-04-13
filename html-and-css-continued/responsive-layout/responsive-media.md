@@ -2,7 +2,7 @@
 
 ## Notes
 
-- With CSS, we can create _fluid_ content. Using percent (%) measurements on our media's CSS allows them to fluidly fill the size of their container. In most cases our media is contained within the columns and rows of our layouts.
+- With CSS, we can create _fluid_ content. Using percent (`%`) measurements on our media's CSS allows them to fluidly fill the size of their container. In most cases our media is contained within the columns and rows of our layouts.
 
 ### Use Percent Measurements
 

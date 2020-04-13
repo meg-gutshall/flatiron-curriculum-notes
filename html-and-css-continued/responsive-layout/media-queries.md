@@ -4,7 +4,7 @@
 
 - Media queries are a feature of CSS. They are sets of styles that are applied when the medium satisfies specific conditions. media queries most frequently decide whether a group of CSS rules applies based on the device "viewport" (or, "screen") size. The points at which the layout adjusts, based on some media property (or properties!), is called a "breakpoint".
 - Media queries automatically inherit all of the styles written outside of the `{}` braces so inside the media query we only need to write the CSS for the properties we wish to change.
-- Let your content determine where break points should fall.
+- Let your content determine where breakpoints should fall.
 
 ### Media Query Syntax
 

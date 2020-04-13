@@ -16,7 +16,7 @@
 **Drawbacks of Using Bootstrap**
 
 - Individuality: Many sites do not customize their styles beyond the defaults, making hundreds of sites that look the same.
-- Non-Content-Driven Media Queries: Unless you use the source code version and set your own custom break points, the precompiled CSS sets breakpoints for you, which can affect the way your content looks as the screen size changes.
+- Non-Content-Driven Media Queries: Unless you use the source code version and set your own custom breakpoints, the precompiled CSS sets breakpoints for you, which can affect the way your content looks as the screen size changes.
 - Heavier Than Necessary: If you are not using all the features, the file size could be potentially heavier than if you wrote your own code.
 
 ### Bootstrap Grid System
@@ -36,8 +36,8 @@
 #### Columns
 
 - Bootstrap uses `class="col-"` to create horizontal separation, the default grid allowing for 12 columns.
-- The class name `col-` is followed by either `xs`, `sm`, `md`, or `lg`. These indicate the sizes—extra-small, small, medium, or large-which affect the CSS media query break points, or at what size the columns will collapse so that they will no longer be positioned side-by-side.
+- The class name `col-` is followed by either `xs`, `sm`, `md`, or `lg`. These indicate the sizes—extra-small, small, medium, or large-which affect the CSS media query breakpoints, or at what size the columns will collapse so that they will no longer be positioned side-by-side.
   - You can use `-offset` class to shift columns over to the right (i.e. `col-sm-offset-4` will offset the column 4 spaces). Following columns will appear to the right of the offset column.
   - You can also use `-push` to push columns right or `-pull` to pull columns left instead of using `-offset`.
 - The number after the second dash indicates the number of units we'd like to span within the 12-unit grid system.
-- Columns can be nested inside one another by inserting a row inside a column adn then inserting additional columns inside of the inner row.
+- Columns can be nested inside one another by inserting a row inside a column and then inserting additional columns inside of the inner row.

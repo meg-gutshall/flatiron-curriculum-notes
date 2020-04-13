@@ -27,7 +27,7 @@
 
 #### ID and Class Selectors
 
-- ID selectors target all elements with a specific ID attribute value. The way we specify an ID selector in a CSS rule is to follow the element name with a hash tag and then the ID attribute value we want to match (no spaces).
+- ID selectors target all elements with a specific ID attribute value. The way we specify an ID selector in a CSS rule is to follow the element name with a hashtag and then the ID attribute value we want to match (no spaces).
 - Class selectors target all elements with a class attribute value matching the selector name. We specify a class selector using the period symbol followed by the name of the value (no spaces).
 - The difference between IDs and classes is the IDs are meant for one element on the page that has unique identity where class selectors are meant to be spread throughout the page across multiple elements.
 
